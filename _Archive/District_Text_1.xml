@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_NAME" Language="en_US">
+			<Text>Tier 1 City Center Expansion</Text>
+		</Replace>		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONB_NAME" Language="en_US">
+			<Text>Tier 2 City Center Expansion</Text>
+		</Replace>		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONC_NAME" Language="en_US">
+			<Text>Tier 3 City Center Expansion</Text>
+		</Replace>
+
+		<Replace Tag="LOC_BUILDING_COREXA_TIER1_SCI_NAME" Language="en_US">
+			<Text>Elder Teachers</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXA_TIER1_CUL_NAME" Language="en_US">
+			<Text>Historical Scribes</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXA_TIER1_FAI_NAME" Language="en_US">
+			<Text>Religous Ceremonies</Text>
+		</Replace>			
+		<Replace Tag="LOC_BUILDING_COREXA_TIER2_SCI_NAME" Language="en_US">
+			<Text>Scientists' Guild</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXA_TIER2_CUL_NAME" Language="en_US">
+			<Text>Artists' Guild</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXA_TIER2_FAI_NAME" Language="en_US">
+			<Text>Religous Guild</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXB_TIER1_SCI_NAME" Language="en_US">
+			<Text>Academy of Science</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXB_TIER1_CUL_NAME" Language="en_US">
+			<Text>Periodical Publishers</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXB_TIER1_GOL_NAME" Language="en_US">
+			<Text>Foreign Trading Company</Text>
+		</Replace>			
+		<Replace Tag="LOC_BUILDING_COREXB_TIER2_SCI_NAME" Language="en_US">
+			<Text>Trade Workers Union</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXB_TIER2_CUL_NAME" Language="en_US">
+			<Text>City Planners</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXB_TIER2_GOL_NAME" Language="en_US">
+			<Text>Immigration Office</Text>
+		</Replace>		
+	
+		<Replace Tag="LOC_BUILDING_COREXC_TIER1_SCI_NAME" Language="en_US">
+			<Text>Board of Education</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXC_TIER1_CUL_NAME" Language="en_US">
+			<Text>Parks and Recreation</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXC_TIER1_GOL_NAME" Language="en_US">
+			<Text>Suburban Developers</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXC_TIER2_SCI_NAME" Language="en_US">
+			<Text>Department of Energy</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXC_TIER2_CUL_NAME" Language="en_US">
+			<Text>Civil Enigneers</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXC_TIER2_GOL_NAME" Language="en_US">
+			<Text>Ministry of Finance</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXA_TIER3_DP_TOUR_NAME" Language="en_US">
+			<Text>Department of Tourism</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXA_TIER3_DP_EDU_NAME" Language="en_US">
+			<Text>Department of Education</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXA_TIER3_DP_ENRGY_NAME" Language="en_US">
+			<Text>Department of Energy</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXA_TIER3_DP_AGRI_NAME" Language="en_US">
+			<Text>Department of Agriculture</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXA_TIER3_DP_ECONOM_NAME" Language="en_US">
+			<Text>Department of Economic Development</Text>
+		</Replace>
+	
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_DESCRIPTION" Language="en_US">
+			<Text>An expansion of your city center district [NEWLINE][NEWLINE]+1 [ICON_Gold] Gold for every citizen in this city. [NEWLINE]-1 of the primary yield for all basic tile improvments in this city (-1 [ICON_Food] farms, -1 [ICON_Production] mines, -1 [ICON_Food] fishing boats, etc.).[NEWLINE]-10% [ICON_Production] Production towards military units in this city. [NEWLINE]-10 City Defense.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_DESCRIPTION_ADJACENCY" Language="en_US">
+			<Text>Adjacency: Major yield bonuses from adjacent districts. Provides minor yield bonus for adjacent districts</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONB_DESCRIPTION" Language="en_US">
+			<Text>An expansion of your city center district [NEWLINE][NEWLINE]+1 [ICON_Production] Production for every citizen in this city. [NEWLINE]-1 of the primary yield for all basic tile improvments in this city (-1 [ICON_Food] farms, -1 [ICON_Production] mines, -1 [ICON_Food] fishing boats, etc.).[NEWLINE]-10% [ICON_Production] Production towards military units in this city. [NEWLINE]-10 City Defense.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONB_DESCRIPTION_ADJACENCY" Language="en_US">
+			<Text>Adjacency: Major yield bonuses from adjacent districts. Provides minor yield bonus for adjacent districts</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONC_DESCRIPTION" Language="en_US">
+			<Text>An expansion of your city center district [NEWLINE][NEWLINE]+1 [ICON_Production] Production for every citizen in this city. [NEWLINE]-1 of the primary yield for all basic tile improvments in this city (-1 [ICON_Food] farms, -1 [ICON_Production] mines, -1 [ICON_Food] fishing boats, etc.).[NEWLINE]-10% [ICON_Production] Production towards military units in this city. [NEWLINE]-10 City Defense.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONC_DESCRIPTION_ADJACENCY" Language="en_US">
+			<Text>Adjacency: Major yield bonuses from adjacent districts. Provides minor yield bonus for adjacent districts</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXA_TIER1_SCI_DESCRIPTION" Language="en_US">
+			<Text>+5% [ICON_Science] Science in this city</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXA_TIER1_CUL_DESCRIPTION" Language="en_US">
+			<Text>+5% [ICON_Culture] Culture in this city</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXA_TIER1_FAI_DESCRIPTION" Language="en_US">
+			<Text>+5% [ICON_Faith] Faith in this city</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXA_TIER2_SCI_DESCRIPTION" Language="en_US">
+			<Text>+20% [ICON_PRODUCTION] Production towards campus district buildings in this city</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXA_TIER2_CUL_DESCRIPTION" Language="en_US">
+			<Text>+20% [ICON_PRODUCTION] Production in this city</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXA_TIER2_FAI_DESCRIPTION" Language="en_US">
+			<Text>+20% [ICON_PRODUCTION] Production in this city</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXA_TIER2_PLUSDIS_DESCRIPTION" Language="en_US">
+			<Text>Provides all tiles within this city with +1 Appeal. [NEWLINE][NEWLINE]Core Expansion district gains +1 [ICON_PRODUCTION] Production adjaceny bonus from specialty districts.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXA_TIER2_PRODDIS_DESCRIPTION" Language="en_US">
+			<Text>+30% [ICON_PRODUCTION] Production towards dirstricts in this city. +1 Districts in this city.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXA_TIER2_DUBADJ_DESCRIPTION" Language="en_US">
+			<Text>+1 [ICON_TradeRoute] Trade Route capacity. +1 [ICON_Amenities] Amenities and +1 [ICON_GreatPerson] Great Merchant Points in this city if it has a commercial district.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXA_TIER3_DP_TOUR_DESCRIPTION" Language="en_US">
+			<Text>Adjacency: Major yield bonuses for adjacent Campus, Holy Site, Commercial Hub, Theater, Harbor, Industrial Zone, and Aqueduct districts. Bonus Air Slots and [ICON_Amenity] Amenities for adjacent Aerodrome and Entertainment Complex districts.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXA_TIER3_DP_EDU_DESCRIPTION" Language="en_US">
+			<Text>Adjacency: Major yield bonuses for adjacent Campus, Holy Site, Commercial Hub, Theater, Harbor, Industrial Zone, and Aqueduct districts. Bonus Air Slots and [ICON_Amenity] Amenities for adjacent Aerodrome and Entertainment Complex districts.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXA_TIER3_DP_ENRGY_DESCRIPTION" Language="en_US">
+			<Text>Adjacency: Major yield bonuses for adjacent Campus, Holy Site, Commercial Hub, Theater, Harbor, Industrial Zone, and Aqueduct districts. Bonus Air Slots and [ICON_Amenity] Amenities for adjacent Aerodrome and Entertainment Complex districts.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXA_TIER3_DP_AGRI_DESCRIPTION" Language="en_US">
+			<Text>Adjacency: Major yield bonuses for adjacent Campus, Holy Site, Commercial Hub, Theater, Harbor, Industrial Zone, and Aqueduct districts. Bonus Air Slots and [ICON_Amenity] Amenities for adjacent Aerodrome and Entertainment Complex districts.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXA_TIER3_DP_ECONOM_DESCRIPTION" Language="en_US">
+			<Text>Adjacency: Major yield bonuses for adjacent Campus, Holy Site, Commercial Hub, Theater, Harbor, Industrial Zone, and Aqueduct districts. Bonus Air Slots and [ICON_Amenity] Amenities for adjacent Aerodrome and Entertainment Complex districts.</Text>
+		</Replace>
+		
+		
+		
+	</LocalizedText>
+</GameData>

@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_NAME" Language="en_US">
+			<Text>Classical City Center Expansion</Text>
+		</Replace>		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONB_NAME" Language="en_US">
+			<Text>Renaissance City Center Expansion</Text>
+		</Replace>		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONC_NAME" Language="en_US">
+			<Text>Modern City Center Expansion</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_RURALCOMMUNITY_NAME" Language="en_US">
+			<Text>Rural Community</Text>
+		</Replace>
+
+		<Replace Tag="LOC_BUILDING_COREXA_TIER1_SCI_NAME" Language="en_US">
+			<Text>Elder Teachers</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXA_TIER1_CUL_NAME" Language="en_US">
+			<Text>Historical Scribes</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXA_TIER1_GOL_NAME" Language="en_US">
+			<Text>Record Keepers</Text>
+		</Replace>			
+		<Replace Tag="LOC_BUILDING_COREXA_TIER2_SCI_NAME" Language="en_US">
+			<Text>Craftsman Guild</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXA_TIER2_CUL_NAME" Language="en_US">
+			<Text>Festival Planners</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXA_TIER2_GOL_NAME" Language="en_US">
+			<Text>Merchant Guild</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXB_TIER1_SCI_NAME" Language="en_US">
+			<Text>Academy of Science</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXB_TIER1_CUL_NAME" Language="en_US">
+			<Text>Book Publishers</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXB_TIER1_GOL_NAME" Language="en_US">
+			<Text>Foreign Trading Company</Text>
+		</Replace>	
+
+			<!-- Project Buildings -->			
+
+				<Replace Tag="LOC_BUILDING_COREXB_TIER1_SCI_1_NAME" Language="en_US">
+					<Text>Academic Conference</Text>
+				</Replace>
+				<Replace Tag="LOC_BUILDING_COREXB_TIER1_CUL_1_NAME" Language="en_US">
+					<Text>Publication Deal</Text>
+				</Replace>
+				<Replace Tag="LOC_BUILDING_COREXB_TIER1_GOL_1_NAME" Language="en_US">
+					<Text>Trade Route Expedition</Text>
+				</Replace>		
+				
+				<Replace Tag="LOC_BUILDING_COREXB_TIER1_SCI_2_NAME" Language="en_US">
+					<Text>Academic Conference</Text>
+				</Replace>
+				<Replace Tag="LOC_BUILDING_COREXB_TIER1_CUL_2_NAME" Language="en_US">
+					<Text>Publication Deal</Text>
+				</Replace>
+				<Replace Tag="LOC_BUILDING_COREXB_TIER1_GOL_2_NAME" Language="en_US">
+					<Text>Trade Route Expedition</Text>
+				</Replace>		
+				
+				<Replace Tag="LOC_BUILDING_COREXB_TIER1_SCI_3_NAME" Language="en_US">
+					<Text>Academic Conference</Text>
+				</Replace>
+				<Replace Tag="LOC_BUILDING_COREXB_TIER1_CUL_3_NAME" Language="en_US">
+					<Text>Publication Deal</Text>
+				</Replace>
+				<Replace Tag="LOC_BUILDING_COREXB_TIER1_GOL_3_NAME" Language="en_US">
+					<Text>Trade Route Expedition</Text>
+				</Replace>		
+		
+		<Replace Tag="LOC_BUILDING_COREXB_TIER2_SCI_NAME" Language="en_US">
+			<Text>Railway Company</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXB_TIER2_CUL_NAME" Language="en_US">
+			<Text>Industrialists</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXB_TIER2_GOL_NAME" Language="en_US">
+			<Text>Immigration Office</Text>
+		</Replace>		
+	
+		<Replace Tag="LOC_BUILDING_COREXC_TIER1_SCI_NAME" Language="en_US">
+			<Text>Board of Education</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXC_TIER1_CUL_NAME" Language="en_US">
+			<Text>Tourism Industry</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXC_TIER1_GOL_NAME" Language="en_US">
+			<Text>Trade Workers Union</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXC_TIER2_SCI_NAME" Language="en_US">
+			<Text>Department of Energy</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXC_TIER2_CUL_NAME" Language="en_US">
+			<Text>Civil Enigneers</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREXC_TIER2_GOL_NAME" Language="en_US">
+			<Text>Suburban Developers</Text>
+		</Replace>
+
+		<Replace Tag="LOC_BUILDING_COREX_NATIONAL_FAI_NAME" Language="en_US">
+			<Text>Grand Temple</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREX_NATIONAL_FOOD_NAME" Language="en_US">
+			<Text>Department of Education</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREX_NATIONAL_GOL_NAME" Language="en_US">
+			<Text>National Treasury</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREX_NATIONAL_CUL_NAME" Language="en_US">
+			<Text>National Heritage Trust</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_COREX_NATIONAL_SCI_NAME" Language="en_US">
+			<Text>National Space Agency</Text>
+		</Replace>
+	
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_DESCRIPTION" Language="en_US">
+			<Text>An expansion of your city center district [NEWLINE][NEWLINE]+1 [ICON_Gold] Gold for every citizen in this city. [NEWLINE]-1 of the primary yield for all basic tile improvments in this city (-1 [ICON_Food] farms, -1 [ICON_Production] mines, -1 [ICON_Food] fishing boats, etc.).[NEWLINE]-10% [ICON_Production] Production towards military units in this city. [NEWLINE]-10 City Defense.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_DESCRIPTION_ADJACENCY" Language="en_US">
+			<Text>Adjacency: Major yield bonuses from adjacent districts. Provides minor yield bonus for adjacent districts</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONB_DESCRIPTION" Language="en_US">
+			<Text>An expansion of your city center district [NEWLINE][NEWLINE]+1 [ICON_Production] Production for every citizen in this city. [NEWLINE]-1 of the primary yield for all basic tile improvments in this city (-1 [ICON_Food] farms, -1 [ICON_Production] mines, -1 [ICON_Food] fishing boats, etc.).[NEWLINE]-10% [ICON_Production] Production towards military units in this city. [NEWLINE]-10 City Defense.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONB_DESCRIPTION_ADJACENCY" Language="en_US">
+			<Text>Adjacency: Major yield bonuses from adjacent districts. Provides minor yield bonus for adjacent districts</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONC_DESCRIPTION" Language="en_US">
+			<Text>An expansion of your city center district [NEWLINE][NEWLINE]+1 [ICON_Production] Production for every citizen in this city. [NEWLINE]-1 of the primary yield for all basic tile improvments in this city (-1 [ICON_Food] farms, -1 [ICON_Production] mines, -1 [ICON_Food] fishing boats, etc.).[NEWLINE]-10% [ICON_Production] Production towards military units in this city. [NEWLINE]-10 City Defense.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONC_DESCRIPTION_ADJACENCY" Language="en_US">
+			<Text>Adjacency: Major yield bonuses from adjacent districts. Provides minor yield bonus for adjacent districts</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXA_TIER1_SCI_DESCRIPTION" Language="en_US">
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants a Library building in the Campus district whenever it is constructed. The Librariy building provides [ICON_PRODUCTION] Production equal to its intrinsic [ICON_Science] Science output. [NEWLINE][NEWLINE]+5% [ICON_Science] Science.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXA_TIER1_CUL_DESCRIPTION" Language="en_US">
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants a Amphitheatre building in the Theater Square district whenever it is constructed. The Amphitheatre building gains +1 [ICON_GreatWork_Writing] Great Works of Writing slots. [NEWLINE][NEWLINE]+5% [ICON_Culture] Culture.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXA_TIER1_GOL_DESCRIPTION" Language="en_US">
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants a Market building in the Commercial Hub district whenever it is constructed. +100% [ICON_Gold] Gold from the Market building. [NEWLINE][NEWLINE]+10% [ICON_Gold] Gold.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXA_TIER2_SCI_DESCRIPTION" Language="en_US">
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Allows an additional district to be built above the usual population limit. +25% [ICON_Production] Production towards engineering projects (Aquaduct, Dam, Canal, and Neighborhoods).</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXA_TIER2_CUL_DESCRIPTION" Language="en_US">
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants a free Arena building in the Entertainment Complex district whenever it is constructed. +100% [ICON_Production] Production towards the Entertainment Complex district.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXA_TIER2_GOL_DESCRIPTION" Language="en_US">
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants +25% [ICON_Gold] Gold from buildings in the Commercial district. +15% [ICON_Production] production towards Commercial Hub Projects.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXB_TIER1_SCI_DESCRIPTION" Language="en_US">
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants access to the Campus district Academic Conference Project. [NEWLINE][NEWLINE]Academic Conference Project Grants +20% [ICON_Science] Science from Campus district buildings and a one time [ICON_Culture] Culture bonus equal to your [ICON_Science] Science per turn on completion. Project can be completed 3 times. [NEWLINE][NEWLINE]Requires a Campus district with at least +4 [ICON_Science] Science adjacency in this city. [NEWLINE][NEWLINE]+10% [ICON_Science] Science.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXB_TIER1_CUL_DESCRIPTION" Language="en_US">
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants access to the Theater Square district Publish Great Works Project. [NEWLINE][NEWLINE]Publish Great Works Project Grants +2 [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing and a one time [ICON_Science] Science bonus equal to your [ICON_Culture] Culture per turn on completion. Project can be completed 3 times. [NEWLINE][NEWLINE]Requires a Theater Square district and that the Printing Press Technolgy has been researched. [NEWLINE][NEWLINE]+10% [ICON_Culture] Culture.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXB_TIER1_GOL_DESCRIPTION" Language="en_US">
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants access to the Commercial Hub district Foreign Trade Expedition Project. [NEWLINE][NEWLINE]Foreign Trade Expedition Project Grants +1 [ICON_Gold] Gold per Luxury and Strategic resource improved at the destination as well as +1 [ICON_TradeRoute] Trade Routes and a free Trader Unit on completion. Project can be completed 3 times. [NEWLINE][NEWLINE]Requires a Commercial Hub district and that a Shipyard has been built in this city. [NEWLINE][NEWLINE]+20% [ICON_Gold] Gold.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXB_TIER2_SCI_DESCRIPTION" Language="en_US">
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants +1 [ICON_RESOURCE_COAL] Coal and +1 [ICON_RESOURCE_IRON] Iron per turn and a free Military Enigneer. Domestic [ICON_TradeRoute] Trade Routes from this city gain +2 [ICON_Production] Production and +4 [ICON_Gold] Gold. Unlocks Steam Power technology if not already researched</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXB_TIER2_CUL_DESCRIPTION" Language="en_US">
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Industrial Zone district gains [ICON_Gold] Gold equal to its [ICON_Production] Production adjacency and recieves a free Workshop and Factory building whenever it is constructed. Grants 1 copy of the unique Luxury Resource Textiles which provides +4 Happiness.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXB_TIER2_GOL_DESCRIPTION" Language="en_US">
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]+3 [ICON_Citizen] Population and +50% Growth upon completion.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXC_TIER1_SCI_DESCRIPTION" Language="en_US">
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Plots within 2 tiles of a Campus district with a Library gain +1 Appeal and an additional +1 Appeal with a University. Neighborhood districts gain [ICON_Science] Science based on the Appeal of the tile. [NEWLINE][NEWLINE]+1 [ICON_Science] Science on tiles with 3 Appeal or higher. [NEWLINE]+3 [ICON_Science] Science on tiles with 5 Appeal or higher. [NEWLINE]+6 [ICON_Science] Science on tiles with 7 Appeal or higher. [NEWLINE][NEWLINE]+15% [ICON_Science] Science.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXC_TIER1_CUL_DESCRIPTION" Language="en_US">
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]May build the City Park and Seaside Resort Tile Improvement if not already available. The City Park and Seaside Resort Tile Improvements gain +2 [ICON_Culture] Culture and an additional +1 [ICON_Culture] Culture and +2 [ICON_Gold] Gold if adjacent to a Wonder. [NEWLINE][NEWLINE]+15% [ICON_Culture] Culture.</Text>
+		</Replace>
+
+		<Replace Tag="LOC_BUILDING_COREXC_TIER1_GOL_DESCRIPTION" Language="en_US">
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants +4 [ICON_Amenities] Amenities. +15 [ICON_Production] Production and [ICON_GOLD] Gold if the city is Ecstatic. [NEWLINE][NEWLINE]+30% [ICON_Gold] Gold.</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXC_TIER2_SCI_DESCRIPTION" Language="en_US">
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]May build all [ICON_Power] Power supplying land Tile Improvemnts. All [ICON_Power] Power producing Buildings and Tile Improvements gain +2 [ICON_Gold] Gold. Buildings that provide additional yields when powered receive +2 of their respective yields. [NEWLINE][NEWLINE]+4 [ICON_Power] Power from Misc Sources. </Text>
+		</Replace>
+		
+		<Replace Tag="LOC_BUILDING_COREXC_TIER2_CUL_DESCRIPTION" Language="en_US">
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Allows the Civil Engineer Unit to be recruited and immediatly recruites 1 Civil Engineer Unit. Prevents structural damage from Natural Disasters. [NEWLINE][NEWLINE]Civil Engineer Units can expend charges to speed [ICON_Production] Production of Non-Engineering (Aqueduct, Dam, Canal, Flood Barrier) Districts and Buildings.</Text>
+		</Replace>
+
+		<Replace Tag="LOC_BUILDING_COREXC_TIER2_GOL_DESCRIPTION" Language="en_US">
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Neighborhood districts recieves +2 [ICON_Gold] Gold for each adjacent district. +75% [ICON_Production] Production towards Neighborhood districts.</Text>
+		</Replace>
+
+<!-- Unit Names -->			
+
+		<Replace Tag="LOC_UNIT_COREXC_TIER2_CUL_CIVIL_ENG_NAME" Language="en_US">
+			<Text>Civil Engineer</Text>
+		</Replace>
+
+<!-- Unit Descriptions -->			
+
+		<Replace Tag="LOC_UNIT_COREXC_TIER2_CUL_CIVIL_ENG_DESCRIPTION" Language="en_US">
+			<Text>Modern era support unit. Can spend a charge to add +20% [ICON_Production] Production towards Non-Engineering Type Districts and +20% [ICON_Production] Production towards Modern Era and later Buildings. [ICON_Production] Production bonus increases for earlier era buildings. 2 build charges.</Text>
+		</Replace>
+		
+<!-- Project Names -->			
+
+		<Replace Tag="LOC_PROJECT_COREX_PUBLISHERS_1_NAME" Language="en_US">
+			<Text>Publish Great Works</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_PROJECT_COREX_TRADE_EXP_1_NAME" Language="en_US">
+			<Text>Fund Foreign Trade Expedition</Text>
+		</Replace>
+
+		<Replace Tag="LOC_PROJECT_COREX_ACADEM_CONF_1_NAME" Language="en_US">
+			<Text>Host Academic Conference</Text>
+		</Replace>
+
+		<Replace Tag="LOC_PROJECT_COREX_SPACE_RACE" Language="en_US">
+			<Text>Support Space Race</Text>
+		</Replace>
+
+		<Replace Tag="LOC_PROJECT_COREX_IMMIGRATION_NAME" Language="en_US">
+			<Text>Support Immigration</Text>
+		</Replace>
+
+<!-- Project Descriptions -->			
+
+		<Replace Tag="LOC_PROJECT_COREX_PUBLISHERS_1_DESCRIPTION" Language="en_US">
+			<Text>Provides [ICON_Culture] Culture while ongoing. Grants +2 [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing and a one time [ICON_Science] Science bonus equal to your [ICON_Culture] Culture per turn on completion. Can be completed 3 times. (1/3)</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_PROJECT_COREX_TRADE_EXP_1_DESCRIPTION" Language="en_US">
+			<Text>Provides [ICON_Gold] Gold while ongoing. Grants +1 [ICON_Gold] Gold per Luxury and Strategic resource improved at the destination as well as +1 [ICON_TradeRoute] Trade Routes and a free Trader Unit on completion. Can be completed 3 times. (1/3)</Text>
+		</Replace>
+
+		<Replace Tag="LOC_PROJECT_COREX_ACADEM_CONF_1_DESCRIPTION" Language="en_US">
+			<Text>Provides [ICON_Science] Science while ongoing. Grants +20% [ICON_Science] Science from Campus district buildings and a one time [ICON_Culture] Culture bonus equal to your [ICON_Science] Science per turn on completion. Can be completed 3 times. (1/3)</Text>
+		</Replace>
+
+		<Replace Tag="LOC_PROJECT_COREX_PUBLISHERS_2_DESCRIPTION" Language="en_US">
+			<Text>Provides [ICON_Culture] Culture while ongoing. Grants +2 [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing and a one time [ICON_Science] Science bonus equal to your [ICON_Culture] Culture per turn on completion. Can be completed 3 times. (2/3)</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_PROJECT_COREX_TRADE_EXP_2_DESCRIPTION" Language="en_US">
+			<Text>Provides [ICON_Gold] Gold while ongoing. Grants +1 [ICON_Gold] Gold per Luxury and Strategic resource improved at the destination as well as +1 [ICON_TradeRoute] Trade Routes and a free Trader Unit on completion. Can be completed 3 times. (2/3)</Text>
+		</Replace>
+
+		<Replace Tag="LOC_PROJECT_COREX_ACADEM_CONF_2_DESCRIPTION" Language="en_US">
+			<Text>Provides [ICON_Science] Science while ongoing. Grants +20% [ICON_Science] Science from Campus district buildings and a one time [ICON_Culture] Culture bonus equal to your [ICON_Science] Science per turn on completion. Can be completed 3 times. (2/3)</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_PROJECT_COREX_PUBLISHERS_3_DESCRIPTION" Language="en_US">
+			<Text>Provides [ICON_Culture] Culture while ongoing. Grants +2 [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing and a one time [ICON_Science] Science bonus equal to your [ICON_Culture] Culture per turn on completion. Can be completed 3 times. (3/3)</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_PROJECT_COREX_TRADE_EXP_3_DESCRIPTION" Language="en_US">
+			<Text>Provides [ICON_Gold] Gold while ongoing. Grants +1 [ICON_Gold] Gold per Luxury and Strategic resource improved at the destination as well as +1 [ICON_TradeRoute] Trade Routes and a free Trader Unit on completion. Can be completed 3 times. (3/3)</Text>
+		</Replace>
+
+		<Replace Tag="LOC_PROJECT_COREX_ACADEM_CONF_3_DESCRIPTION" Language="en_US">
+			<Text>Provides [ICON_Science] Science while ongoing. Grants +20% [ICON_Science] Science from Campus district buildings and a one time [ICON_Culture] Culture bonus equal to your [ICON_Science] Science per turn on completion. Can be completed 3 times. (3/3)</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_PROJECT_COREX_SPACE_RACE_DESCRIPTION" Language="en_US">
+			<Text>Support Space Race</Text>
+		</Replace>
+
+		<Replace Tag="LOC_PROJECT_COREX_IMMIGRATION_DESCRIPTION" Language="en_US">
+			<Text>Provides -2 [ICON_Amenities] Amenities while active. Grants -4 Loyalty and +1 [ICON_Citizen] Population upon completion.</Text>
+		</Replace>
+
+<!-- Adjacencies Descriptions -->		
+		
+		<Replace Tag="LOC_COREEX_DISTRICT_PRODUCTION_1" Language="en_US">
+			<Text>+1 [ICON_Production] Production from adjacent district</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_COREEX_DISTRICT_PRODUCTION_2" Language="en_US">
+			<Text>+2 [ICON_Production] Production from adjacent district</Text>
+		</Replace>
+
+		<Replace Tag="LOC_COREEX_DISTRICT_PRODUCTION_3" Language="en_US">
+			<Text>+3 [ICON_Production] Production from adjacent district</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_CITYCENTER" Language="en_US">
+			<Text>+1 [ICON_PRODUCTION] Production from the adjacent City Center</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_CAMPUS" Language="en_US">
+			<Text>+1 [ICON_SCIENCE] Science from the adjacent Campus</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_HOLYSITE" Language="en_US">
+			<Text>+1 [ICON_FAITH] Faith from the adjacent Holy Site</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_COMMHUB" Language="en_US">
+			<Text>+1 [ICON_GOLD] Gold from the adjacent Commercial Hub</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_SUGUBA" Language="en_US">
+			<Text>+1 [ICON_GOLD] Gold from the adjacent Suguba</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_THEATER" Language="en_US">
+			<Text>+1 [ICON_CULTURE] Culture from the adjacent Theater Square</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_HARBOR" Language="en_US">
+			<Text>+1 [ICON_GOLD] Gold from the adjacent Harbor</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_INDUSTRIAL" Language="en_US">
+			<Text>+1 [ICON_PRODUCTION] Production from the adjacent Industrial Zone</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_AQUEDUCT" Language="en_US">
+			<Text>+1 [ICON_PRODUCTION] Production from the adjacent Aqueduct</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_ACROPOLIS" Language="en_US">
+			<Text>+1 [ICON_CULTURE] Culture from the adjacent Acropolis</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_BATH" Language="en_US">
+			<Text>+1 [ICON_PRODUCTION] Production from the adjacent Bath</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_HANSA" Language="en_US">
+			<Text>+1 [ICON_PRODUCTION] Production from the adjacent Hansa</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_LAVRA" Language="en_US">
+			<Text>+1 [ICON_FAITH] Faith from the adjacent Lavra</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_ROYALGOLD" Language="en_US">
+			<Text>+1 [ICON_GOLD] Gold from the adjacent Royal Navy Dockyard</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_COTHON" Language="en_US">
+			<Text>+1 [ICON_GOLD] Gold from the adjacent Cothon</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_CANAL" Language="en_US">
+			<Text>+1 [ICON_PRODUCTION] Production from the adjacent Canal</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_ENTERTAIMENT" Language="en_US">
+			<Text>+1 [ICON_GOLD] Gold from the adjacent Entertainment Complex</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_STREETCARNIVAL" Language="en_US">
+			<Text>+1 [ICON_GOLD] Gold from the adjacent Street Carnival</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_WATERPARK" Language="en_US">
+			<Text>+1 [ICON_GOLD] Gold from the adjacent Waterpark</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_COPACABANA" Language="en_US">
+			<Text>+1 [ICON_GOLD] Gold from the adjacent Copacabana</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_DAM" Language="en_US">
+			<Text>+1 [ICON_GOLD] Gold from the adjacent Dam</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_GOVCULT" Language="en_US">
+			<Text>+1 [ICON_CULTURE] Culture from the adjacent Government Plaza</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_GOVSCIE" Language="en_US">
+			<Text>+1 [ICON_SCIENCE] Science from the adjacent Government Plaza</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_COREXA" Language="en_US">
+			<Text>+1 [ICON_GOLD] Gold from the adjacent Classical Era Core Expansion</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_COREXB" Language="en_US">
+			<Text>+1 [ICON_GOLD] Gold from the adjacent Renaissance Era Core Expansion</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_COREXC" Language="en_US">
+			<Text>+1 [ICON_GOLD] Gold from the adjacent Modern Era Core Expansion</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_CAMPUS_COREEXPANSIONA" Language="en_US">
+			<Text>+1 [ICON_SCIENCE] Science from the adjacent Classical Era Expansion</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_HOLYSITE_COREEXPANSIONA" Language="en_US">
+			<Text>+1 [ICON_FAITH] Faith from the adjacent Classical Era Expansion</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_LAVRA_COREEXPANSIONA" Language="en_US">
+			<Text>+1 [ICON_FAITH] Faith from the adjacent Classical Era Expansion</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_THEATER_COREEXPANSIONA" Language="en_US">
+			<Text>+1 [ICON_GOLD] Gold from the adjacent Classical Era Expansion</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_SUGUBA_COREEXPANSIONA" Language="en_US">
+			<Text>+1 [ICON_GOLD] Gold from the adjacent Classical Era Expansion</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_THEATER_COREEXPANSIONA" Language="en_US">
+			<Text>+1 [ICON_CULTURE] Culture from the adjacent Classical Era Expansion</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_ACROPOLIS_COREEXPANSIONA" Language="en_US">
+			<Text>+1 [ICON_CULTURE] Culture from the adjacent Classical Era Expansion</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_HARBOR_COREEXPANSIONA" Language="en_US">
+			<Text>+1 [ICON_GOLD] Gold from the adjacent Classical Era Expansion</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_ROYALNAVY_COREEXPANSIONA" Language="en_US">
+			<Text>+1 [ICON_GOLD] Gold from the adjacent Classical Era Expansion</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_COTHON_COREEXPANSIONA" Language="en_US">
+			<Text>+1 [ICON_FOOD Food from the adjacent Classical Era Expansion</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_INDUSTRIAL_COREEXPANSIONA" Language="en_US">
+			<Text>+1 [ICON_PRODUCTION] Production from the adjacent Classical Era Expansion</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_DISTRICT_HANSA_COREEXPANSIONA" Language="en_US">
+			<Text>+1 [ICON_PRODUCTION] Production from the adjacent Classical Era Expansion</Text>
+		</Replace>		
+
+	<!-- CIV CHANGES -->
+
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ADJACENT_DISTRICTS_DESCRIPTION" Language="en_US">
+			<Text>All districts receive an additional standard adjacency bonus for being adjacent to another district. +50% [ICON_Production] Production towards the Modern Era Core Expansion.</Text>
+		</Replace>
+
+		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="en_US">
+			<Text>Allows Farms to be built on Tundra terrain. After Civil Engineering is unlocked Farms can be built on Tundra Hills. In Snow, Tundra, Snow Hills, and Tundra Hills all Mines provide +1 [ICON_PRODUCTION] Production and strategic resource accumulation rate is +100%. Reduces the purchase cost of tiles in these terrain types by 50%. Tundra and Tundra Hill tiles adjacent to a Rural Community gain +1 [ICON_FOOD] Food, as well as +1 [ICON_PRODUCTION] Production with Forests.</Text>
+		</Replace>
+
+
+
+		
+	</LocalizedText>
+</GameData>
