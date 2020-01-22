@@ -314,7 +314,7 @@
 <!-- Adjacencies Descriptions -->		
 		
 		<Replace Tag="LOC_COREEX_DISTRICT_PRODUCTION_1" Language="en_US">
-			<Text>+{1_num} [ICON_Production] Production from adjacent {2_Num : plural 1?district; other?districts;} {1_Num : plural 1?district; other?districts;}.</Text>
+			<Text>+{1_num} [ICON_Production] Production from adjacent {1_Num : plural 1?district; other?districts;} {1_Num : plural 1?district; other?districts;}.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_COREEX_DISTRICT_PRODUCTION_2" Language="en_US">
