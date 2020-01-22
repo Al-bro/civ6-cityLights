@@ -182,11 +182,11 @@
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXB_TIER1_CUL_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants access to the unique Theater Square district Project: Publish Great Works. [NEWLINE][NEWLINE]Publish Great Works Project Grants +2 [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing and a one time [ICON_Science] Science bonus equal to your [ICON_Culture] Culture per turn on completion. Project can be completed 3 times in this city. [NEWLINE][NEWLINE]Requires a Theater Square district and that the Printing Press Technolgy has been researched. [NEWLINE][NEWLINE]+10% [ICON_Culture] Culture.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants access to the unique Theater Square district Project: Publish Great Works. [NEWLINE][NEWLINE]Publish Great Works Project Grants +2 [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing and a one time [ICON_Science] Science bonus equal to your [ICON_Culture] Culture per turn on completion. Project can be completed 3 times in this city. [NEWLINE][NEWLINE]Requires that the Printing Press Technolgy has been researched. [NEWLINE][NEWLINE]+10% [ICON_Culture] Culture.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXB_TIER1_GOL_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants access to the unique Commercial Hub district Project: Foreign Trade Expedition. [NEWLINE][NEWLINE]Foreign Trade Expedition Project Grants +1 [ICON_Gold] Gold per Luxury and Strategic resource improved at the destination as well as +1 [ICON_TradeRoute] Trade Routes and a free Trader Unit on completion. Project can be completed 3 times in this city. [NEWLINE][NEWLINE]Requires a Commercial Hub district and that a Shipyard has been built in this city. [NEWLINE][NEWLINE]+10% [ICON_Gold] Gold.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants access to the unique Harbor district Project: Foreign Trade Expedition. [NEWLINE][NEWLINE]Foreign Trade Expedition Project Grants +1 [ICON_Gold] Gold per Luxury and Strategic resource improved at the destination as well as +1 [ICON_TradeRoute] Trade Routes and a free Trader Unit on completion. Project can be completed 3 times in this city. [NEWLINE][NEWLINE]Requires that a Shipyard has been built in this city. [NEWLINE][NEWLINE]+10% [ICON_Gold] Gold.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXB_TIER2_SCI_DESCRIPTION" Language="en_US">
