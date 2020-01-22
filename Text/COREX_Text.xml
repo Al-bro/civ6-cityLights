@@ -138,11 +138,11 @@
 		</Replace>
 		
 		<Replace Tag="LOC_DISTRICT_COREEXPANSIONC_DESCRIPTION" Language="en_US">
-			<Text>Third tier expansion of your city center that provides and gains Prime Adjacencies from all other districts. Lowers the effectiveness of all basic tile improvements.</Text>
+			<Text>Third tier expansion of your city center that provides and gains Maximal Adjacencies from all other districts. Lowers the effectiveness of all basic tile improvements.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_DISTRICT_COREEXPANSIONC_DESCRIPTION_ADJACENCY" Language="en_US">
-			<Text>Prime yield bonuses from adjacent districts. Provides Prime yield bonus for adjacent districts</Text>
+			<Text>Maximal yield bonuses from adjacent districts. Provides Maximal yield bonus for adjacent districts</Text>
 		</Replace>
 
 		<Replace Tag="LOC_DISTRICT_RURALCOMMUNITY_DESCRIPTION" Language="en_US">

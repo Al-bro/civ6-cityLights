@@ -394,49 +394,66 @@
 	/* MAORI */
 
 		INSERT INTO Types
-		(	Type,												Kind					)	VALUES
-		(	'BUILDING_COREXA_TIER1_CUL_ALT',					'KIND_BUILDING'			),
-		(	'TRAIT_COREX_BUILDING_TIER1_CUL',					'KIND_TRAIT'			);
+			(	Type,												Kind					)	VALUES
+	
+			(	'BUILDING_COREXA_TIER1_CUL_ALT',					'KIND_BUILDING'			),
+			(	'TRAIT_COREX_BUILDING_TIER1_CUL',					'KIND_TRAIT'			);
 
 		INSERT INTO Buildings
-		(	BuildingType,       					Name,       										PrereqTech,					PrereqCivic,   					 Cost,      	 MaxPlayerInstances,    PrereqDistrict,       			TraitType,									Description,										Maintenance,    CitizenSlots,   		Entertainment,			PurchaseYield,				ObsoleteEra,		    AdvisorType      			)	VALUES
-		(	'BUILDING_COREXA_TIER1_CUL_ALT',		'LOC_BUILDING_COREXA_TIER1_CUL_ALT_NAME',			NULL,						'CIVIC_RECORDED_HISTORY',		'150',			'-1',					'DISTRICT_COREEXPANSIONA', 		'TRAIT_COREX_BUILDING_TIER1_CUL',			'LOC_BUILDING_COREXA_TIER1_CUL_ALT_DESCRIPTION',	'2',			'1',					'-1',					'YIELD_GOLD',				'NO_ERA',				'ADVISOR_CULTURE'			);
+			(	BuildingType,       					Name,       										PrereqTech,					PrereqCivic,   					 Cost,      	 MaxPlayerInstances,    PrereqDistrict,       			TraitType,									Description,										Maintenance,    CitizenSlots,   		Entertainment,			PurchaseYield,				ObsoleteEra,		    AdvisorType      			)	VALUES
+
+			(	'BUILDING_COREXA_TIER1_CUL_ALT',		'LOC_BUILDING_COREXA_TIER1_CUL_ALT_NAME',			NULL,						'CIVIC_RECORDED_HISTORY',		'150',			'-1',					'DISTRICT_COREEXPANSIONA', 		'TRAIT_COREX_BUILDING_TIER1_CUL',			'LOC_BUILDING_COREXA_TIER1_CUL_ALT_DESCRIPTION',	'2',			'1',					'-1',					'YIELD_GOLD',				'NO_ERA',				'ADVISOR_CULTURE'			);
 
 		INSERT INTO BuildingReplaces
-		(	CivUniqueBuildingType,						ReplacesBuildingType				)	VALUES
-		(	'BUILDING_COREXA_TIER1_CUL_ALT',			'BUILDING_COREXA_TIER1_CUL'			);	
+			(	CivUniqueBuildingType,						ReplacesBuildingType				)	VALUES
+
+			(	'BUILDING_COREXA_TIER1_CUL_ALT',			'BUILDING_COREXA_TIER1_CUL'			);	
 
 		INSERT INTO BuildingModifiers
-		(	BuildingType,								ModifierId													)	VALUES
-		(	'BUILDING_COREXA_TIER1_CUL_ALT',			'BUILDING_COREXA_TIER1_CUL_GRANT_AMP'						),
-		(	'BUILDING_COREXA_TIER1_CUL_ALT',			'BUILDING_COREXA_TIER1_CUL_YIELD_CUL'						),
-		(	'BUILDING_COREXA_TIER1_CUL_ALT',			'BUILDING_COREXA_TIER1_CUL_ALT_TOURISM'						);
+			(	BuildingType,								ModifierId													)	VALUES
+	
+			(	'BUILDING_COREXA_TIER1_CUL_ALT',			'BUILDING_COREXA_TIER1_CUL_GRANT_AMP'						),
+			(	'BUILDING_COREXA_TIER1_CUL_ALT',			'BUILDING_COREXA_TIER1_CUL_YIELD_CUL'						),
+			(	'BUILDING_COREXA_TIER1_CUL_ALT',			'BUILDING_COREXA_TIER1_CUL_ALT_TOURISM'						);
 
 		INSERT INTO Building_YieldsPerEra 
-		(	BuildingType,								YieldType,				 		 YieldChange			)	VALUES
-		(	'BUILDING_COREXA_TIER1_CUL_ALT',			'YIELD_CULTURE',				 '2'					);
+			(	BuildingType,								YieldType,				 		 YieldChange			)	VALUES
+
+			(	'BUILDING_COREXA_TIER1_CUL_ALT',			'YIELD_CULTURE',				 '2'					);
+
+		INSERT INTO Building_CitizenYieldChanges
+		
+			(	BuildingType,							YieldType,				YieldChange			)	VALUES
+			
+			(	'BUILDING_COREXA_TIER1_CUL_ALT',		'YIELD_CULTURE',		'1'					),
+			(	'BUILDING_COREXA_TIER1_CUL_ALT',		'YIELD_FAITH',			'1'					);
 
 		INSERT INTO Traits
-		(	TraitType,										Name										)	VALUES
-		(	'TRAIT_COREX_BUILDING_TIER1_CUL',				'TRAIT_COREX_BUILDING_TIER1_CUL_NAME'		);
+			(	TraitType,										Name										)	VALUES
+
+			(	'TRAIT_COREX_BUILDING_TIER1_CUL',				'TRAIT_COREX_BUILDING_TIER1_CUL_NAME'		);
 
 		INSERT INTO CivilizationTraits
-		(	CivilizationType,								TraitType										)	VALUES
-		(	'CIVILIZATION_MAORI',							'TRAIT_COREX_BUILDING_TIER1_CUL'				);
+			(	CivilizationType,								TraitType										)	VALUES
+	
+			(	'CIVILIZATION_MAORI',							'TRAIT_COREX_BUILDING_TIER1_CUL'				);
 
 		INSERT INTO Modifiers 
-		(	ModifierId,												ModifierType,									 				RunOnce,	Permanent,	OwnerRequirementSetId,		OwnerStackLimit,			SubjectStackLimit,				SubjectRequirementSetId							)	VALUES
-		(	'BUILDING_COREXA_TIER1_CUL_ALT_TOURISM',				'MODIFIER_SINGLE_CITY_ADJUST_TOURISM_LATE_ERAS',				 0,			0,			NULL,						NULL,						NULL,							NULL											);
+			(	ModifierId,												ModifierType,									 				RunOnce,	Permanent,	OwnerRequirementSetId,		OwnerStackLimit,			SubjectStackLimit,				SubjectRequirementSetId							)	VALUES
+	
+			(	'BUILDING_COREXA_TIER1_CUL_ALT_TOURISM',				'MODIFIER_SINGLE_CITY_ADJUST_TOURISM_LATE_ERAS',				 0,			0,			NULL,						NULL,						NULL,							NULL											);
 
 		INSERT INTO ModifierArguments
-		(	ModifierId,												Name,						Value								)	VALUES
-		(	'BUILDING_COREXA_TIER1_CUL_ALT_TOURISM',				'MinimumEra',				'ERA_MODERN'						),
-		(	'BUILDING_COREXA_TIER1_CUL_ALT_TOURISM',				'Modifier',					'50'								);
+			(	ModifierId,												Name,						Value								)	VALUES
+	
+			(	'BUILDING_COREXA_TIER1_CUL_ALT_TOURISM',				'MinimumEra',				'ERA_MODERN'						),
+			(	'BUILDING_COREXA_TIER1_CUL_ALT_TOURISM',				'Modifier',					'50'								);
 
 		INSERT INTO ExcludedDistricts
-		(	DistrictType,									TraitType										)	VALUES
-		(	'DISTRICT_COREEXPANSIONB',						'TRAIT_CIVILIZATION_MAORI_MANA'			    	),
-		(	'DISTRICT_COREEXPANSIONC',						'TRAIT_CIVILIZATION_MAORI_MANA'			    	);
+			(	DistrictType,									TraitType										)	VALUES
+	
+			(	'DISTRICT_COREEXPANSIONB',						'TRAIT_CIVILIZATION_MAORI_MANA'			    	),
+			(	'DISTRICT_COREEXPANSIONC',						'TRAIT_CIVILIZATION_MAORI_MANA'			    	);
 
 
 
