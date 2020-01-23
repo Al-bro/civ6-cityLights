@@ -48,6 +48,12 @@
       </Properties>
       <File>Gameplay/COREX_Civs.sql</File>
     </UpdateDatabase>
+    <UpdateDatabase id="PoliciessUpdate">
+      <Properties>
+        <LoadOrder>299</LoadOrder>
+      </Properties>
+      <File>Gameplay/COREX_Policies.sql</File>
+    </UpdateDatabase>    
     <UpdateText id="TextImport">
       <Properties>
         <LoadOrder>298</LoadOrder>
@@ -75,6 +81,7 @@
     <File>COREX_Config.dep</File>
     <File>Gameplay/COREX_Core.sql</File>
     <File>Gameplay/COREX_Civs.sql</File>
+    <File>Gameplay/COREX_Policies.sql</File>
     <File>Text/COREX_Text.xml</File>
   </Files>
 </Mod>

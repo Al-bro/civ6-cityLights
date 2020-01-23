@@ -1,3 +1,7 @@
+--===========================================================================================================================================================================--
+-- Author: Albro
+-- Create date: 2019-03-07
+-- Description: Core Components for the City Lights expansion.
 --==========================================================================================================================================================================--
 /* CITY LIGHTS */
 --==========================================================================================================================================================================--
@@ -94,7 +98,7 @@ INSERT INTO Types
 			(	'DISTRICT_COREEXPANSIONC',	'LOC_DISTRICT_COREEXPANSIONC_NAME',	'LOC_DISTRICT_COREEXPANSIONC_DESCRIPTION',	'TECH_STEEL',				NULL,				'PLUNDER_GOLD',		'400',			'ADVISOR_GENERIC',	'101',	'COST_PROGRESSION_GAME_PROGRESS',	'1000',					'1',		'1',				'0',				'1',		'0',					'0',				'0',			'1',						'0',						'NO_DOMAIN',		'0',		'7',		'-6',				'25',				'3',					'-30',						'0',						'-1'						),
 			(	'DISTRICT_RURALCOMMUNITY',	'LOC_DISTRICT_RURALCOMMUNITY_NAME',	'LOC_DISTRICT_RURALCOMMUNITY_DESCRIPTION',	'TECH_IRRIGATION',			NULL,				'PLUNDER_FAITH',	'50',			'ADVISOR_GENERIC',	'31',	'COST_PROGRESSION_GAME_PROGRESS',	'1000',					'0',		'1',				'0',				'0',		'1',					'0',				'0',			'1',						'0',						'NO_DOMAIN',		'0',		'1',		'0',				'1',				'0',					'2',						'0',						'-1'						);
 			
-		
+--===========================================================================================================================================================================--		
 		INSERT INTO Adjacency_YieldChanges
 			(	ID,								Description,									YieldType,				YieldChange,	OtherDistrictAdjacent,			TilesRequired,			AdjacentImprovement,			PrereqCivic,			PrereqTech,							AdjacentDistrict						)	VALUES
 
@@ -290,7 +294,8 @@ INSERT INTO Types
 	*/
 		
 		
-		
+			
+--===========================================================================================================================================================================--				
 		INSERT INTO District_Adjacencies
 			(	DistrictType,					YieldChangeID					)	VALUES
 			
@@ -455,6 +460,7 @@ INSERT INTO Types
 			(	'DISTRICT_HANSA',				'Hansa_RurCom'					);
 
 			
+--===========================================================================================================================================================================--					
 		INSERT INTO District_TradeRouteYields
 			(	DistrictType,				YieldType,			YieldChangeAsOrigin,	YieldChangeAsDomesticDestination,	YieldChangeAsInternationalDestination	)	VALUES
 			
@@ -476,7 +482,8 @@ INSERT INTO Types
 	/* RURAL COMMUNITY */
 
 			(	'DISTRICT_RURALCOMMUNITY',	'YIELD_FOOD',		'0',					'1',								'0'										);
-	
+			
+--===========================================================================================================================================================================--			
 		INSERT INTO District_CitizenYieldChanges
 			(	DistrictType,      				 YieldType,       			YieldChange			)	VALUES
 			
@@ -492,7 +499,8 @@ INSERT INTO Types
 
 			(	'DISTRICT_COREEXPANSIONC',		'YIELD_PRODUCTION',			'4'					);
 
-	
+			
+--===========================================================================================================================================================================--			
 		INSERT INTO DistrictModifiers
 			(	DistrictType,				ModifierId						)	VALUES
 			
@@ -543,7 +551,8 @@ INSERT INTO Types
 			(	'DISTRICT_RURALCOMMUNITY',	'RURCOM_NEG_GROWTH'						),
 			(	'DISTRICT_RURALCOMMUNITY',	'RURCOM_NEG_PROD_DIST_RURCOM_1'			),
 			(	'DISTRICT_RURALCOMMUNITY',	'RURCOM_NEG_PROD_DIST_RURCOM_2'			);
-
+			
+--===========================================================================================================================================================================--		
 		INSERT INTO MutuallyExclusiveDistricts
 			(	District,						MutuallyExclusiveDistrict				)	VALUES
 			
@@ -614,7 +623,8 @@ INSERT INTO Types
 			(	'BUILDING_COREX_NATIONAL_CUL',		'LOC_BUILDING_COREX_NATIONAL_CUL_NAME',				NULL,						'CIVIC_CULTURAL_HERITAGE',		'725',			'1',					'DISTRICT_THEATER', 			'LOC_BUILDING_COREX_NATIONAL_CUL_DESCRIPTION',		'8',			'0',					'0',					NULL,						'NO_ERA',				'ADVISOR_CULTURE'			),
 			(	'BUILDING_COREX_NATIONAL_SCI',		'LOC_BUILDING_COREX_NATIONAL_SCI_NAME',				NULL,						'CIVIC_SPACE_RACE',				'725',			'1',					'DISTRICT_SPACEPORT', 			'LOC_BUILDING_COREX_NATIONAL_SCI_DESCRIPTION',		'8',			'0',					'0',					NULL,						'NO_ERA',				'ADVISOR_TECHNOLOGY'		);                                                                                                                                                                                                                                                                                                                                                               		
 		
-
+			
+--===========================================================================================================================================================================--		
 		INSERT INTO Building_CitizenYieldChanges
 		
 			(	BuildingType,						YieldType,			YieldChange			)	VALUES
@@ -666,7 +676,8 @@ INSERT INTO Types
 			(	'BUILDING_COREXC_TIER2_CUL',		'YIELD_PRODUCTION',		'2'				),
 			(	'BUILDING_COREXC_TIER2_GOL',		'YIELD_GOLD',			'4'				),			
 			(	'BUILDING_COREXC_TIER2_GOL',		'YIELD_PRODUCTION',		'3'				);
-
+			
+--===========================================================================================================================================================================--		
 		INSERT INTO Building_GreatPersonPoints
 		
 			(	BuildingType,						GreatPersonClassType,				PointsPerTurn			)	VALUES
@@ -688,7 +699,8 @@ INSERT INTO Types
 			(	'BUILDING_COREXC_TIER1_SCI',		'GREAT_PERSON_CLASS_SCIENTIST',		'1'						),
 			(	'BUILDING_COREXC_TIER1_GOL',		'GREAT_PERSON_CLASS_MERCHANT',		'1'						);
 			
-
+			
+--===========================================================================================================================================================================--		
 		INSERT INTO BuildingModifiers
 			(	BuildingType,								ModifierId													)	VALUES
 
@@ -870,7 +882,8 @@ INSERT INTO Types
                                                                                                                    			                                                                                                        
 			(	'BUILDING_COREX_NATIONAL_SCI',				'BUILDING_COREX_NATIONAL_SCI_SPACE_ADJACENY'				),
 			(	'BUILDING_COREX_NATIONAL_SCI',				'BUILDING_COREX_NATIONAL_SCI_PROJ_AVAIL'					);
-                                                                                                                    
+			
+--===========================================================================================================================================================================--		                                                                                                                    
 		INSERT INTO MutuallyExclusiveBuildings
 			(	Building,								MutuallyExclusiveBuilding				)	VALUES
 
@@ -924,6 +937,7 @@ INSERT INTO Types
 
 	/* NATIONAL */
 			
+--===========================================================================================================================================================================--					
 		INSERT INTO BuildingPrereqs
 			(	Building,								PrereqBuilding							)	VALUES
 
@@ -1011,6 +1025,7 @@ INSERT INTO Types
 			(	'MODIFIER_COREEX_GAME_DISTRICT_UNLOCK',											'COLLECTION_ALL_PLAYERS',			'EFFECT_ADJUST_DISTRICT_PREREQ'																		);			
 	*/
 			
+--===========================================================================================================================================================================--					
 		INSERT INTO ImprovementModifiers 
 			(	ImprovementType,																ModifierID														)	VALUES
 
@@ -1021,7 +1036,8 @@ INSERT INTO Types
 			(	'IMPROVEMENT_CITY_PARK',														'BUILDING_COREXC_TIER1_CUL_PARK_YIELD_CUL_2'					),			
 			(	'IMPROVEMENT_CITY_PARK',														'BUILDING_COREXC_TIER1_CUL_PARK_YIELD_CUL_1'					),			
 			(	'IMPROVEMENT_CITY_PARK',														'BUILDING_COREXC_TIER1_CUL_PARK_YIELD_GOL_2'					);			
-		
+			
+--===========================================================================================================================================================================--				
 		INSERT INTO Modifiers 
 			(	ModifierId,												ModifierType,									 				RunOnce,	Permanent,	OwnerRequirementSetId,		OwnerStackLimit,			SubjectStackLimit,				SubjectRequirementSetId							)	VALUES
 		
@@ -1393,7 +1409,8 @@ INSERT INTO Types
 			(	'BUILDING_COREXA_TIER3_AGRI_FREE_POP',					'MODIFIER_PLAYER_BUILT_CITIES_GRANT_FREE_POPULATION',	 		 0,			1,			NULL,						NULL,						NULL,							NULL											),
 			(	'BUILDING_COREXA_TIER3_ECON_BRTH_HOODS',				'MODIFIER_COREX_SINGLE_CITY_ADJUST_DISTRICT_ADJ',				 0,			0,			NULL,						NULL,						NULL,							NULL											);			
 	*/			
-
+			
+--===========================================================================================================================================================================--		
 		INSERT INTO ModifierArguments
 			(	ModifierId,												Name,						Value								)	VALUES
 
@@ -2223,7 +2240,8 @@ INSERT INTO Types
 	
 			(	'COREXA_CITY_HAS_UNI',				'REQUIREMENT_CITY_HAS_BUILDING',						0		);
 	*/
-
+			
+--===========================================================================================================================================================================--		
 		INSERT INTO RequirementArguments 
 			(	RequirementId,							Name,				Value								)	VALUES
 
@@ -2403,7 +2421,8 @@ INSERT INTO Types
 	
 			(	'COREXA_CITY_HAS_UNI',					'BuildingType',		'BUILDING_UNIVERSITY'				);
 	*/
-
+			
+--===========================================================================================================================================================================--		
 		INSERT INTO RequirementSets 
 			(	RequirementSetId,						RequirementSetType			)	VALUES
 
@@ -2565,6 +2584,7 @@ INSERT INTO Types
 			(	'COREXA_SET_CITY_HAS_UNI',						'REQUIREMENTSET_TEST_ALL'	);
 	*/
 			
+--===========================================================================================================================================================================--				
 		INSERT INTO RequirementSetRequirements
 			(	RequirementSetId,									RequirementId								)	VALUES
 
@@ -2748,7 +2768,8 @@ INSERT INTO Types
 			(	'COREXA_SET_CITY_HAS_UNI',							'COREXA_CITY_HAS_UNI'						);
 
 	 */
-
+			
+--===========================================================================================================================================================================--		
 		INSERT INTO Improvement_Adjacencies
 			(	ImprovementType,					YieldChangeId									)	VALUES
 
@@ -2778,7 +2799,8 @@ INSERT INTO Types
 			(	'PROJECT_COREX_ACADEM_CONF_2',		'LOC_PROJECT_COREX_ACADEM_CONF_1_NAME',		'LOC_PROJECT_COREX_ACADEM_CONF_1_SHORT_NAME',	'LOC_PROJECT_COREX_ACADEM_CONF_2_DESCRIPTION',		'25',				'COST_PROGRESSION_GAME_PROGRESS',	'1500',						NULL,				'DISTRICT_CAMPUS',				NULL,							'ADVISOR_TECHNOLOGY'	),
 			(	'PROJECT_COREX_ACADEM_CONF_3',		'LOC_PROJECT_COREX_ACADEM_CONF_1_NAME',		'LOC_PROJECT_COREX_ACADEM_CONF_1_SHORT_NAME',	'LOC_PROJECT_COREX_ACADEM_CONF_3_DESCRIPTION',		'25',				'COST_PROGRESSION_GAME_PROGRESS',	'1500',						NULL,				'DISTRICT_CAMPUS',				NULL,							'ADVISOR_TECHNOLOGY'	),
 			(	'PROJECT_COREX_SPACE_RACE',			'LOC_PROJECT_COREX_SPACE_RACE',				'LOC_PROJECT_COREX_SPACE_RACE_SHORT_NAME',		'LOC_PROJECT_COREX_SPACE_RACE_DESCRIPTION',			'25',				'COST_PROGRESSION_GAME_PROGRESS',	'1500',						NULL,				NULL,							NULL,							'ADVISOR_TECHNOLOGY'	);
-
+			
+--===========================================================================================================================================================================--		
 		INSERT INTO Projects_XP2
 			(	ProjectType,						UnlocksFromEffect,				RequiredBuilding,						CreateBuilding							)	VALUES
 			(	'PROJECT_COREX_PUBLISHERS_1',		'0',							'BUILDING_COREXB_TIER1_CUL_1',			'BUILDING_COREXB_TIER1_CUL_2'			),
@@ -2791,7 +2813,8 @@ INSERT INTO Types
 			(	'PROJECT_COREX_ACADEM_CONF_2',		'0',							'BUILDING_COREXB_TIER1_SCI_2',			'BUILDING_COREXB_TIER1_SCI_3'			),
 			(	'PROJECT_COREX_ACADEM_CONF_3',		'0',							'BUILDING_COREXB_TIER1_SCI_3',			NULL									),
 			(	'PROJECT_COREX_SPACE_RACE',			'1',							NULL,									NULL									);
-
+			
+--===========================================================================================================================================================================--		
 		INSERT INTO Project_BuildingCosts
 			(	ProjectType,						ConsumedBuildingType						)	VALUES
 			(	'PROJECT_COREX_PUBLISHERS_1',		'BUILDING_COREXB_TIER1_CUL_1'				),
@@ -2803,7 +2826,8 @@ INSERT INTO Types
 			(	'PROJECT_COREX_ACADEM_CONF_1',		'BUILDING_COREXB_TIER1_SCI_1'				),
 			(	'PROJECT_COREX_ACADEM_CONF_2',		'BUILDING_COREXB_TIER1_SCI_2'				),
 			(	'PROJECT_COREX_ACADEM_CONF_3',		'BUILDING_COREXB_TIER1_SCI_3'				);
-
+			
+--===========================================================================================================================================================================--		
 		INSERT INTO Project_YieldConversions
 			(	ProjectType,						YieldType,						PercentOfProductionRate				)	VALUES
 			(	'PROJECT_COREX_PUBLISHERS_1',		'YIELD_CULTURE',				'15'								),
@@ -2816,7 +2840,8 @@ INSERT INTO Types
 			(	'PROJECT_COREX_ACADEM_CONF_2',		'YIELD_SCIENCE',				'15'								),
 			(	'PROJECT_COREX_ACADEM_CONF_3',		'YIELD_SCIENCE',				'15'								),
 			(	'PROJECT_COREX_SPACE_RACE',			'YIELD_SCIENCE',				'20'								);
-
+			
+--===========================================================================================================================================================================--		
 		INSERT INTO ProjectCompletionModifiers
 			(	ProjectType,						ModifierId											)	VALUES
 			(	'PROJECT_COREX_PUBLISHERS_1',		'PROJECT_COREXB_TIER1_CUL_PUBLISHERS'				),
@@ -2859,11 +2884,13 @@ INSERT INTO Types
 		INSERT INTO Units
 			(	UnitType,									Name,												BaseSightRange,				BaseMoves,				Domain,				FormationClass,					Cost,		BuildCharges,		Description,											CostProgressionModel,						CostProgressionParam1,			PurchaseYield,			AdvisorType				)	VALUES
 			(	'UNIT_COREXC_TIER2_CUL_CIVIL_ENG',			'LOC_UNIT_COREXC_TIER2_CUL_CIVIL_ENG_NAME',			'2',						'2',					'DOMAIN_LAND',		'FORMATION_CLASS_CIVILIAN',		'330',		'2',				'LOC_UNIT_COREXC_TIER2_CUL_CIVIL_ENG_DESCRIPTION',		'COST_PROGRESSION_PREVIOUS_COPIES',			'4',							'YIELD_GOLD',			'ADVISOR_GENERIC'		);
-
+			
+--===========================================================================================================================================================================--		
 		INSERT INTO Unit_BuildingPrereqs
 			(	Unit,										PrereqBuilding,						NumSupported				)	VALUES
 			(	'UNIT_COREXC_TIER2_CUL_CIVIL_ENG',			'BUILDING_COREXC_TIER2_CUL',		'-1'						);
-
+			
+--===========================================================================================================================================================================--		
 		INSERT INTO District_BuildChargeProductions
 			(	DistrictType,									UnitType,								PercentProductionPerCharge		)	VALUES
 			(	'DISTRICT_HOLY_SITE',							'UNIT_COREXC_TIER2_CUL_CIVIL_ENG',		'20'							),
@@ -2888,7 +2915,8 @@ INSERT INTO Types
 			(	'DISTRICT_COREEXPANSIONA',						'UNIT_COREXC_TIER2_CUL_CIVIL_ENG',		'20'							),
 			(	'DISTRICT_COREEXPANSIONB',						'UNIT_COREXC_TIER2_CUL_CIVIL_ENG',		'20'							),
 			(	'DISTRICT_COREEXPANSIONC',						'UNIT_COREXC_TIER2_CUL_CIVIL_ENG',		'20'							);
-
+			
+--===========================================================================================================================================================================--		
 		INSERT INTO Building_BuildChargeProductions
 			(	BuildingType,									UnitType,								PercentProductionPerCharge		)	VALUES
 			(	'BUILDING_MONUMENT',							'UNIT_COREXC_TIER2_CUL_CIVIL_ENG',		'70'							),
@@ -2963,7 +2991,8 @@ INSERT INTO Types
 		INSERT INTO Resources
 			(	ResourceType,								Name,										ResourceClassType,				Happiness				)	VALUES
 			(	'RESOURCE_COREEX_TEXTILES',					'LOC_RESOURCE_COREEX_TEXTILES_NAME',		'RESOURCECLASS_LUXURY',			'4'						);
-
+			
+--===========================================================================================================================================================================--		
 		INSERT INTO Features
 			(	FeatureType					)	VALUES
 			(	'FEATURE_COREX'				);	

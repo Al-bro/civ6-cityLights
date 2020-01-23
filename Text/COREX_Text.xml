@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+
+<!-- NAMES -->
+
+	<!-- DISTRICT NAMES -->
+
 		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_NAME" Language="en_US">
 			<Text>Classical Era Core Expansion</Text>
 		</Replace>		
@@ -13,6 +18,8 @@
 		<Replace Tag="LOC_DISTRICT_RURALCOMMUNITY_NAME" Language="en_US">
 			<Text>Rural Community</Text>
 		</Replace>
+
+	<!-- BUILDING NAMES -->
 
 		<Replace Tag="LOC_BUILDING_COREXA_TIER1_SCI_NAME" Language="en_US">
 			<Text>Elder Teachers</Text>
@@ -43,7 +50,7 @@
 			<Text>Foreign Trading Company</Text>
 		</Replace>	
 
-			<!-- Project Buildings -->			
+			<!-- PROJECT BUILDING NAMES -->			
 
 				<Replace Tag="LOC_BUILDING_COREXB_TIER1_SCI_1_NAME" Language="en_US">
 					<Text>Academic Conference</Text>
@@ -104,6 +111,8 @@
 			<Text>Suburban Developers</Text>
 		</Replace>
 
+	<!-- NATIONAL BUILDING NAMES -->
+
 		<Replace Tag="LOC_BUILDING_COREX_NATIONAL_FAI_NAME" Language="en_US">
 			<Text>Grand Temple</Text>
 		</Replace>
@@ -120,7 +129,10 @@
 			<Text>National Space Agency</Text>
 		</Replace>
 	
-		
+<!-- DESCRIPTIONS -->
+
+	<!-- DISTRICT DESCRIPTIONS -->
+
 		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_DESCRIPTION" Language="en_US">
 			<Text>First tier expansion of your city center that provides and gains Standard Adjacencies from all other districts. Lowers the effectiveness of some basic tile improvements.</Text>
 		</Replace>
@@ -152,6 +164,8 @@
 		<Replace Tag="LOC_DISTRICT_RURALCOMMUNITY_DESCRIPTION_ADJACENCY" Language="en_US">
 			<Text>Rural Community Placeholder Text</Text>
 		</Replace>
+
+	<!-- BUILDING DESCRIPTIONS -->
 
 		<Replace Tag="LOC_BUILDING_COREXA_TIER1_SCI_DESCRIPTION" Language="en_US">
 			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants a Library building in the Campus district whenever it is constructed. The Librariy building provides [ICON_PRODUCTION] Production equal to its intrinsic [ICON_Science] Science output. [NEWLINE][NEWLINE]+5% [ICON_Science] Science.</Text>
@@ -225,19 +239,19 @@
 			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Neighborhood districts recieves +1 [ICON_Gold] Gold for each adjacent district. +100% [ICON_Production] Production towards Neighborhood districts.</Text>
 		</Replace>
 
-<!-- Unit Names -->			
+<!-- UNIT NAMES -->			
 
 		<Replace Tag="LOC_UNIT_COREXC_TIER2_CUL_CIVIL_ENG_NAME" Language="en_US">
 			<Text>Civil Engineer</Text>
 		</Replace>
 
-<!-- Unit Descriptions -->			
+<!-- UNIT DESCRIPTIONS -->			
 
 		<Replace Tag="LOC_UNIT_COREXC_TIER2_CUL_CIVIL_ENG_DESCRIPTION" Language="en_US">
 			<Text>Modern era support unit. Can spend a charge to add +20% [ICON_Production] Production towards Non-Engineering Type Districts and +20% [ICON_Production] Production towards Modern Era and later Buildings. [ICON_Production] Production bonus increases for earlier era buildings. 2 build charges.</Text>
 		</Replace>
 		
-<!-- Project Names -->			
+<!-- PROJECT NAMES -->			
 
 		<Replace Tag="LOC_PROJECT_COREX_PUBLISHERS_1_NAME" Language="en_US">
 			<Text>Publish Great Works</Text>
@@ -259,7 +273,7 @@
 			<Text>Support Immigration</Text>
 		</Replace>
 
-<!-- Project Descriptions -->			
+<!-- PROJECT DESCRIPTIONS -->			
 
 		<Replace Tag="LOC_PROJECT_COREX_PUBLISHERS_1_DESCRIPTION" Language="en_US">
 			<Text>Provides [ICON_Culture] Culture while ongoing. Grants +2 [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing and a one time [ICON_Science] Science bonus equal to your [ICON_Culture] Culture per turn on completion. Can be completed 3 times. (1/3)</Text>
@@ -305,14 +319,16 @@
 			<Text>Provides -2 [ICON_Amenities] Amenities while active. Grants -4 Loyalty and +1 [ICON_Citizen] Population upon completion.</Text>
 		</Replace>
 
-<!-- Resources -->
+<!-- RESOURCES -->
 
 		<Replace Tag="LOC_RESOURCE_COREEX_TEXTILES_NAME" Language="en_US">
 			<Text>TEXTILES</Text>
 		</Replace>
 
-<!-- Adjacencies Descriptions -->		
-		
+<!-- ADJACENCY DESCRIPTIONS -->		
+
+	<!-- DISCTRICT ADJACENCY DESCRIPTIONS -->		
+
 		<Replace Tag="LOC_COREEX_DISTRICT_PRODUCTION_1" Language="en_US">
 			<Text>+{1_num} [ICON_Production] Production from adjacent {1_Num : plural 1?district; other?districts;} {1_Num : plural 1?district; other?districts;}.</Text>
 		</Replace>
@@ -813,7 +829,9 @@
 			<Text>+{1_num} [ICON_PRODUCTION] Production from the adjacent Ikanda {1_Num : plural 1?district; other?districts;}.</Text>
 		</Replace>              
 
-	<!-- CIV CHANGES -->
+<!-- CIV CHANGES -->
+
+	<!-- CIV TRAIT DESCRIPTIONS -->
 
 		<Replace Tag="LOC_RURCOM_COAST_FAITH" Language="en_US">
 			<Text>+1 [ICON_FAITH] Faith from the adjacent Coast tile</Text>

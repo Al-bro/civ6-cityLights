@@ -337,7 +337,7 @@
 											</m_Values>
 										</m_Fields>
 										<m_ChildCollections/>
-										<m_Name text="Distribution002"/>
+										<m_Name text="Distribution001"/>
 										<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
 									</Element>
 									<Element>
@@ -362,7 +362,7 @@
 											</m_Values>
 										</m_Fields>
 										<m_ChildCollections/>
-										<m_Name text="Distribution003"/>
+										<m_Name text="Distribution002"/>
 										<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
 									</Element>
 								</Element>

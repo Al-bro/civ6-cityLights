@@ -1,8 +1,13 @@
 --===========================================================================================================================================================================--
-/* SECTION 8: CIV CHANGES */
+-- Author: Albro
+-- Create date: 2019-11-22
+-- Description: Civ Specific Changes relating to City Lights. Comment out entire section below or Civ specific sections to disable changes.
+--===========================================================================================================================================================================--
+/* SECTION 1: CIV CHANGES */
 --===========================================================================================================================================================================--			
 
-	/* JAPAN */
+--===========================================================================================================================================================================--
+/* JAPAN */
 
 		INSERT INTO Modifiers 
 			(	ModifierId,												ModifierType,									 				RunOnce,	Permanent,	OwnerRequirementSetId,		OwnerStackLimit,			SubjectStackLimit,				SubjectRequirementSetId							)	VALUES
@@ -27,7 +32,8 @@
 			(	TraitType,												ModifierId										)	VALUES
 			(	'TRAIT_CIVILIZATION_ADJACENT_DISTRICTS',				'CIV_COREX_JAPAN_COREXC_PROD'					);
 
-	/* NUBIA */
+--===========================================================================================================================================================================--
+/* NUBIA */
 
 		INSERT INTO Adjacency_YieldChanges
 			(	ID,								Description,									YieldType,				YieldChange,	OtherDistrictAdjacent,			TilesRequired,			AdjacentImprovement,			PrereqCivic,			PrereqTech,							AdjacentDistrict						)	VALUES
@@ -44,7 +50,8 @@
 			(	'IMPROVEMENT_PYRAMID',				'Pyramid_CoreExC'								),
 			(	'IMPROVEMENT_PYRAMID',				'Pyramid_RurCom'								);
 
-	/* CANADA */
+--===========================================================================================================================================================================--
+/* CANADA */
 
 		INSERT INTO Modifiers 
 			(	ModifierId,												ModifierType,									 				RunOnce,	Permanent,	OwnerRequirementSetId,		OwnerStackLimit,			SubjectStackLimit,				SubjectRequirementSetId							)	VALUES
@@ -127,7 +134,8 @@
 				'TUNDRA_LUMBER_MILLS_PRODUCTION'
 			);
 
-	/* KONGO */
+--===========================================================================================================================================================================--
+/* KONGO */
 
 
 	/* DEPRECATED		DELETE FROM DistrictReplaces WHERE 
@@ -290,7 +298,8 @@
 			(	'TRAIT_CIVILIZATION_NKISI',							'COREX_KONGO_VALID_FEATURE_COREXC_JUNG'			),		
 			(	'TRAIT_CIVILIZATION_NKISI',							'COREX_KONGO_VALID_FEATURE_COREXC_FOREST'		);		
 
-	/* INDIA */
+--===========================================================================================================================================================================--
+/* INDIA */
 
 		INSERT INTO Modifiers 
 			(	ModifierId,										ModifierType,									 				RunOnce,	Permanent,	OwnerRequirementSetId,		OwnerStackLimit,			SubjectStackLimit,				SubjectRequirementSetId							)	VALUES
@@ -334,7 +343,8 @@
 			
 			(	'IMPROVEMENT_STEPWELL',							'STEPWELL_RURCOM_AMENITY'					);			
 
-	/* NORWAY */
+--===========================================================================================================================================================================--
+/* NORWAY */
 
 	/*		INSERT INTO Types
 			(	Type,													Kind					)	VALUES
@@ -391,7 +401,8 @@
 			);
 	*/
 
-	/* MAORI */
+--===========================================================================================================================================================================--
+/* MAORI */
 
 		INSERT INTO Types
 			(	Type,												Kind					)	VALUES
