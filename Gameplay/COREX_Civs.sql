@@ -1,7 +1,7 @@
 --===========================================================================================================================================================================--
 -- Author: Albro
 -- Create date: 2019-11-22
--- Description: Civ Specific Changes relating to City Lights. Comment out entire section below or Civ specific sections to disable changes.
+-- Description: Civ Specific Changes relating to City Lights. Comment out entire section below to dsable all changes or the Civ specific sections to disable just those changes.
 --===========================================================================================================================================================================--
 /* SECTION 1: CIV CHANGES */
 --===========================================================================================================================================================================--			
