@@ -32,6 +32,11 @@
 			(	TraitType,												ModifierId										)	VALUES
 			(	'TRAIT_CIVILIZATION_ADJACENT_DISTRICTS',				'CIV_COREX_JAPAN_COREXC_PROD'					);
 
+		UPDATE Traits
+			SET
+				Description = 'LOC_TRAIT_CIVILIZATION_ADJACENT_DISTRICTS_DESCRIPTION_COREX'
+			WHERE TraitType = 'TRAIT_CIVILIZATION_ADJACENT_DISTRICTS';
+
 --===========================================================================================================================================================================--
 /* NUBIA */
 
@@ -104,7 +109,7 @@
 			(	'CIV_RURCOM_SET_HILL',							'REQUIREMENTSET_TEST_ALL'	);
 
 		INSERT INTO RequirementSetRequirements
-			(	RequirementSetId,									RequirementId								)	VALUES
+			(	RequirementSetId,								RequirementId								)	VALUES
 
 			(	'CIV_RURCOM_SET_FOREST_FLAT',					'CIV_RURCOM_PLOT_NEAR_RURCOM'					),
 			(	'CIV_RURCOM_SET_FOREST_FLAT',					'CIV_RURCOM_PLOT_HAS_FOREST'					),
@@ -134,6 +139,11 @@
 				'TUNDRA_LUMBER_MILLS_PRODUCTION'
 			);
 
+		UPDATE Traits
+			SET
+				Description = 'LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION_COREX'
+			WHERE TraitType = 'TRAIT_LEADER_LAST_BEST_WEST';
+
 --===========================================================================================================================================================================--
 /* KONGO */
 
@@ -150,7 +160,8 @@
 		UPDATE Districts
 			SET
 				Housing = '3',
-				NoAdjacentCity = '1'
+				NoAdjacentCity = '1',
+				Description = 'LOC_DISTRICT_MBANZA_DESCRIPTION_COREX'
 			WHERE DistrictType = 'DISTRICT_MBANZA';
 
 		DELETE FROM DistrictModifiers WHERE ModifierId = 'MBANZA_FOOD';
@@ -298,6 +309,16 @@
 			(	'TRAIT_CIVILIZATION_NKISI',							'COREX_KONGO_VALID_FEATURE_COREXC_JUNG'			),		
 			(	'TRAIT_CIVILIZATION_NKISI',							'COREX_KONGO_VALID_FEATURE_COREXC_FOREST'		);		
 
+		UPDATE Traits
+			SET
+				Description = 'LOC_TRAIT_CIVILIZATION_NKISI_DESCRIPTION_COREX'
+			WHERE TraitType = 'TRAIT_CIVILIZATION_NKISI';
+
+		UPDATE Traits
+			SET
+				Description = 'LOC_TRAIT_LEADER_RELIGIOUS_CONVERT_DESCRIPTION_COREX'
+			WHERE TraitType = 'TRAIT_LEADER_RELIGIOUS_CONVERT';
+			
 --===========================================================================================================================================================================--
 /* INDIA */
 
@@ -342,6 +363,11 @@
 			(	ImprovementType,								ModifierID									)	VALUES
 			
 			(	'IMPROVEMENT_STEPWELL',							'STEPWELL_RURCOM_AMENITY'					);			
+
+		UPDATE Improvements
+			SET
+				Description = 'LOC_TRAIT_LEADER_RELIGIOUS_CONVERT_DESCRIPTION_COREX'
+			WHERE ImprovementType = 'IMPROVEMENT_STEPWELL';
 
 --===========================================================================================================================================================================--
 /* NORWAY */
@@ -466,7 +492,9 @@
 			(	'DISTRICT_COREEXPANSIONB',						'TRAIT_CIVILIZATION_MAORI_MANA'			    	),
 			(	'DISTRICT_COREEXPANSIONC',						'TRAIT_CIVILIZATION_MAORI_MANA'			    	);
 
-
-
+		UPDATE Traits
+			SET
+				Description = 'LOC_TRAIT_CIVILIZATION_MAORI_MANA_DESCRIPTION_COREX'
+			WHERE TraitType = 'TRAIT_CIVILIZATION_MAORI_MANA';
 	
 --======================================================================================================================================================================================================--
