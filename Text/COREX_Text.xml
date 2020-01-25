@@ -196,7 +196,7 @@
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXB_TIER1_CUL_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants access to the unique Theater Square district Project: Publish Great Works. [NEWLINE][NEWLINE]Publish Great Works Project Grants +2 [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing and a one time [ICON_Science] Science bonus equal to your [ICON_Culture] Culture per turn on completion. Project can be completed 3 times in this city. [NEWLINE][NEWLINE]Requires that the Printing Press Technolgy has been researched. [NEWLINE][NEWLINE]+10% [ICON_Culture] Culture.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants access to the unique Theater Square district Project: Publish Great Works. [NEWLINE][NEWLINE]Publish Great Works Project Grants +150% [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing and a one time [ICON_Science] Science bonus equal to your [ICON_Culture] Culture per turn on completion. Project can be completed 3 times in this city. [NEWLINE][NEWLINE]Requires that the Printing Press Technolgy has been researched. [NEWLINE][NEWLINE]+10% [ICON_Culture] Culture.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXB_TIER1_GOL_DESCRIPTION" Language="en_US">
@@ -276,7 +276,7 @@
 <!-- PROJECT DESCRIPTIONS -->			
 
 		<Replace Tag="LOC_PROJECT_COREX_PUBLISHERS_1_DESCRIPTION" Language="en_US">
-			<Text>Provides [ICON_Culture] Culture while ongoing. Grants +2 [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing and a one time [ICON_Science] Science bonus equal to your [ICON_Culture] Culture per turn on completion. Can be completed 3 times. (1/3)</Text>
+			<Text>Provides [ICON_Culture] Culture while ongoing. Grants +150% [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing and a one time [ICON_Science] Science bonus equal to your [ICON_Culture] Culture per turn on completion. Can be completed 3 times. (1/3)</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_PROJECT_COREX_TRADE_EXP_1_DESCRIPTION" Language="en_US">
@@ -288,7 +288,7 @@
 		</Replace>
 
 		<Replace Tag="LOC_PROJECT_COREX_PUBLISHERS_2_DESCRIPTION" Language="en_US">
-			<Text>Provides [ICON_Culture] Culture while ongoing. Grants +2 [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing and a one time [ICON_Science] Science bonus equal to your [ICON_Culture] Culture per turn on completion. Can be completed 3 times. (2/3)</Text>
+			<Text>Provides [ICON_Culture] Culture while ongoing. Grants +150% [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing and a one time [ICON_Science] Science bonus equal to your [ICON_Culture] Culture per turn on completion. Can be completed 3 times. (2/3)</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_PROJECT_COREX_TRADE_EXP_2_DESCRIPTION" Language="en_US">
@@ -300,7 +300,7 @@
 		</Replace>
 		
 		<Replace Tag="LOC_PROJECT_COREX_PUBLISHERS_3_DESCRIPTION" Language="en_US">
-			<Text>Provides [ICON_Culture] Culture while ongoing. Grants +2 [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing and a one time [ICON_Science] Science bonus equal to your [ICON_Culture] Culture per turn on completion. Can be completed 3 times. (3/3)</Text>
+			<Text>Provides [ICON_Culture] Culture while ongoing. Grants +150% [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing and a one time [ICON_Science] Science bonus equal to your [ICON_Culture] Culture per turn on completion. Can be completed 3 times. (3/3)</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_PROJECT_COREX_TRADE_EXP_3_DESCRIPTION" Language="en_US">
@@ -834,7 +834,7 @@
 	<!-- POLICIES NAMES -->
 
 		<Replace Tag="LOC_COREX_POLICY_1_NAME" Language="en_US">
-			<Text>TEMP</Text>
+			<Text>Agrarian Toil</Text>
 		</Replace>
 
 		<Replace Tag="LOC_COREX_POLICY_2_NAME" Language="en_US">
@@ -848,7 +848,7 @@
 		</Replace>
 
 		<Replace Tag="LOC_COREX_POLICY_2_DESCRIPTION" Language="en_US">
-			<Text>+15% Growth in cities with any Core Expansion district. -1 [ICON_Amenities] Amenities in cites without any Core Expansion districts.</Text>
+			<Text>+15% Growth in cities with any Core Expansion district. -1 [ICON_Amenities] Amenities in cities with no Core Expansion districts.</Text>
 		</Replace>
 
 <!-- CIV CHANGES -->
@@ -880,7 +880,7 @@
 		</Replace>
 
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NKISI_DESCRIPTION_COREX" Language="en_US">
-			<Text>TEMPPPP</Text>
+			<Text>All districts can be built on Forests and Jungle. +2 [ICON_Food] Food, +2 [ICON_Production] Production, and +4 [ICON_Gold] Gold from each [ICON_GreatWork_Relic] Relic, [ICON_GreatWork_Artifact] Artifact, and Sculpture [ICON_GreatWork_Sculpture] Great Work of Art in addition to the usual [ICON_Culture] Culture. Receive 50% more [ICON_GreatWriter] Great Writer, [ICON_GreatArtist] Great Artist, [ICON_GreatMusician] Great Musician, and [ICON_GreatMerchant] Great Merchant points. Palace has slots for 5 Great Works.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_COREEX_Mbanza_FOOD_JUNGLE" Language="en_US">

@@ -246,49 +246,32 @@ INSERT INTO Types
  
     /* DEPRECATED
 			(	'RurCom_DISTRICT_NEG_FAITH',	'LOC_RurCom_DISTRICT_NEG_FAITH',				'YIELD_FAITH',			-1,				1,								1,						NULL,							NULL,					NULL,								NULL									),
-	*/	
-
-			(	'RurCom_FARM',					'Placeholder',									'YIELD_FAITH',			1,				0,								1,						'IMPROVEMENT_FARM',				NULL,					NULL,								NULL									),
- 
-    /* DEPRECATED
+			(	'RurCom_FARM',					'Placeholder',									'YIELD_FAITH',			0.5,				0,							1,						'IMPROVEMENT_FARM',				NULL,					NULL,								NULL									),
 			(	'RurCom_TERRACEFARM',			'Placeholder',									'YIELD_FAITH',			1,				0,								1,						'IMPROVEMENT_TERRACE_FARM',		NULL,					NULL,								NULL									),
+			(	'RurCom_FISHBOAT',				'Placeholder',									'YIELD_FAITH',			0.5,				0,							1,						'IMPROVEMENT_FISHING_BOATS',	NULL,					NULL,								NULL									),
+			(	'RurCom_PASTURE',				'Placeholder',									'YIELD_FAITH',			0.5,				0,							1,						'IMPROVEMENT_PASTURE',			NULL,					NULL,								NULL									),
+			(	'RurCom_PLANTATION',			'Placeholder',									'YIELD_FAITH',			0.5,				0,							1,						'IMPROVEMENT_PLANTATION',		NULL,					NULL,								NULL									),
 	*/
 
-			(	'RurCom_FISHBOAT',				'Placeholder',									'YIELD_FAITH',			0.5,				0,								1,						'IMPROVEMENT_FISHING_BOATS',	NULL,					NULL,								NULL									),
-			(	'RurCom_PASTURE',				'Placeholder',									'YIELD_FAITH',			0.5,				0,								1,						'IMPROVEMENT_PASTURE',			NULL,					NULL,								NULL									),
-			(	'RurCom_PLANTATION',			'Placeholder',									'YIELD_FAITH',			0.5,				0,								1,						'IMPROVEMENT_PLANTATION',		NULL,					NULL,								NULL									),
-							                                                                                                                                                                                                                                                                                                                                                                                                                                    
 			(	'RurCom_HOLY_SITE',				'LOC_DISTRICT_RURALCOMMUNITY_HOLY_SITE',		'YIELD_FAITH',			1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_HOLY_SITE'					),
 			(	'RurCom_LAVRA',					'LOC_DISTRICT_RURALCOMMUNITY_LAVRA',			'YIELD_FAITH',			1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_LAVRA'						),
 			(	'RurCom_SEOWON',				'LOC_DISTRICT_RURALCOMMUNITY_SEOWON',			'YIELD_SCIENCE',		1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_SEOWON'						),
 			(	'RurCom_ENCAMPMENT',			'LOC_DISTRICT_RURALCOMMUNITY_ENCAMPMENT',		'YIELD_PRODUCTION',		1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_ENCAMPMENT'					),
 			(	'RurCom_IKANDA',				'LOC_DISTRICT_RURALCOMMUNITY_IKANDA',			'YIELD_PRODUCTION',		1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_IKANDA'						),
 																																																																						
-			(	'Campus_RurCom',				'Placeholder',									'YIELD_SCIENCE',	   -1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_RURALCOMMUNITY'				),
-			(	'Seowon_RurCom',				'Placeholder',									'YIELD_SCIENCE',	 	1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_RURALCOMMUNITY'				),
-			(	'HolySite_RurCom',				'Placeholder',									'YIELD_FAITH',		   -1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_RURALCOMMUNITY'				),
-			(	'Lavra_RurCom',					'Placeholder',									'YIELD_FAITH',		   -1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_RURALCOMMUNITY'				),
-			(	'CommHub_RurCom',				'Placeholder',									'YIELD_GOLD',		   -1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_RURALCOMMUNITY'				),
-			(	'Suguba_RurCom',				'Placeholder',									'YIELD_GOLD',		   -1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_RURALCOMMUNITY'				),
-			(	'Theater_RurCom',				'Placeholder',									'YIELD_CULTURE',	   -1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_RURALCOMMUNITY'				),
-			(	'Acropolis_RurCom',				'Placeholder',									'YIELD_CULTURE',	   -1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_RURALCOMMUNITY'				),
-			(	'Harbor_RurCom',				'Placeholder',									'YIELD_GOLD',		   -1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_RURALCOMMUNITY'				),
-			(	'RoyalNavy_RurCom',				'Placeholder',									'YIELD_GOLD',		   -1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_RURALCOMMUNITY'				),
-			(	'Cothon_RurCom',				'Placeholder',									'YIELD_FOOD',		   -1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_RURALCOMMUNITY'				),
-			(	'Industrial_RurCom',			'Placeholder',									'YIELD_PRODUCTION',	   -1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_RURALCOMMUNITY'				),
-			(	'Hansa_RurCom',					'Placeholder',									'YIELD_PRODUCTION',	   -1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_RURALCOMMUNITY'				),
-																																																																						
-			(	'FISHBOAT_RurCom',				'Placeholder',									'YIELD_GOLD',			1,				0,								1,						NULL,							'CIVIC_FEUDALISM',		NULL,								'DISTRICT_RURALCOMMUNITY'				),
-			(	'PASTURE_RurCom',				'Placeholder',									'YIELD_GOLD',			1,				0,								1,						NULL,							'CIVIC_FEUDALISM',		NULL,								'DISTRICT_RURALCOMMUNITY'				),
-			(	'PLANTATION_RurCom',			'Placeholder',									'YIELD_GOLD',			1,				0,								1,						NULL,							'CIVIC_FEUDALISM',		NULL,								'DISTRICT_RURALCOMMUNITY'				),
-			(	'FARM_RurCom',					'Placeholder',									'YIELD_GOLD',			1,				0,								1,						NULL,							'CIVIC_FEUDALISM',		NULL,								'DISTRICT_RURALCOMMUNITY'				),
+			(	'RurCom_negSci_1',				'Placeholder',									'YIELD_SCIENCE',	   -1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_RURALCOMMUNITY'				),
+			(	'RurCom_Sci_1',					'Placeholder',									'YIELD_SCIENCE',	 	1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_RURALCOMMUNITY'				),
+			(	'RurCom_negGold_1',				'Placeholder',									'YIELD_GOLD',		   -1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_RURALCOMMUNITY'				),
+			(	'RurCom_negCul_1',				'Placeholder',									'YIELD_CULTURE',	   -1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_RURALCOMMUNITY'				),
+			(	'RurCom_negFood_1',				'Placeholder',									'YIELD_FOOD',		   -1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_RURALCOMMUNITY'				),
+			(	'RurCom_negProd_1',				'Placeholder',									'YIELD_PRODUCTION',	   -1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_RURALCOMMUNITY'				),
+
+			(	'RurCom_Faith_1',				'Placeholder',									'YIELD_FAITH',			1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_RURALCOMMUNITY'				),
+			(	'RurCom_Gold_1',				'Placeholder',									'YIELD_GOLD',			1,				0,								1,						NULL,							'CIVIC_FEUDALISM',		NULL,								'DISTRICT_RURALCOMMUNITY'				),
     /* DEPRECATED
 			(	'TERRACEFARM_RurCom',			'Placeholder',									'YIELD_FOOD',			1,				0,								1,						NULL,							'CIVIC_FEUDALISM',		NULL,								'DISTRICT_RURALCOMMUNITY'				),
 	*/
-			(	'FISHBOAT_RurCom_Gol',			'Placeholder',									'YIELD_GOLD',			1,				0,								1,						NULL,							NULL,					'TECH_REPLACEABLE_PARTS',			'DISTRICT_RURALCOMMUNITY'				),
-			(	'PASTURE_RurCom_Gol',			'Placeholder',									'YIELD_GOLD',			1,				0,								1,						NULL,							NULL,					'TECH_REPLACEABLE_PARTS',			'DISTRICT_RURALCOMMUNITY'				),
-			(	'PLANTATION_RurCom_Gol',		'Placeholder',									'YIELD_GOLD',			1,				0,								1,						NULL,							NULL,					'TECH_REPLACEABLE_PARTS',			'DISTRICT_RURALCOMMUNITY'				),
-			(	'FARM_RurCom_Gol',				'Placeholder',									'YIELD_GOLD',			1,				0,								1,						NULL,							NULL,					'TECH_REPLACEABLE_PARTS',			'DISTRICT_RURALCOMMUNITY'				);
+			(	'RurCom_Gold_2',				'Placeholder',									'YIELD_GOLD',			1,				0,								1,						NULL,							NULL,					'TECH_REPLACEABLE_PARTS',			'DISTRICT_RURALCOMMUNITY'				);
     /* DEPRECATED
 			(	'TERRACEFARM_RurCom_Gol',		'Placeholder',									'YIELD_GOLD',			1,				0,								1,						NULL,							NULL,					'TECH_REPLACEABLE_PARTS',			'DISTRICT_RURALCOMMUNITY'				),
 	*/
@@ -432,12 +415,7 @@ INSERT INTO Types
 			(	'DISTRICT_INDUSTRIAL_ZONE',		'Industrial_CoreExC'			),
 			(	'DISTRICT_HANSA',				'Hansa_CoreExC'					),
 
-	/* RURAL COMMUNITY */
-
-			(	'DISTRICT_RURALCOMMUNITY',		'RurCom_FISHBOAT'				),		
-			(	'DISTRICT_RURALCOMMUNITY',		'RurCom_PASTURE'				),		
-			(	'DISTRICT_RURALCOMMUNITY',		'RurCom_PLANTATION'				),		
-			(	'DISTRICT_RURALCOMMUNITY',		'RurCom_FARM'					),		
+	/* RURAL COMMUNITY */	
 
 			(	'DISTRICT_RURALCOMMUNITY',		'RurCom_HOLY_SITE'				),		
 			(	'DISTRICT_RURALCOMMUNITY',		'RurCom_LAVRA'					),		
@@ -445,19 +423,17 @@ INSERT INTO Types
 			(	'DISTRICT_RURALCOMMUNITY',		'RurCom_ENCAMPMENT'				),		
 			(	'DISTRICT_RURALCOMMUNITY',		'RurCom_IKANDA'					),		
 
-			(	'DISTRICT_CAMPUS',				'Campus_RurCom'					),
-			(	'DISTRICT_SEOWON',				'Seowon_RurCom'					),
-			(	'DISTRICT_HOLY_SITE',			'HolySite_RurCom'				),
-			(	'DISTRICT_LAVRA',				'Lavra_RurCom'					),
-			(	'DISTRICT_COMMERCIAL_HUB',		'CommHub_RurCom'				),
-			(	'DISTRICT_SUGUBA',				'Suguba_RurCom'					),
-			(	'DISTRICT_THEATER',				'Theater_RurCom'				),
-			(	'DISTRICT_ACROPOLIS',			'Acropolis_RurCom'				),
-			(	'DISTRICT_HARBOR',				'Harbor_RurCom'					),
-			(	'DISTRICT_ROYAL_NAVY_DOCKYARD',	'RoyalNavy_RurCom'				),
-			(	'DISTRICT_COTHON',				'Cothon_RurCom'					),
-			(	'DISTRICT_INDUSTRIAL_ZONE',		'Industrial_RurCom'				),
-			(	'DISTRICT_HANSA',				'Hansa_RurCom'					);
+			(	'DISTRICT_CAMPUS',				'RurCom_negSci_1'				),
+			(	'DISTRICT_SEOWON',				'RurCom_Sci_1'					),
+			(	'DISTRICT_COMMERCIAL_HUB',		'RurCom_negGold_1'				),
+			(	'DISTRICT_SUGUBA',				'RurCom_negGold_1'				),
+			(	'DISTRICT_THEATER',				'RurCom_negCul_1'				),
+			(	'DISTRICT_ACROPOLIS',			'RurCom_negCul_1'				),
+			(	'DISTRICT_HARBOR',				'RurCom_negGold_1'				),
+			(	'DISTRICT_ROYAL_NAVY_DOCKYARD',	'RurCom_negGold_1'				),
+			(	'DISTRICT_COTHON',				'RurCom_negFood_1'				),
+			(	'DISTRICT_INDUSTRIAL_ZONE',		'RurCom_negProd_1'				),
+			(	'DISTRICT_HANSA',				'RurCom_negProd_1'				);
 
 			
 --===========================================================================================================================================================================--					
@@ -1002,7 +978,7 @@ INSERT INTO Types
 		INSERT INTO DynamicModifiers 
 			(	ModifierType,																	CollectionType,						EffectType																							)	VALUES
 
-			(	'BUILDING_COREX_SINGLE_CITY_ADJUST_GREATWORK_YIELD',							'COLLECTION_OWNER',					'EFFECT_ADJUST_CITY_GREATWORK_YIELD'																),			
+			(	'BUILDING_COREX_SINGLE_CITY_ADJUST_GREATWORK_YIELD',							'COLLECTION_OWNER_CITY',			'EFFECT_GRANT_YIELD_PER_GREAT_WORK_IN_CITY'															),			
 			(	'BUILDING_COREX_SINGLE_CITY_ADJUST_BUILDING_YIELD_CHANGE',						'COLLECTION_OWNER',					'EFFECT_ADJUST_BUILDING_YIELD_CHANGE'																),			
 			(	'BUILDING_COREX_SINGLE_CITY_ADJUST_BUILDING_YIELD_MODIFIER',					'COLLECTION_OWNER',					'EFFECT_ADJUST_BUILDING_YIELD_MODIFIERS_FOR_DISTRICT'												),			
 			(	'BUILDING_COREX_SINGLE_CITY_ADJUST_SINGLE_BUILDING_YIELD_MODIFIER',				'COLLECTION_OWNER',					'EFFECT_ADJUST_BUILDING_YIELD_MODIFIER'																),			
@@ -1156,7 +1132,9 @@ INSERT INTO Types
 			(	'BUILDING_COREXB_TIER1_CUL_YIELD_CUL',					'MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER',				 0,			0,			NULL,						NULL,						NULL,							'COREXB_SET_PLAYER_HAS_PRINTING'				),
 			(	'BUILDING_COREXB_TIER1_CUL_GRANT_PROJ_BUILD',			'MODIFIER_SINGLE_CITY_GRANT_BUILDING_IN_CITY_IGNORE',			 1,			1,			NULL,						NULL,						NULL,							'COREXB_SET_PLAYER_HAS_PRINTING'				),
 			(	'PROJECT_COREXB_TIER1_CUL_PUBLISHERS',					'MODIFIER_PLAYER_GRANT_YIELD_BASED_ON_CURRENT_YIELD_RATE',		 1,			1,			NULL,						NULL,						NULL,							NULL											),
-			(	'PROJECT_COREXB_TIER1_CUL_GREATWORK_YIELD',				'BUILDING_COREX_SINGLE_CITY_ADJUST_GREATWORK_YIELD',			 0,			0,			NULL,						NULL,						NULL,							NULL											),		
+			(	'PROJECT_COREXB_TIER1_CUL_GREATWORK_YIELD_1',			'MODIFIER_SINGLE_CITY_ADJUST_GREATWORK_YIELD',					 0,			0,			NULL,						NULL,						NULL,							NULL											),		
+			(	'PROJECT_COREXB_TIER1_CUL_GREATWORK_YIELD_2',			'MODIFIER_SINGLE_CITY_ADJUST_GREATWORK_YIELD',					 0,			0,			NULL,						NULL,						NULL,							NULL											),		
+			(	'PROJECT_COREXB_TIER1_CUL_GREATWORK_YIELD_3',			'MODIFIER_SINGLE_CITY_ADJUST_GREATWORK_YIELD',					 0,			0,			NULL,						NULL,						NULL,							NULL											),		
 																																																						
 			(	'BUILDING_COREXB_TIER1_SCI_YIELD_SCI',					'MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER',				 0,			0,			NULL,						NULL,						NULL,							'COREXB_SET_CAMPUS_HIGH_ADJACENCY'				),
 			(	'BUILDING_COREXB_TIER1_SCI_GRANT_PROJ_BUILD',			'MODIFIER_SINGLE_CITY_GRANT_BUILDING_IN_CITY_IGNORE',			 1,			1,			NULL,						NULL,						NULL,							'COREXB_SET_CAMPUS_HIGH_ADJACENCY'				),
@@ -1597,9 +1575,15 @@ INSERT INTO Types
 			(	'PROJECT_COREXB_TIER1_CUL_PUBLISHERS',					'Multiplier',				'2'									),
 			(	'PROJECT_COREXB_TIER1_CUL_PUBLISHERS',					'YieldToBaseOn',			'YIELD_CULTURE'						),
 			(	'PROJECT_COREXB_TIER1_CUL_PUBLISHERS',					'YieldToGrant',				'YIELD_SCIENCE'						),
-			(	'PROJECT_COREXB_TIER1_CUL_GREATWORK_YIELD',				'GreatWorkObjectType',		'GREATWORKOBJECT_WRITING'			),
-			(	'PROJECT_COREXB_TIER1_CUL_GREATWORK_YIELD',				'YieldChange',				'2'									),
-			(	'PROJECT_COREXB_TIER1_CUL_GREATWORK_YIELD',				'YieldType',				'YIELD_CULTURE'						),	
+			(	'PROJECT_COREXB_TIER1_CUL_GREATWORK_YIELD_1',			'GreatWorkObjectType',		'GREATWORKOBJECT_WRITING'			),
+			(	'PROJECT_COREXB_TIER1_CUL_GREATWORK_YIELD_1',			'ScalingFactor',			'200'								),
+			(	'PROJECT_COREXB_TIER1_CUL_GREATWORK_YIELD_1',			'YieldType',				'YIELD_CULTURE'						),	
+			(	'PROJECT_COREXB_TIER1_CUL_GREATWORK_YIELD_2',			'GreatWorkObjectType',		'GREATWORKOBJECT_WRITING'			),
+			(	'PROJECT_COREXB_TIER1_CUL_GREATWORK_YIELD_2',			'ScalingFactor',			'150'								),
+			(	'PROJECT_COREXB_TIER1_CUL_GREATWORK_YIELD_2',			'YieldType',				'YIELD_CULTURE'						),	
+			(	'PROJECT_COREXB_TIER1_CUL_GREATWORK_YIELD_3',			'GreatWorkObjectType',		'GREATWORKOBJECT_WRITING'			),
+			(	'PROJECT_COREXB_TIER1_CUL_GREATWORK_YIELD_3',			'ScalingFactor',			'133'								),
+			(	'PROJECT_COREXB_TIER1_CUL_GREATWORK_YIELD_3',			'YieldType',				'YIELD_CULTURE'						),	
 			(	'BUILDING_COREXB_TIER1_CUL_GRANT_PROJ_BUILD',			'BuildingType',				'BUILDING_COREXB_TIER1_CUL_1'		),
 			(	'BUILDING_COREXB_TIER1_CUL_YIELD_CUL',					'YieldType',				'YIELD_CULTURE'						),
 			(	'BUILDING_COREXB_TIER1_CUL_YIELD_CUL',					'Amount',					'10'								),
@@ -2773,16 +2757,32 @@ INSERT INTO Types
 		INSERT INTO Improvement_Adjacencies
 			(	ImprovementType,					YieldChangeId									)	VALUES
 
-			(	'IMPROVEMENT_FISHING_BOATS',		'FISHBOAT_RurCom'								),
-			(	'IMPROVEMENT_PASTURE',				'PASTURE_RurCom'								),
-			(	'IMPROVEMENT_PLANTATION',			'PLANTATION_RurCom'								),
-			(	'IMPROVEMENT_FARM',					'FARM_RurCom'									),
+			(	'IMPROVEMENT_FISHING_BOATS',		'RurCom_Faith_1'								),
+			(	'IMPROVEMENT_PASTURE',				'RurCom_Faith_1'								),
+			(	'IMPROVEMENT_PLANTATION',			'RurCom_Faith_1'								),
+			(	'IMPROVEMENT_FARM',					'RurCom_Faith_1'								),
 
-			(	'IMPROVEMENT_FISHING_BOATS',		'FISHBOAT_RurCom_Gol'							),
-			(	'IMPROVEMENT_PASTURE',				'PASTURE_RurCom_Gol'							),
-			(	'IMPROVEMENT_PLANTATION',			'PLANTATION_RurCom_Gol'							),
-			(	'IMPROVEMENT_FARM',					'FARM_RurCom_Gol'								);
+			(	'IMPROVEMENT_FISHING_BOATS',		'RurCom_Gold_1'									),
+			(	'IMPROVEMENT_PASTURE',				'RurCom_Gold_1'									),
+			(	'IMPROVEMENT_PLANTATION',			'RurCom_Gold_1'									),
+			(	'IMPROVEMENT_FARM',					'RurCom_Gold_1'									),
 
+			(	'IMPROVEMENT_FISHING_BOATS',		'RurCom_Gold_2'									),
+			(	'IMPROVEMENT_PASTURE',				'RurCom_Gold_2'									),
+			(	'IMPROVEMENT_PLANTATION',			'RurCom_Gold_2'									),
+			(	'IMPROVEMENT_FARM',					'RurCom_Gold_2'									);
+
+--===========================================================================================================================================================================--	
+		INSERT INTO Improvement_YieldChanges
+			(	ImprovementType,					YieldType,					YieldChange				)	VALUES
+
+			(	'IMPROVEMENT_PASTURE',				'YIELD_GOLD',				0						),
+			(	'IMPROVEMENT_FARM',					'YIELD_GOLD',				0						),
+			(	'IMPROVEMENT_PASTURE',				'YIELD_FAITH',				0						),
+			(	'IMPROVEMENT_FARM',					'YIELD_FAITH',				0						),
+			(	'IMPROVEMENT_PLANTATION',			'YIELD_FAITH',				0						),
+			(	'IMPROVEMENT_FISHING_BOATS',		'YIELD_FAITH',				0						);
+			
 --===========================================================================================================================================================================--
 /* SECTION 5: PROJECTS */
 --===========================================================================================================================================================================--			
@@ -2845,11 +2845,11 @@ INSERT INTO Types
 		INSERT INTO ProjectCompletionModifiers
 			(	ProjectType,						ModifierId											)	VALUES
 			(	'PROJECT_COREX_PUBLISHERS_1',		'PROJECT_COREXB_TIER1_CUL_PUBLISHERS'				),
-			(	'PROJECT_COREX_PUBLISHERS_1',		'PROJECT_COREXB_TIER1_CUL_GREATWORK_YIELD'			),
+			(	'PROJECT_COREX_PUBLISHERS_1',		'PROJECT_COREXB_TIER1_CUL_GREATWORK_YIELD_1'		),
 			(	'PROJECT_COREX_PUBLISHERS_2',		'PROJECT_COREXB_TIER1_CUL_PUBLISHERS'				),
-			(	'PROJECT_COREX_PUBLISHERS_2',		'PROJECT_COREXB_TIER1_CUL_GREATWORK_YIELD'			),
+			(	'PROJECT_COREX_PUBLISHERS_2',		'PROJECT_COREXB_TIER1_CUL_GREATWORK_YIELD_2'		),
 			(	'PROJECT_COREX_PUBLISHERS_3',		'PROJECT_COREXB_TIER1_CUL_PUBLISHERS'				),
-			(	'PROJECT_COREX_PUBLISHERS_3',		'PROJECT_COREXB_TIER1_CUL_GREATWORK_YIELD'			),
+			(	'PROJECT_COREX_PUBLISHERS_3',		'PROJECT_COREXB_TIER1_CUL_GREATWORK_YIELD_3'		),
 
 			(	'PROJECT_COREX_TRADE_EXP_1',		'PROJECT_COREXB_TIER1_GOL_GRANT_TRDR'				),
 			(	'PROJECT_COREX_TRADE_EXP_1',		'PROJECT_COREXB_TIER1_GOL_EXTRA_TRD_ROUTE'			),

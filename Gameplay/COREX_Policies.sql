@@ -12,14 +12,14 @@
             (	'COREX_POLICY_2',				    	'KIND_POLICY'			);
 
 --===========================================================================================================================================================================--
-		INSERT INTO Policies 
-            (   PolicyType,	             Description,                                    PrereqCivic,           	PrereqTech,     	Name,                           GovernmentSlotType,     	RequiresGovernmentUnlock,   	ExplicitUnlock         ) VALUES
+		INSERT INTO Policies
+            (   PolicyType,	             Description,                                    PrereqCivic,           	PrereqTech,     	Name,                        	   GovernmentSlotType,     			RequiresGovernmentUnlock,   	ExplicitUnlock         ) VALUES
   
-            (   'COREX_POLICY_1',	     'LOC_COREX_POLICY_1_DESCRIPTION',              'CIVIC_FEUDALISM',         	'NULL',         	'LOC_COREX_POLICY_1_NAME',      'SLOT_WILDCARD',            'NULL',                        	'NULL'                 ),
-            (   'COREX_POLICY_2',	     'LOC_COREX_POLICY_2_DESCRIPTION',              'CIVIC_URBANIZATION',      	'NULL',         	'LOC_COREX_POLICY_2_NAME',      'SLOT_WILDCARD',            'NULL',                        	'NULL'                 );
+            (   'COREX_POLICY_1',	     'LOC_COREX_POLICY_1_DESCRIPTION',              'CIVIC_FEUDALISM',         	NULL,         		'LOC_COREX_POLICY_1_NAME',   	   'SLOT_WILDCARD',          		NULL,                        	0          		       ),
+            (   'COREX_POLICY_2',	     'LOC_COREX_POLICY_2_DESCRIPTION',              'CIVIC_URBANIZATION',      	NULL,         		'LOC_COREX_POLICY_2_NAME',   	   'SLOT_WILDCARD',           		NULL,                        	0		               );
 
 --===========================================================================================================================================================================--
-		INSERT INTO PolicyModifiers 
+		INSERT INTO PolicyModifiers
 			(	PolicyType,				    		ModifierId		                        	)	VALUES
 
 			(	'COREX_POLICY_1',	    		    'COREX_POLICY_1_RURCOM_PROD'	           	),
@@ -30,7 +30,7 @@
 /* SECTION 2: MODIFIERS */
 --===========================================================================================================================================================================--			
 
-		INSERT INTO Modifiers 
+		INSERT INTO Modifiers
 			(	ModifierId,												ModifierType,									 				RunOnce,	Permanent,	OwnerRequirementSetId,		OwnerStackLimit,			SubjectStackLimit,				SubjectRequirementSetId							)	VALUES
 		
 	/* COREX_POLICY_1 */			
@@ -55,7 +55,7 @@
 	/* COREX_POLICY_2 */
 
 			(	'COREX_POLICY_2_COREX_GROWTH',							'Amount',					'15'								),
-			(	'COREX_POLICY_2_NO_COREX_GROWTH',						'Amount',					'-1'								);
+			(	'COREX_POLICY_2_NO_COREX_AMEN',							'Amount',					'-1'								);
 
 --===========================================================================================================================================================================--
 /* SECTION 3: REQUIREMENTS */
@@ -75,7 +75,7 @@
 
 --===========================================================================================================================================================================--		
 		INSERT INTO RequirementArguments 
-			(	RequirementId,							Name,			    	Value								)	VALUES
+			(	RequirementId,							Name,			    	Value										)	VALUES
 
 	/* POLICY */		
 

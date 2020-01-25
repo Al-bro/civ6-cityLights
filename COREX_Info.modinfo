@@ -48,15 +48,15 @@
       </Properties>
       <File>Gameplay/COREX_Civs.sql</File>
     </UpdateDatabase>
-    <UpdateDatabase id="PoliciessUpdate">
+    <UpdateDatabase id="PoliciesUpdate">
       <Properties>
-        <LoadOrder>299</LoadOrder>
+        <LoadOrder>300</LoadOrder>
       </Properties>
       <File>Gameplay/COREX_Policies.sql</File>
     </UpdateDatabase>    
     <UpdateText id="TextImport">
       <Properties>
-        <LoadOrder>298</LoadOrder>
+        <LoadOrder>301</LoadOrder>
       </Properties>
       <File>Text/COREX_Text.xml</File>
     </UpdateText>
