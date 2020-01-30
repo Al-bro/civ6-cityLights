@@ -1051,6 +1051,12 @@ INSERT INTO Types
 			(	'RURCOM_NEG_GROWTH',									'MODIFIER_SINGLE_CITY_ADJUST_CITY_GROWTH',						 0,			0,			NULL,						NULL,						NULL,							NULL											),
 			(	'RURCOM_NEG_PROD_DIST_RURCOM_1',						'MODIFIER_COREX_SINGLE_CITY_ADJUST_DIS_PROD',					 0,			0,			NULL,						'6',						'6',							NULL											),
 			(	'RURCOM_NEG_PROD_DIST_RURCOM_2',						'MODIFIER_COREX_SINGLE_CITY_ADJUST_DIS_PROD',					 0,			0,			NULL,						'3',						'3',							NULL											),
+			(	'RURCOM_FARM_GOLD_1',							'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_FARM'							),
+			(	'RURCOM_PAST_GOLD_1',							'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_PAST'							),
+			(	'RURCOM_BOAT_GOLD_1',							'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_BOAT'							),
+			(	'RURCOM_PLANT_GOLD_1',							'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_PLANT'							),
+
+
 
 	/* DEPRECATED
 			(	'RURCOM_NEG_PROD_DIST',									'MODIFIER_CITY_INCREASE_DISTRICT_PRODUCTION_RATE',				 0,			0,			NULL,						NULL,						NULL,							NULL											),
@@ -1441,6 +1447,14 @@ INSERT INTO Types
 			(	'RURCOM_NEG_PROD_DIST_RURCOM_1',						'DistrictType',				'DISTRICT_RURALCOMMUNITY'			),		
 			(	'RURCOM_NEG_PROD_DIST_RURCOM_2',						'Amount',					'-8'								),
 			(	'RURCOM_NEG_PROD_DIST_RURCOM_2',						'DistrictType',				'DISTRICT_RURALCOMMUNITY'			),		
+			(	'RURCOM_FARM_GOLD_1',							'YieldType',				'YIELD_GOLD'						),		
+			(	'RURCOM_FARM_GOLD_1',							'Amount',					'1'									),		
+			(	'RURCOM_PAST_GOLD_1',							'YieldType',				'YIELD_GOLD'						),		
+			(	'RURCOM_PAST_GOLD_1',							'Amount',					'1'									),		
+			(	'RURCOM_BOAT_GOLD_1',							'YieldType',				'YIELD_GOLD'						),		
+			(	'RURCOM_BOAT_GOLD_1',							'Amount',					'1'									),		
+			(	'RURCOM_PLANT_GOLD_1',							'YieldType',				'YIELD_GOLD'						),		
+			(	'RURCOM_PLANT_GOLD_1',							'Amount',					'1'									),		
 
 	/* DEPRECATED
 			(	'RURCOM_NEG_PROD_DIST',									'Amount',					'-10'								),	
@@ -2078,9 +2092,7 @@ INSERT INTO Types
 
 	/* RURAL COMMUNITY */	
 
-			(	'RURCOM_HIGH_ADJACENCY_2',				'REQUIREMENT_CITY_HAS_HIGH_ADJACENCY_DISTRICT',		0		),
-			(	'RURCOM_HIGH_ADJACENCY_4',				'REQUIREMENT_CITY_HAS_HIGH_ADJACENCY_DISTRICT',		0		),
-			(	'RURCOM_HIGH_ADJACENCY_6',				'REQUIREMENT_CITY_HAS_HIGH_ADJACENCY_DISTRICT',		0		),
+			(	'RURCOM_PLOT_NEAR_RURCOM',				'REQUIREMENT_PLOT_ADJACENT_DISTRICT_TYPE_MATCHES',	0		),
 	
 	/* BUILDING A */		
 	
@@ -2243,18 +2255,8 @@ INSERT INTO Types
 
 	/* RURAL COMMUNITY */	
 
-			(	'RURCOM_HIGH_ADJACENCY_2',				'Amount',			'2'									),
-			(	'RURCOM_HIGH_ADJACENCY_2',				'DistrictType',		'DISTRICT_RURALCOMMUNITY'			),
-			(	'RURCOM_HIGH_ADJACENCY_2',				'YieldType',		'YIELD_FAITH'						),
+			(	'RURCOM_PLOT_NEAR_RURCOM',				'DistrictType',		'DISTRICT_RURALCOMMUNITY'			),
 
-			(	'RURCOM_HIGH_ADJACENCY_4',				'Amount',			'4'									),
-			(	'RURCOM_HIGH_ADJACENCY_4',				'DistrictType',		'DISTRICT_RURALCOMMUNITY'			),
-			(	'RURCOM_HIGH_ADJACENCY_4',				'YieldType',		'YIELD_FAITH'						),
-
-			(	'RURCOM_HIGH_ADJACENCY_6',				'Amount',			'6'									),
-			(	'RURCOM_HIGH_ADJACENCY_6',				'DistrictType',		'DISTRICT_RURALCOMMUNITY'			),
-			(	'RURCOM_HIGH_ADJACENCY_6',				'YieldType',		'YIELD_FAITH'						),
-	
 	/* BUILDING A */		
 	
 			(	'COREXA_PLAYER_HAS_REC_GAMES',			'CivicType',		'CIVIC_GAMES_RECREATION'			),
@@ -2425,6 +2427,10 @@ INSERT INTO Types
 	/* RURAL COMMUNITY */	
 
 			(	'RURCOM_SET_NEG_DISTRICTS',						'REQUIREMENTSET_TEST_ANY'	),
+			(	'RURCOM_SET_PLOT_FARM',							'REQUIREMENTSET_TEST_ALL'	),
+			(	'RURCOM_SET_PLOT_PAST',							'REQUIREMENTSET_TEST_ALL'	),
+			(	'RURCOM_SET_PLOT_BOAT',							'REQUIREMENTSET_TEST_ALL'	),
+			(	'RURCOM_SET_PLOT_PLANT',						'REQUIREMENTSET_TEST_ALL'	),
 
 
 	/* BUILDING A*/			
@@ -2589,6 +2595,14 @@ INSERT INTO Types
 			(	'RURCOM_SET_NEG_DISTRICTS',							'REQUIRES_DISTRICT_IS_CAMPUS'				),
 			(	'RURCOM_SET_NEG_DISTRICTS',							'REQUIRES_DISTRICT_IS_COMMERCIAL_HUB'		),
 			(	'RURCOM_SET_NEG_DISTRICTS',							'REQUIRES_DISTRICT_IS_THEATER'				),
+			(	'RURCOM_SET_PLOT_FARM',								'RURCOM_PLOT_NEAR_RURCOM'					),
+			(	'RURCOM_SET_PLOT_FARM',								'COREXA_PLOT_HAS_FARM'						),
+			(	'RURCOM_SET_PLOT_PAST',								'RURCOM_PLOT_NEAR_RURCOM'					),
+			(	'RURCOM_SET_PLOT_PAST',								'COREXA_PLOT_HAS_PASTURE'					),
+			(	'RURCOM_SET_PLOT_BOAT',								'RURCOM_PLOT_NEAR_RURCOM'					),
+			(	'RURCOM_SET_PLOT_BOAT',								'COREXA_PLOT_HAS_FISHING'					),
+			(	'RURCOM_SET_PLOT_PLANT',							'RURCOM_PLOT_NEAR_RURCOM'					),
+			(	'RURCOM_SET_PLOT_PLANT',							'COREXA_PLOT_HAS_PLANTATION'				),
 
 
 	/* BUILDING A */				
@@ -2997,7 +3011,24 @@ INSERT INTO Types
 			(	FeatureType					)	VALUES
 			(	'FEATURE_COREX'				);	
 
+--===========================================================================================================================================================================--
+/* SECTION 8: CIVICS & TECHS */
+--===========================================================================================================================================================================--			
 
+		INSERT INTO CivicModifiers
+			(	CivicType,							ModifierId								)	VALUES
+			(	'CIVIC_FEUDALISM',					'RURCOM_FARM_GOLD_1'					),	
+			(	'CIVIC_FEUDALISM',					'RURCOM_PAST_GOLD_1'					),	
+			(	'CIVIC_FEUDALISM',					'RURCOM_BOAT_GOLD_1'					),	
+			(	'CIVIC_FEUDALISM',					'RURCOM_PLANT_GOLD_1'					);	
+
+--======================================================================================================================================================================================================--
+		INSERT INTO TechnologyModifiers
+			(	TechnologyType,						ModifierId								)	VALUES
+			(	'TECH_REPLACEABLE_PARTS',			'RURCOM_FARM_GOLD_1'					),	
+			(	'TECH_REPLACEABLE_PARTS',			'RURCOM_PAST_GOLD_1'					),	
+			(	'TECH_REPLACEABLE_PARTS',			'RURCOM_BOAT_GOLD_1'					),	
+			(	'TECH_REPLACEABLE_PARTS',			'RURCOM_PLANT_GOLD_1'					);	
 	
 --======================================================================================================================================================================================================--
 
