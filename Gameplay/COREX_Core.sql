@@ -1436,7 +1436,7 @@ INSERT INTO Types
 
 	/* RURAL COMMUNITY */	
 
-			(	'RURCOM_NEG_GROWTH',									'Amount',					'-20'								),
+			(	'RURCOM_NEG_GROWTH',									'Amount',					'-10'								),
 			(	'RURCOM_NEG_PROD_DIST_RURCOM_1',						'Amount',					'-12'								),
 			(	'RURCOM_NEG_PROD_DIST_RURCOM_1',						'DistrictType',				'DISTRICT_RURALCOMMUNITY'			),		
 			(	'RURCOM_NEG_PROD_DIST_RURCOM_2',						'Amount',					'-8'								),
