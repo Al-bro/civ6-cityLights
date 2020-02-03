@@ -96,7 +96,7 @@ INSERT INTO Types
 			(	'DISTRICT_COREEXPANSIONA',	'LOC_DISTRICT_COREEXPANSIONA_NAME',	'LOC_DISTRICT_COREEXPANSIONA_DESCRIPTION',	'TECH_CONSTRUCTION',		NULL,				'PLUNDER_GOLD',		'100',			'ADVISOR_GENERIC',	'61',	'COST_PROGRESSION_GAME_PROGRESS',	'1000',					'1',		'1',				'0',				'1',		'0',					'0',				'0',			'1',						'0',						'NO_DOMAIN',		'0',		'3',		'-2',				'10',				'1',					'-10',						'0',						'-1'						),
 			(	'DISTRICT_COREEXPANSIONB',	'LOC_DISTRICT_COREEXPANSIONB_NAME',	'LOC_DISTRICT_COREEXPANSIONB_DESCRIPTION',	'TECH_GUNPOWDER',			NULL,				'PLUNDER_GOLD',		'200',			'ADVISOR_GENERIC',	'81',	'COST_PROGRESSION_GAME_PROGRESS',	'1000',					'1',		'1',				'0',				'1',		'0',					'0',				'0',			'1',						'0',						'NO_DOMAIN',		'0',		'5',		'-4',				'15',				'2',					'-20',						'0',						'-1'						),
 			(	'DISTRICT_COREEXPANSIONC',	'LOC_DISTRICT_COREEXPANSIONC_NAME',	'LOC_DISTRICT_COREEXPANSIONC_DESCRIPTION',	'TECH_STEEL',				NULL,				'PLUNDER_GOLD',		'400',			'ADVISOR_GENERIC',	'101',	'COST_PROGRESSION_GAME_PROGRESS',	'1000',					'1',		'1',				'0',				'1',		'0',					'0',				'0',			'1',						'0',						'NO_DOMAIN',		'0',		'7',		'-6',				'25',				'3',					'-30',						'0',						'-1'						),
-			(	'DISTRICT_RURALCOMMUNITY',	'LOC_DISTRICT_RURALCOMMUNITY_NAME',	'LOC_DISTRICT_RURALCOMMUNITY_DESCRIPTION',	'TECH_IRRIGATION',			NULL,				'PLUNDER_FAITH',	'50',			'ADVISOR_GENERIC',	'31',	'COST_PROGRESSION_GAME_PROGRESS',	'1000',					'0',		'1',				'0',				'0',		'1',					'0',				'0',			'1',						'0',						'NO_DOMAIN',		'0',		'1',		'0',				'1',				'0',					'2',						'0',						'-1'						);
+			(	'DISTRICT_RURALCOMMUNITY',	'LOC_DISTRICT_RURALCOMMUNITY_NAME',	'LOC_DISTRICT_RURALCOMMUNITY_DESCRIPTION',	'TECH_IRRIGATION',			NULL,				'PLUNDER_FAITH',	'50',			'ADVISOR_GENERIC',	'31',	'COST_PROGRESSION_GAME_PROGRESS',	'500',					'0',		'1',				'0',				'0',		'1',					'0',				'0',			'1',						'0',						'NO_DOMAIN',		'0',		'1',		'1',				'1',				'0',					'1',						'0',						'-1'						);
 			
 --===========================================================================================================================================================================--		
 		INSERT INTO Adjacency_YieldChanges
@@ -1442,19 +1442,19 @@ INSERT INTO Types
 
 	/* RURAL COMMUNITY */	
 
-			(	'RURCOM_NEG_GROWTH',									'Amount',					'-10'								),
+			(	'RURCOM_NEG_GROWTH',									'Amount',					'-15'								),
 			(	'RURCOM_NEG_PROD_DIST_RURCOM_1',						'Amount',					'-12'								),
 			(	'RURCOM_NEG_PROD_DIST_RURCOM_1',						'DistrictType',				'DISTRICT_RURALCOMMUNITY'			),		
 			(	'RURCOM_NEG_PROD_DIST_RURCOM_2',						'Amount',					'-8'								),
 			(	'RURCOM_NEG_PROD_DIST_RURCOM_2',						'DistrictType',				'DISTRICT_RURALCOMMUNITY'			),		
-			(	'RURCOM_FARM_GOLD_1',							'YieldType',				'YIELD_GOLD'						),		
-			(	'RURCOM_FARM_GOLD_1',							'Amount',					'1'									),		
-			(	'RURCOM_PAST_GOLD_1',							'YieldType',				'YIELD_GOLD'						),		
-			(	'RURCOM_PAST_GOLD_1',							'Amount',					'1'									),		
-			(	'RURCOM_BOAT_GOLD_1',							'YieldType',				'YIELD_GOLD'						),		
-			(	'RURCOM_BOAT_GOLD_1',							'Amount',					'1'									),		
-			(	'RURCOM_PLANT_GOLD_1',							'YieldType',				'YIELD_GOLD'						),		
-			(	'RURCOM_PLANT_GOLD_1',							'Amount',					'1'									),		
+			(	'RURCOM_FARM_GOLD_1',									'YieldType',				'YIELD_GOLD'						),		
+			(	'RURCOM_FARM_GOLD_1',									'Amount',					'1'									),		
+			(	'RURCOM_PAST_GOLD_1',									'YieldType',				'YIELD_GOLD'						),		
+			(	'RURCOM_PAST_GOLD_1',									'Amount',					'1'									),		
+			(	'RURCOM_BOAT_GOLD_1',									'YieldType',				'YIELD_GOLD'						),		
+			(	'RURCOM_BOAT_GOLD_1',									'Amount',					'1'									),		
+			(	'RURCOM_PLANT_GOLD_1',									'YieldType',				'YIELD_GOLD'						),		
+			(	'RURCOM_PLANT_GOLD_1',									'Amount',					'1'									),		
 
 	/* DEPRECATED
 			(	'RURCOM_NEG_PROD_DIST',									'Amount',					'-10'								),	

@@ -192,7 +192,7 @@
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXB_TIER1_SCI_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants access to the unique Campus district Project: Academic Conference. [NEWLINE][NEWLINE]Academic Conference Project Grants +20% [ICON_Science] Science from Campus district buildings and a one time [ICON_Culture] Culture bonus equal to your [ICON_Science] Science per turn on completion. Project can be completed 3 times in this city. [NEWLINE][NEWLINE]Requires a Campus district with at least +4 [ICON_Science] Science adjacency in this city. [NEWLINE][NEWLINE]+10% [ICON_Science] Science.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants access to the unique Campus district Project: Academic Conference. [NEWLINE][NEWLINE]Academic Conference Project Grants +20% [ICON_Science] Science from Campus district buildings and a one time [ICON_Culture] Culture bonus equal to your [ICON_Science] Science per turn on completion. Project can be completed 3 times in this city. [NEWLINE][NEWLINE]Requires a Campus district with at least +4 [ICON_Science] Science base adjacency in this city. [NEWLINE][NEWLINE]+10% [ICON_Science] Science.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXB_TIER1_CUL_DESCRIPTION" Language="en_US">
