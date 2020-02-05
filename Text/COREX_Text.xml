@@ -208,11 +208,11 @@
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXB_TIER2_CUL_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Industrial Zone district gains [ICON_Gold] Gold equal to its [ICON_Production] Production adjacency and recieves a free Factory building whenever the Workshop building is constructed. Grants 1 copy of the unique Luxury Resource Textiles which provides +4 Happiness.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Industrial Zone district gains [ICON_GOLD] Gold equal to its [ICON_PRODUCTION] Production adjacency and recieves a free Factory building whenever the Workshop building is constructed. Grants 1 copy of the unique Luxury Resource Textiles which provides +4 Happiness.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXB_TIER2_GOL_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE] Instantly provides +3 [ICON_Citizen] Population upon completion. City growth rate is 50% higher.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE] Harbor district gains [ICON_FOOD] Food equal to its [ICON_GOLD] Gold adjacency. Instantly provides +3 [ICON_Citizen] Population upon completion. City growth rate is 30% higher.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXC_TIER1_SCI_DESCRIPTION" Language="en_US">
