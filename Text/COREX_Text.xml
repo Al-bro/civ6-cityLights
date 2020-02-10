@@ -864,7 +864,7 @@
 		</Replace>
 
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ADJACENT_DISTRICTS_DESCRIPTION_COREX" Language="en_US">
-			<Text>All districts receive an additional standard adjacency bonus for being adjacent to another district. +25 [ICON_Production] Production towards the Modern Era Core Expansion.</Text>
+			<Text>All districts receive an additional standard adjacency bonus for being adjacent to another district. +25% [ICON_Production] Production towards the Modern Era Core Expansion.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION_COREX" Language="en_US">

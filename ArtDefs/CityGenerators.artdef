@@ -96,7 +96,7 @@
 										<m_ParamName text="Var_Population"/>
 									</Element>
 									<Element class="AssetObjects..FloatValue">
-										<m_fValue>64.000000</m_fValue>
+										<m_fValue>48.000000</m_fValue>
 										<m_ParamName text="Var_CityArea"/>
 									</Element>
 									<Element class="AssetObjects..FloatValue">
@@ -662,7 +662,7 @@
 										<m_ParamName text="Var_Population"/>
 									</Element>
 									<Element class="AssetObjects..FloatValue">
-										<m_fValue>64.000000</m_fValue>
+										<m_fValue>48.000000</m_fValue>
 										<m_ParamName text="Var_CityArea"/>
 									</Element>
 									<Element class="AssetObjects..FloatValue">
@@ -1149,7 +1149,7 @@
 										<m_ParamName text="Var_Population"/>
 									</Element>
 									<Element class="AssetObjects..FloatValue">
-										<m_fValue>64.000000</m_fValue>
+										<m_fValue>48.000000</m_fValue>
 										<m_ParamName text="Var_CityArea"/>
 									</Element>
 									<Element class="AssetObjects..FloatValue">
@@ -1687,7 +1687,7 @@
 										<m_ParamName text="Var_Population"/>
 									</Element>
 									<Element class="AssetObjects..FloatValue">
-										<m_fValue>64.000000</m_fValue>
+										<m_fValue>48.000000</m_fValue>
 										<m_ParamName text="Var_CityArea"/>
 									</Element>
 									<Element class="AssetObjects..FloatValue">
