@@ -32,7 +32,7 @@
 
 		UPDATE Traits
 			SET
-				Description = 'LOC_TRAIT_CIVILIZATION_ADJACENT_DISTRICTS_DESCRIPTION_COREX'
+				Description = 'LOC_TRAIT_CIVILIZATION_ADJACENT_DISTRICTS_DESCRIPTION'
 			WHERE TraitType = 'TRAIT_CIVILIZATION_ADJACENT_DISTRICTS';
 
 --===========================================================================================================================================================================--
@@ -89,13 +89,11 @@
 		INSERT INTO Requirements
 			(	RequirementId,							RequirementType,									Inverse	)	VALUES
 
-			(	'CIV_RURCOM_PLOT_HAS_FOREST',			'REQUIREMENT_PLOT_FEATURE_TYPE_MATCHES',			0		),
-			(	'CIV_RURCOM_PLOT_NEAR_RURCOM',			'REQUIREMENT_PLOT_ADJACENT_DISTRICT_TYPE_MATCHES',	0		);
+			(	'CIV_RURCOM_PLOT_HAS_FOREST',			'REQUIREMENT_PLOT_FEATURE_TYPE_MATCHES',			0		);
 
 		INSERT INTO RequirementArguments 
 			(	RequirementId,							Name,				Value								)	VALUES
 
-			(	'CIV_RURCOM_PLOT_NEAR_RURCOM',			'DistrictType',		'DISTRICT_RURALCOMMUNITY'			),
 			(	'CIV_RURCOM_PLOT_HAS_FOREST',			'FeatureType',		'FEATURE_FOREST'					);
 
 		INSERT INTO RequirementSets 
@@ -109,18 +107,18 @@
 		INSERT INTO RequirementSetRequirements
 			(	RequirementSetId,								RequirementId								)	VALUES
 
-			(	'CIV_RURCOM_SET_FOREST_FLAT',					'CIV_RURCOM_PLOT_NEAR_RURCOM'					),
+			(	'CIV_RURCOM_SET_FOREST_FLAT',					'RURCOM_PLOT_NEAR_RURCOM'					),
 			(	'CIV_RURCOM_SET_FOREST_FLAT',					'CIV_RURCOM_PLOT_HAS_FOREST'					),
 			(	'CIV_RURCOM_SET_FOREST_FLAT',					'REQUIRES_PLOT_HAS_TUNDRA'						),
 
-			(	'CIV_RURCOM_SET_FLAT',							'CIV_RURCOM_PLOT_NEAR_RURCOM'					),
+			(	'CIV_RURCOM_SET_FLAT',							'RURCOM_PLOT_NEAR_RURCOM'					),
 			(	'CIV_RURCOM_SET_FLAT',							'REQUIRES_PLOT_HAS_TUNDRA'						),
 
-			(	'CIV_RURCOM_SET_FOREST_HILL',					'CIV_RURCOM_PLOT_NEAR_RURCOM'					),
+			(	'CIV_RURCOM_SET_FOREST_HILL',					'RURCOM_PLOT_NEAR_RURCOM'					),
 			(	'CIV_RURCOM_SET_FOREST_HILL',					'CIV_RURCOM_PLOT_HAS_FOREST'					),
 			(	'CIV_RURCOM_SET_FOREST_HILL',					'REQUIRES_PLOT_HAS_TUNDRA_HILLS'				),
 
-			(	'CIV_RURCOM_SET_HILL',							'CIV_RURCOM_PLOT_NEAR_RURCOM'					),
+			(	'CIV_RURCOM_SET_HILL',							'RURCOM_PLOT_NEAR_RURCOM'					),
 			(	'CIV_RURCOM_SET_HILL',							'REQUIRES_PLOT_HAS_TUNDRA_HILLS'				);
 
 
@@ -139,7 +137,7 @@
 
 		UPDATE Traits
 			SET
-				Description = 'LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION_COREX'
+				Description = 'LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION'
 			WHERE TraitType = 'TRAIT_LEADER_LAST_BEST_WEST';
 
 --===========================================================================================================================================================================--
@@ -159,7 +157,7 @@
 			SET
 				Housing = '3',
 				NoAdjacentCity = '1',
-				Description = 'LOC_DISTRICT_MBANZA_DESCRIPTION_COREX'
+				Description = 'LOC_DISTRICT_MBANZA_DESCRIPTION'
 			WHERE DistrictType = 'DISTRICT_MBANZA';
 
 		DELETE FROM DistrictModifiers WHERE ModifierId = 'MBANZA_FOOD';
@@ -309,12 +307,12 @@
 
 		UPDATE Traits
 			SET
-				Description = 'LOC_TRAIT_CIVILIZATION_NKISI_DESCRIPTION_COREX'
+				Description = 'LOC_TRAIT_CIVILIZATION_NKISI_DESCRIPTION'
 			WHERE TraitType = 'TRAIT_CIVILIZATION_NKISI';
 
 		UPDATE Traits
 			SET
-				Description = 'LOC_TRAIT_LEADER_RELIGIOUS_CONVERT_DESCRIPTION_COREX'
+				Description = 'LOC_TRAIT_LEADER_RELIGIOUS_CONVERT_DESCRIPTION'
 			WHERE TraitType = 'TRAIT_LEADER_RELIGIOUS_CONVERT';
 			
 --===========================================================================================================================================================================--
@@ -355,7 +353,7 @@
 			(	'CIV_RURCOM_SET_NEAR_RURCOM',					'CIV_RURCOM_PLOT_NEAR_COREXA'					),
 			(	'CIV_RURCOM_SET_NEAR_RURCOM',					'CIV_RURCOM_PLOT_NEAR_COREXB'					),
 			(	'CIV_RURCOM_SET_NEAR_RURCOM',					'CIV_RURCOM_PLOT_NEAR_COREXC'					),
-			(	'CIV_RURCOM_SET_NEAR_RURCOM',					'CIV_RURCOM_PLOT_NEAR_RURCOM'					);
+			(	'CIV_RURCOM_SET_NEAR_RURCOM',					'RURCOM_PLOT_NEAR_RURCOM'					);
 
 		INSERT INTO ImprovementModifiers 
 			(	ImprovementType,								ModifierID									)	VALUES
@@ -364,7 +362,7 @@
 
 		UPDATE Improvements
 			SET
-				Description = 'LOC_TRAIT_LEADER_RELIGIOUS_CONVERT_DESCRIPTION_COREX'
+				Description = 'LOC_TRAIT_LEADER_RELIGIOUS_CONVERT_DESCRIPTION'
 			WHERE ImprovementType = 'IMPROVEMENT_STEPWELL';
 
 --===========================================================================================================================================================================--
@@ -492,7 +490,7 @@
 
 		UPDATE Traits
 			SET
-				Description = 'LOC_TRAIT_CIVILIZATION_MAORI_MANA_DESCRIPTION_COREX'
+				Description = 'LOC_TRAIT_CIVILIZATION_MAORI_MANA_DESCRIPTION'
 			WHERE TraitType = 'TRAIT_CIVILIZATION_MAORI_MANA';
 	
 --======================================================================================================================================================================================================--

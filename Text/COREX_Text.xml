@@ -863,23 +863,23 @@
 			<Text>+1 [ICON_FAITH] Faith from the adjacent Ocean tile</Text>
 		</Replace>
 
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_ADJACENT_DISTRICTS_DESCRIPTION_COREX" Language="en_US">
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_ADJACENT_DISTRICTS_DESCRIPTION" Language="en_US">
 			<Text>All districts receive an additional standard adjacency bonus for being adjacent to another district. +25% [ICON_Production] Production towards the Modern Era Core Expansion.</Text>
 		</Replace>
 
-		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION_COREX" Language="en_US">
+		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="en_US">
 			<Text>Allows Farms to be built on Tundra terrain. After Civil Engineering is unlocked Farms can be built on Tundra Hills. In Snow, Tundra, Snow Hills, and Tundra Hills all Mines provide +1 [ICON_PRODUCTION] Production and strategic resource accumulation rate is +100%. Trigger a culture bomb when constructung a Rural Community. Tundra and Tundra Hill tiles adjacent to a Rural Community gain +1 [ICON_FOOD] Food, as well as +1 [ICON_PRODUCTION] Production from Forests.</Text>
 		</Replace>
 
-		<Replace Tag="LOC_DISTRICT_MBANZA_DESCRIPTION_COREX" Language="en_US">
+		<Replace Tag="LOC_DISTRICT_MBANZA_DESCRIPTION" Language="en_US">
 			<Text>A district unique to Kongo that can only be constructed in Rainforest or Woods. Replaces the Neighborhood district but is available earlier and cheaper to build. Provides +3 [ICON_Housing] Housing  and +4 [ICON_Gold] Gold, regardless of Appeal. Gains +1 [ICON_Food] Food for every adjacent Woods and Rainforest Feature.</Text>
 		</Replace>
 
-		<Replace Tag="LOC_TRAIT_LEADER_RELIGIOUS_CONVERT_DESCRIPTION_COREX" Language="en_US">
+		<Replace Tag="LOC_TRAIT_LEADER_RELIGIOUS_CONVERT_DESCRIPTION" Language="en_US">
 			<Text>May not build Holy Site districts, Rural Community districts, gain Great Prophets, or found Religions. Gains all Beliefs of any Religion that has established itself in a majority of his cities. Receives an Apostle each time he finishes a M'banza or Theater Square district (of that city's majority Religion).</Text>
 		</Replace>
 
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_NKISI_DESCRIPTION_COREX" Language="en_US">
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_NKISI_DESCRIPTION" Language="en_US">
 			<Text>All districts can be built on Forests and Jungle. +2 [ICON_Food] Food, +2 [ICON_Production] Production, and +4 [ICON_Gold] Gold from each [ICON_GreatWork_Relic] Relic, [ICON_GreatWork_Artifact] Artifact, and Sculpture [ICON_GreatWork_Sculpture] Great Work of Art in addition to the usual [ICON_Culture] Culture. Receive 50% more [ICON_GreatWriter] Great Writer, [ICON_GreatArtist] Great Artist, [ICON_GreatMusician] Great Musician, and [ICON_GreatMerchant] Great Merchant points. Palace has slots for 5 Great Works.</Text>
 		</Replace>
 
@@ -895,7 +895,7 @@
 			<Text>-{1_num} [ICON_FOOD] Food from the adjacent {1_Num : plural 1?district; other?districts;}.</Text>
 		</Replace>
 
-		<Replace Tag="LOC_IMPROVEMENT_STEPWELL_EXPANSION2_DESCRIPTION_COREX" Language="en_US">
+		<Replace Tag="LOC_IMPROVEMENT_STEPWELL_EXPANSION2_DESCRIPTION" Language="en_US">
 			<Text>Unlocks the Builder ability to construct a Stepwell, unique to India.[NEWLINE][NEWLINE]+1 [ICON_Food] Food and +1 [ICON_Housing] Housing. +1 [ICON_Faith] Faith if adjacent to a Holy Site district. +1 [ICON_Food] Food if adjacent to a Farm. +1 [ICON_Amenities] Amenities if adjacent to a Core Expansion District. Additional [ICON_Housing] Housing, [ICON_Faith] Faith, and [ICON_Food] Food as you advance through the Technology and Civics Tree. Prevents [ICON_Food] Food loss during Drought. Cannot be built on Hills or adjacent to another Stepwell.</Text>
 		</Replace>
 
@@ -911,7 +911,7 @@
 			<Text>Maori unique Insitution: Kōrero Pūrākau</Text>
 		</Replace>
 
-		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAORI_MANA_DESCRIPTION_COREX" Language="en_US">
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAORI_MANA_DESCRIPTION" Language="en_US">
 			<Text>Begin the game with the Sailing and Shipbuilding technologies unlocked and with the ability to enter Ocean tiles. Embarked units gain +2 [ICON_Movement] Movement. Unimproved Woods and Rainforest are +1 [ICON_PRODUCTION] Production. Additional +1 [ICON_PRODUCTION] Production from Mercantilism and +2 [ICON_PRODUCTION] Production from Conservation. Fishing Boats provide +1 [ICON_FOOD] Food and a Culture Bomb to adjacent tiles. Resources cannot be harvested. [ICON_GreatWriter] Great Writers cannot be earned. May not build Renaissance or Modern Era Core Expansions. </Text>
 		</Replace>
 

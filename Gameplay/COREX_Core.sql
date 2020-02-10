@@ -1054,10 +1054,10 @@ INSERT INTO Types
 			(	'RURCOM_NEG_GROWTH',									'MODIFIER_SINGLE_CITY_ADJUST_CITY_GROWTH',						 0,			0,			NULL,						NULL,						NULL,							NULL											),
 			(	'RURCOM_NEG_PROD_DIST_RURCOM_1',						'MODIFIER_COREX_SINGLE_CITY_ADJUST_DIS_PROD',					 0,			0,			NULL,						'6',						'6',							NULL											),
 			(	'RURCOM_NEG_PROD_DIST_RURCOM_2',						'MODIFIER_COREX_SINGLE_CITY_ADJUST_DIS_PROD',					 0,			0,			NULL,						'3',						'3',							NULL											),
-			(	'RURCOM_FARM_GOLD_1',							'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_FARM'							),
-			(	'RURCOM_PAST_GOLD_1',							'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_PAST'							),
-			(	'RURCOM_BOAT_GOLD_1',							'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_BOAT'							),
-			(	'RURCOM_PLANT_GOLD_1',							'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_PLANT'							),
+			(	'RURCOM_FARM_GOLD_1',									'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_FARM'							),
+			(	'RURCOM_PAST_GOLD_1',									'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_PAST'							),
+			(	'RURCOM_BOAT_GOLD_1',									'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_BOAT'							),
+			(	'RURCOM_PLANT_GOLD_1',									'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_PLANT'							),
 
 
 
@@ -2776,6 +2776,8 @@ INSERT INTO Types
 	 */
 			
 --===========================================================================================================================================================================--		
+	/* DEPRECATED
+
 		INSERT INTO Improvement_Adjacencies
 			(	ImprovementType,					YieldChangeId									)	VALUES
 
@@ -2794,6 +2796,7 @@ INSERT INTO Types
 			(	'IMPROVEMENT_PLANTATION',			'RurCom_Gold_2'									),
 			(	'IMPROVEMENT_FARM',					'RurCom_Gold_2'									);
 
+	 */
 --===========================================================================================================================================================================--	
 		INSERT INTO Improvement_YieldChanges
 			(	ImprovementType,					YieldType,					YieldChange				)	VALUES
