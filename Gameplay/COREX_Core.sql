@@ -1058,6 +1058,10 @@ INSERT INTO Types
 			(	'RURCOM_PAST_GOLD_1',									'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_PAST'							),
 			(	'RURCOM_BOAT_GOLD_1',									'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_BOAT'							),
 			(	'RURCOM_PLANT_GOLD_1',									'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_PLANT'							),
+			(	'RURCOM_FARM_GOLD_2',									'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_FARM'							),
+			(	'RURCOM_PAST_GOLD_2',									'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_PAST'							),
+			(	'RURCOM_BOAT_GOLD_2',									'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_BOAT'							),
+			(	'RURCOM_PLANT_GOLD_2',									'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_PLANT'							),
 
 
 
@@ -1375,8 +1379,7 @@ INSERT INTO Types
 																																																						
 			(	'BUILDING_COREX_NATIONAL_SCI_SPACE_ADJACENY',			'MODIFIER_COREX_SINGLE_CITY_ADJUST_DISTRICT_ADJ',				 0,			0,			NULL,						NULL,						NULL,							NULL											),
 			(	'BUILDING_COREX_NATIONAL_SCI_PROJ_AVAIL',				'MODIFIER_COREX_SINGLE_CITY_PROJECT_AVAILABLE',					 0,			0,			NULL,						NULL,						'1',							NULL											),
-			(	'PROJECT_COREX_NATIONAL_SCI_SPACE_RACE',				'MODIFIER_PLAYER_CITIES_ADJUST_SPACE_RACE_PROJECTS_PRODUCTION',	 0,			0,			NULL,						NULL,						NULL,							NULL											);
-																																																																																												
+			(	'PROJECT_COREX_NATIONAL_SCI_SPACE_RACE',				'MODIFIER_PLAYER_CITIES_ADJUST_SPACE_RACE_PROJECTS_PRODUCTION',	 0,			0,			NULL,						NULL,						NULL,							NULL											);																																																																																										
 																																																						
 	/* DEPRECATED
 			(	'GAME_COREEX_DISTRICT_COREXA_UNLOCK',					'MODIFIER_COREEX_GAME_DISTRICT_UNLOCK',	 						0,			0,			NULL,						NULL,						NULL,							'COREXA_PLAYER_ERA_IS_SET'						),
@@ -1461,6 +1464,14 @@ INSERT INTO Types
 			(	'RURCOM_BOAT_GOLD_1',									'Amount',					'1'									),		
 			(	'RURCOM_PLANT_GOLD_1',									'YieldType',				'YIELD_GOLD'						),		
 			(	'RURCOM_PLANT_GOLD_1',									'Amount',					'1'									),		
+			(	'RURCOM_FARM_GOLD_2',									'YieldType',				'YIELD_GOLD'						),		
+			(	'RURCOM_FARM_GOLD_2',									'Amount',					'2'									),		
+			(	'RURCOM_PAST_GOLD_2',									'YieldType',				'YIELD_GOLD'						),		
+			(	'RURCOM_PAST_GOLD_2',									'Amount',					'2'									),		
+			(	'RURCOM_BOAT_GOLD_2',									'YieldType',				'YIELD_GOLD'						),		
+			(	'RURCOM_BOAT_GOLD_2',									'Amount',					'2'									),		
+			(	'RURCOM_PLANT_GOLD_2',									'YieldType',				'YIELD_GOLD'						),		
+			(	'RURCOM_PLANT_GOLD_2',									'Amount',					'2'									),		
 
 	/* DEPRECATED
 			(	'RURCOM_NEG_PROD_DIST',									'Amount',					'-10'								),	
@@ -2776,7 +2787,7 @@ INSERT INTO Types
 	 */
 			
 --===========================================================================================================================================================================--		
-	/* DEPRECATED
+
 
 		INSERT INTO Improvement_Adjacencies
 			(	ImprovementType,					YieldChangeId									)	VALUES
@@ -2784,7 +2795,9 @@ INSERT INTO Types
 			(	'IMPROVEMENT_FISHING_BOATS',		'RurCom_Faith_1'								),
 			(	'IMPROVEMENT_PASTURE',				'RurCom_Faith_1'								),
 			(	'IMPROVEMENT_PLANTATION',			'RurCom_Faith_1'								),
-			(	'IMPROVEMENT_FARM',					'RurCom_Faith_1'								),
+			(	'IMPROVEMENT_FARM',					'RurCom_Faith_1'								);
+
+	/* DEPRECATED
 
 			(	'IMPROVEMENT_FISHING_BOATS',		'RurCom_Gold_1'									),
 			(	'IMPROVEMENT_PASTURE',				'RurCom_Gold_1'									),
@@ -2798,6 +2811,7 @@ INSERT INTO Types
 
 	 */
 --===========================================================================================================================================================================--	
+
 		INSERT INTO Improvement_YieldChanges
 			(	ImprovementType,					YieldType,					YieldChange				)	VALUES
 
@@ -3017,11 +3031,6 @@ INSERT INTO Types
 			(	ResourceType,								Name,										ResourceClassType,				Happiness				)	VALUES
 			(	'RESOURCE_COREEX_TEXTILES',					'LOC_RESOURCE_COREEX_TEXTILES_NAME',		'RESOURCECLASS_LUXURY',			'4'						);
 			
---===========================================================================================================================================================================--		
-		INSERT INTO Features
-			(	FeatureType					)	VALUES
-			(	'FEATURE_COREX'				);	
-
 --===========================================================================================================================================================================--
 /* SECTION 8: CIVICS & TECHS */
 --===========================================================================================================================================================================--			
@@ -3036,10 +3045,10 @@ INSERT INTO Types
 --======================================================================================================================================================================================================--
 		INSERT INTO TechnologyModifiers
 			(	TechnologyType,						ModifierId								)	VALUES
-			(	'TECH_REPLACEABLE_PARTS',			'RURCOM_FARM_GOLD_1'					),	
-			(	'TECH_REPLACEABLE_PARTS',			'RURCOM_PAST_GOLD_1'					),	
-			(	'TECH_REPLACEABLE_PARTS',			'RURCOM_BOAT_GOLD_1'					),	
-			(	'TECH_REPLACEABLE_PARTS',			'RURCOM_PLANT_GOLD_1'					);	
+			(	'TECH_REPLACEABLE_PARTS',			'RURCOM_FARM_GOLD_2'					),	
+			(	'TECH_REPLACEABLE_PARTS',			'RURCOM_PAST_GOLD_2'					),	
+			(	'TECH_REPLACEABLE_PARTS',			'RURCOM_BOAT_GOLD_2'					),	
+			(	'TECH_REPLACEABLE_PARTS',			'RURCOM_PLANT_GOLD_2'					);	
 	
 --======================================================================================================================================================================================================--
 
