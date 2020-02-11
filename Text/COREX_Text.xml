@@ -34,7 +34,7 @@
 			<Text>Craftsman Guild</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_COREXA_TIER2_CUL_NAME" Language="en_US">
-			<Text>Athelets Guild</Text>
+			<Text>Public Games</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_COREXA_TIER2_GOL_NAME" Language="en_US">
 			<Text>Merchant Guild</Text>
@@ -184,11 +184,11 @@
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXA_TIER2_CUL_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants a free Arena building in the Entertainment Complex district whenever it is constructed. +100% [ICON_Production] Production towards the Entertainment Complex district.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants +1 [ICON_Amenities] Amenities from the Entertainment Complex or Waterfront Park district. +1 Appeal from all plots within 2 tiles of Entertainment Complex or Waterfront Park district.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXA_TIER2_GOL_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants +25% [ICON_Gold] Gold from buildings in the Commercial district. Plots within 1 tile of the Commercial Hub district gain +1 Appeal.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]+1 [ICON_TradeRoute] Trade Routes from the Harbour district. Plots within 1 tile of the Commercial Hub district gain +1 Appeal.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXB_TIER1_SCI_DESCRIPTION" Language="en_US">
