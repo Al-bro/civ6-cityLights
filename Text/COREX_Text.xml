@@ -180,7 +180,7 @@
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXA_TIER2_SCI_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Allows an additional district to be built above the usual population limit. +25% [ICON_Production] Production towards engineering projects (Aquaduct, Dam, Canal, and Neighborhoods).</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Allows an additional district to be built above the usual population limit. +20% [ICON_Production] Production towards engineering projects (Aquaduct, Dam, Canal, and Neighborhoods).</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXA_TIER2_CUL_DESCRIPTION" Language="en_US">
