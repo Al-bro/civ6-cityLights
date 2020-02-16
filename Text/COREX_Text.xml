@@ -220,11 +220,11 @@
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXC_TIER1_CUL_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]May build the City Park and Seaside Resort Tile Improvement if not already available. The City Park and Seaside Resort Tile Improvements gain +2 [ICON_Culture] Culture and an additional +1 [ICON_Culture] Culture and +2 [ICON_Gold] Gold if adjacent to a Wonder. [NEWLINE][NEWLINE]+15% [ICON_Culture] Culture.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]May build the City Park and Seaside Resort Tile Improvements if not already available. The City Park and Seaside Resort Tile Improvements gain +2 [ICON_Culture] Culture and an additional +1 [ICON_Culture] Culture and +2 [ICON_Gold] Gold if adjacent to a Wonder. [NEWLINE][NEWLINE]+15% [ICON_Culture] Culture.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_BUILDING_COREXC_TIER1_GOL_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants a Stock Exchange building in the Commercial Hub district whenever a Bank is constructed. +10% [ICON_GOLD] Gold from the Stock Exchange building for every Luxury resource owned. [NEWLINE][NEWLINE]+15% [ICON_Gold] Gold.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants a Stock Exchange building in the Commercial Hub district whenever a Bank is constructed. +4 [ICON_GOLD] Gold from the Stock Exchange building for every specialty district in this city. [NEWLINE][NEWLINE]+15% [ICON_Gold] Gold.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXC_TIER2_SCI_DESCRIPTION" Language="en_US">

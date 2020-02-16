@@ -30,11 +30,14 @@
 			(	TraitType,												ModifierId										)	VALUES
 			(	'TRAIT_CIVILIZATION_ADJACENT_DISTRICTS',				'CIV_COREX_JAPAN_COREXC_PROD'					);
 
+	/* DEPRECATED
+
 		UPDATE Traits
 			SET
 				Description = 'LOC_TRAIT_CIVILIZATION_ADJACENT_DISTRICTS_DESCRIPTION'
 			WHERE TraitType = 'TRAIT_CIVILIZATION_ADJACENT_DISTRICTS';
 
+	*/
 --===========================================================================================================================================================================--
 /* NUBIA */
 
@@ -135,11 +138,19 @@
 				'TUNDRA_LUMBER_MILLS_PRODUCTION'
 			);
 
+		INSERT INTO StartBiasFeatures
+			(	CivilizationType,						FeatureType,			Tier			)	VALUES
+
+			(	'CIVILIZATION_CANADA',					'FEATURE_FOREST',		'2'				);
+
+	/* DEPRECATED
+
 		UPDATE Traits
 			SET
 				Description = 'LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION'
 			WHERE TraitType = 'TRAIT_LEADER_LAST_BEST_WEST';
 
+	*/
 --===========================================================================================================================================================================--
 /* KONGO */
 
@@ -304,7 +315,7 @@
 			(	'TRAIT_CIVILIZATION_NKISI',							'COREX_KONGO_VALID_FEATURE_COREXB_FOREST'		),		
 			(	'TRAIT_CIVILIZATION_NKISI',							'COREX_KONGO_VALID_FEATURE_COREXC_JUNG'			),		
 			(	'TRAIT_CIVILIZATION_NKISI',							'COREX_KONGO_VALID_FEATURE_COREXC_FOREST'		);		
-
+	/* DEPRECATED
 		UPDATE Traits
 			SET
 				Description = 'LOC_TRAIT_CIVILIZATION_NKISI_DESCRIPTION'
@@ -314,7 +325,7 @@
 			SET
 				Description = 'LOC_TRAIT_LEADER_RELIGIOUS_CONVERT_DESCRIPTION'
 			WHERE TraitType = 'TRAIT_LEADER_RELIGIOUS_CONVERT';
-			
+	*/			
 --===========================================================================================================================================================================--
 /* INDIA */
 
@@ -360,11 +371,14 @@
 			
 			(	'IMPROVEMENT_STEPWELL',							'STEPWELL_RURCOM_AMENITY'					);			
 
+	/* DEPRECATED
+
 		UPDATE Improvements
 			SET
 				Description = 'LOC_TRAIT_LEADER_RELIGIOUS_CONVERT_DESCRIPTION'
 			WHERE ImprovementType = 'IMPROVEMENT_STEPWELL';
 
+	*/
 --===========================================================================================================================================================================--
 /* NORWAY */
 
@@ -488,9 +502,12 @@
 			(	'DISTRICT_COREEXPANSIONB',						'TRAIT_CIVILIZATION_MAORI_MANA'			    	),
 			(	'DISTRICT_COREEXPANSIONC',						'TRAIT_CIVILIZATION_MAORI_MANA'			    	);
 
+	/* DEPRECATED
+
 		UPDATE Traits
 			SET
 				Description = 'LOC_TRAIT_CIVILIZATION_MAORI_MANA_DESCRIPTION'
 			WHERE TraitType = 'TRAIT_CIVILIZATION_MAORI_MANA';
-	
+
+	*/	
 --======================================================================================================================================================================================================--
