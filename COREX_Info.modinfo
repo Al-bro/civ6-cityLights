@@ -54,9 +54,15 @@
       </Properties>
       <File>Gameplay/COREX_Policies.sql</File>
     </UpdateDatabase>    
-    <UpdateText id="TextImport">
+<!--    <UpdateDatabase id="NationalUpdate">
       <Properties>
         <LoadOrder>301</LoadOrder>
+      </Properties>
+      <File>Gameplay/COREX_National.sql</File>
+    </UpdateDatabase>   --> 
+    <UpdateText id="TextImport">
+      <Properties>
+        <LoadOrder>302</LoadOrder>
       </Properties>
       <File>Text/COREX_Text.xml</File>
     </UpdateText>
@@ -82,6 +88,7 @@
     <File>Gameplay/COREX_Core.sql</File>
     <File>Gameplay/COREX_Civs.sql</File>
     <File>Gameplay/COREX_Policies.sql</File>
+<!--    <File>Gameplay/COREX_National.sql</File>  -->
     <File>Text/COREX_Text.xml</File>
   </Files>
 </Mod>

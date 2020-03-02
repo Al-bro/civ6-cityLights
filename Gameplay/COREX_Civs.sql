@@ -382,23 +382,23 @@
 --===========================================================================================================================================================================--
 /* NORWAY */
 
-	/*		INSERT INTO Types
+		INSERT INTO Types
 			(	Type,													Kind					)	VALUES
 
-			(	'MODIFIER_COREX_PLAYER_PROJECT_AVAILABLE',				'KIND_MODIFIER'			);
+			(	'COREX_PLAYER_CITIES_TERRAIN_ADJACENCY',				'KIND_MODIFIER'			);
 
 
 		INSERT INTO DynamicModifiers 
-			(	ModifierType,												CollectionType,						EffectType											)	VALUES
+			(	ModifierType,										CollectionType,						EffectType									)	VALUES
 
-			(	'MODIFIER_COREX_PLAYER_PROJECT_AVAILABLE',					'COLLECTION_PLAYER_CITIES',			'EFFECT_ADD_PLAYER_PROJECT_AVAILABILITY'			);			
-	*/
+			(	'COREX_PLAYER_CITIES_TERRAIN_ADJACENCY',			'COLLECTION_PLAYER_CITIES',			'EFFECT_TERRAIN_ADJACENCY'					);			
+
 
 		INSERT INTO Modifiers 
 			(	ModifierId,										ModifierType,									 				RunOnce,	Permanent,	OwnerRequirementSetId,		OwnerStackLimit,			SubjectStackLimit,				SubjectRequirementSetId							)	VALUES
 				
-			(	'RURCOM_GOLDCOASTADJACENCY',					'MODIFIER_ALL_CITIES_TERRAIN_ADJACENCY',						 0,			0,			NULL,						NULL,						NULL,							NULL											),
-			(	'RURCOM_GOLDOCEANADJACENCY',					'MODIFIER_ALL_CITIES_TERRAIN_ADJACENCY',						 0,			0,			NULL,						NULL,						NULL,							NULL											);
+			(	'RURCOM_GOLDCOASTADJACENCY',					'COREX_PLAYER_CITIES_TERRAIN_ADJACENCY',						 0,			0,			NULL,						NULL,						NULL,							NULL											),
+			(	'RURCOM_GOLDOCEANADJACENCY',					'COREX_PLAYER_CITIES_TERRAIN_ADJACENCY',						 0,			0,			NULL,						NULL,						NULL,							NULL											);
 	/*		(	'CIV_COREX_RAIDING_PROJ_AVAIL',					'MODIFIER_COREX_PLAYER_PROJECT_AVAILABLE',						 0,			0,			NULL,						NULL,						'1',							NULL											);
 	*/
 		INSERT INTO ModifierArguments

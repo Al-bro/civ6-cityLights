@@ -188,7 +188,7 @@
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXA_TIER2_GOL_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Harbour and Commercial Hub district buildings are 50% cheaper to purchase with [ICON_Gold] Gold.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Harbor district recieves +2 [ICON_Gold] Gold for each adjacent district. Harbour and Commercial Hub district buildings are 50% cheaper to purchase with [ICON_Gold] Gold.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXB_TIER1_SCI_DESCRIPTION" Language="en_US">
@@ -340,6 +340,10 @@
 		<Replace Tag="LOC_COREEX_DISTRICT_PRODUCTION_3" Language="en_US">
 			<Text>+{1_num} [ICON_Production] Production from adjacent {1_Num : plural 1?district; other?districts;}.</Text>
 		</Replace>
+
+		<Replace Tag="LOC_COREEX_DISTRICT_GOLD_2" Language="en_US">
+			<Text>+{1_num} [ICON_Gold] Gold from adjacent {1_Num : plural 1?district; other?districts;}.</Text>
+		</Replace>
 		
 		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_CITYCENTER" Language="en_US">
 			<Text>+{1_num} [ICON_PRODUCTION] Production from the adjacent City Center {1_Num : plural 1?district; other?districts;}.</Text>
@@ -457,7 +461,7 @@
 			<Text>+{1_num} [ICON_FAITH] Faith from the adjacent Classical Era Expansion {1_Num : plural 1?district; other?districts;}.</Text>
 		</Replace>
 		
-		<Replace Tag="LOC_DISTRICT_THEATER_COREEXPANSIONA" Language="en_US">
+		<Replace Tag="LOC_DISTRICT_COMMER_COREEXPANSIONA" Language="en_US">
 			<Text>+{1_num} [ICON_GOLD] Gold from the adjacent Classical Era Expansion {1_Num : plural 1?district; other?districts;}.</Text>
 		</Replace>
 		
@@ -621,7 +625,7 @@
 			<Text>+{1_num} [ICON_FAITH] Faith from the adjacent Renaissance Era Core Expansion {1_Num : plural 1?district; other?districts;}.</Text>
 		</Replace>
 
-		<Replace Tag="LOC_DISTRICT_THEATER_COREEXPANSIONB" Language="en_US">
+		<Replace Tag="LOC_DISTRICT_COMMER_COREEXPANSIONB" Language="en_US">
 			<Text>+{1_num} [ICON_GOLD] Gold from the adjacent Renaissance Era Core Expansion {1_Num : plural 1?district; other?districts;}.</Text>
 		</Replace>
 
@@ -773,7 +777,7 @@
 			<Text>+{1_num} [ICON_FAITH] Faith from the adjacent Modern Era Core Expansion {1_Num : plural 1?district; other?districts;}.</Text>
 		</Replace>
 
-		<Replace Tag="LOC_DISTRICT_THEATER_COREEXPANSIONC" Language="en_US">
+		<Replace Tag="LOC_DISTRICT_COMMER_COREEXPANSIONC" Language="en_US">
 			<Text>+{1_num} [ICON_GOLD] Gold from the adjacent Modern Era Core Expansion {1_Num : plural 1?district; other?districts;}.</Text>
 		</Replace>
 
