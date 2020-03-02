@@ -272,14 +272,11 @@ INSERT INTO Types
 			(	'TERRACEFARM_RurCom_Gol',		'Placeholder',									'YIELD_GOLD',			1,				0,								1,						NULL,							NULL,					'TECH_REPLACEABLE_PARTS',			'DISTRICT_RURALCOMMUNITY'				),
 	*/
 		
-		
-			
 --===========================================================================================================================================================================--				
 		INSERT INTO District_Adjacencies
 			(	DistrictType,					YieldChangeID					)	VALUES
 			
 	/* DISTRICT A */	
-	
 	
 			(	'DISTRICT_COREEXPANSIONA',		'District_Production_1'			),
 			(	'DISTRICT_COREEXPANSIONA',		'CoreExA_CityCenter'			),	
@@ -431,7 +428,6 @@ INSERT INTO Types
 			(	'DISTRICT_INDUSTRIAL_ZONE',		'RurCom_negProd_1'				),
 			(	'DISTRICT_HANSA',				'RurCom_negProd_1'				);
 
-			
 --===========================================================================================================================================================================--					
 		INSERT INTO District_TradeRouteYields
 			(	DistrictType,				YieldType,			YieldChangeAsOrigin,	YieldChangeAsDomesticDestination,	YieldChangeAsInternationalDestination	)	VALUES
@@ -471,7 +467,6 @@ INSERT INTO Types
 
 			(	'DISTRICT_COREEXPANSIONC',		'YIELD_PRODUCTION',			'4'					);
 
-			
 --===========================================================================================================================================================================--			
 		INSERT INTO DistrictModifiers
 			(	DistrictType,				ModifierId						)	VALUES

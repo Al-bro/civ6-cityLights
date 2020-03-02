@@ -134,7 +134,7 @@
 	<!-- DISTRICT DESCRIPTIONS -->
 
 		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_DESCRIPTION" Language="en_US">
-			<Text>First tier expansion of your city center that provides and gains Standard Adjacencies from all other districts. Lowers the effectiveness of some basic tile improvements.</Text>
+			<Text>First tier expansion of your city center that provides and gains Standard Adjacencies from all other districts. Minor growth bonus and +1 [ICON_Gold] Gold per citizen in the city.[NEWLINE][NEWLINE] Lowers the effectiveness of some basic tile improvements. Lowers the Defence of the city and has a high Maintanince and Amenity cost.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_DESCRIPTION_ADJACENCY" Language="en_US">
@@ -142,7 +142,7 @@
 		</Replace>
 		
 		<Replace Tag="LOC_DISTRICT_COREEXPANSIONB_DESCRIPTION" Language="en_US">
-			<Text>Second tier expansion of your city center that provides and gains Major Adjacencies from all other districts. Lowers the effectiveness of most basic tile improvements.</Text>
+			<Text>Second tier expansion of your city center that provides and gains Major Adjacencies from all other districts. Moderate growth bonus and +1 [ICON_Gold] Gold per citizen in the city.[NEWLINE][NEWLINE] Lowers the effectiveness of most basic tile improvements. Lowers the Defence of the city and has a very high Maintanince and Amenity cost.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_DISTRICT_COREEXPANSIONB_DESCRIPTION_ADJACENCY" Language="en_US">
@@ -150,7 +150,7 @@
 		</Replace>
 		
 		<Replace Tag="LOC_DISTRICT_COREEXPANSIONC_DESCRIPTION" Language="en_US">
-			<Text>Third tier expansion of your city center that provides and gains Maximal Adjacencies from all other districts. Lowers the effectiveness of all basic tile improvements.</Text>
+			<Text>Third tier expansion of your city center that provides and gains Maximal Adjacencies from all other districts. Major growth bonus and +1 [ICON_Gold] Gold per citizen in the city.[NEWLINE][NEWLINE] Lowers the effectiveness of all basic tile improvements. Lowers the Defence of the city and has an extremely high Maintanince and Amenity cost.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_DISTRICT_COREEXPANSIONC_DESCRIPTION_ADJACENCY" Language="en_US">
@@ -158,11 +158,11 @@
 		</Replace>
 
 		<Replace Tag="LOC_DISTRICT_RURALCOMMUNITY_DESCRIPTION" Language="en_US">
-			<Text>Rural Community Placeholder Text.</Text>
+			<Text>A district specializing in Rural activities. +1 Food to Domestic [ICON_TradeRoute] Trade Routes ending in this city Provides +1 [ICON_Faith] Faith to adjacent Farms, Pastures, Plantations, and Fishing Boats as well as bonus [ICON_Gold] Gold as you progress through the ages. [NEWLINE][NEWLINE]Negative standard adjcency to speciaty districts.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_DISTRICT_RURALCOMMUNITY_DESCRIPTION_ADJACENCY" Language="en_US">
-			<Text>Rural Community Placeholder Text</Text>
+			<Text>Provides standard Faith Adjaceny to Farms, Pastures, Plantations, and Fishing Boats. Negative standard adjcency to speciaty districts.</Text>
 		</Replace>
 
 	<!-- BUILDING DESCRIPTIONS -->
