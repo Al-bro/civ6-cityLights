@@ -872,8 +872,18 @@
 		</Replace>
 
 		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="en_US">
-			<Text>Allows Farms to be built on Tundra terrain. After Civil Engineering is unlocked Farms can be built on Tundra Hills. In Snow, Tundra, Snow Hills, and Tundra Hills all Mines provide +1 [ICON_PRODUCTION] Production and strategic resource accumulation rate is +100%. Trigger a culture bomb when constructung a Rural Community. Tundra and Tundra Hill tiles adjacent to a Rural Community gain +1 [ICON_FOOD] Food, as well as +1 [ICON_PRODUCTION] Production from Forests.</Text>
+			<Text>Allows Farms to be built on Tundra terrain. After Civil Engineering is unlocked Farms can be built on Tundra Hills. In Snow, Tundra, Snow Hills, and Tundra Hills all Mines provide +1 [ICON_PRODUCTION] Production and strategic resource accumulation rate is +100%. Allows the construction of the Frotier Town district, a unique replacment for the Rural Community district.</Text>
 		</Replace>
+
+		<Replace Tag="LOC_DISTRICT_COREX_FRONTIER_TOWN_NAME" Language="en_US">
+			<Text>Frontier Town</Text>
+		</Replace>
+
+		<Replace Tag="LOC_DISTRICT_COREX_FRONTIER_TOWN_DESCRIPTION" Language="en_US">
+			<Text>Triggers a culture bomb when constructed and provides +1 Appeal. Adjacent Tundra and Tundra Hill tiles gain +1 [ICON_FOOD] Food, as well as +1 [ICON_PRODUCTION] Production from Forests.</Text>
+		</Replace>
+
+
 
 		<Replace Tag="LOC_DISTRICT_MBANZA_DESCRIPTION" Language="en_US">
 			<Text>A district unique to Kongo that can only be constructed in Rainforest or Woods. Replaces the Neighborhood district but is available earlier and cheaper to build. Provides +3 [ICON_Housing] Housing  and +4 [ICON_Gold] Gold, regardless of Appeal. Gains +1 [ICON_Food] Food for every adjacent Woods and Rainforest Feature.</Text>

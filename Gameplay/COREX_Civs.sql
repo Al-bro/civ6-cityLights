@@ -59,6 +59,43 @@
 --===========================================================================================================================================================================--
 /* CANADA */
 
+		INSERT INTO Types
+
+			(	Type,										Kind					)	VALUES
+			(	'DISTRICT_COREX_FRONTIER_TOWN',				'KIND_DISTRICT'			);
+
+		INSERT INTO Districts
+
+			(	DistrictType,						Name,											Description,										PrereqTech,					PrereqCivic,		TraitType,							PlunderType,		PlunderAmount,	AdvisorType,		Cost,	CostProgressionModel,				CostProgressionParam1,	OnePerCity,	RequiresPlacement,	RequiresPopulation,	Aqueduct,	NoAdjacentCity,			CityCenter,			InternalOnly,	CaptureRemovesBuildings,	CaptureRemovesCityDefenses,	MilitaryDomain,		Appeal, 	Housing,	Entertainment,		Maintenance,		CitizenSlots,			CityStrengthModifier,		CaptureRemovesDistrict,		MaxPerPlayer				)	VALUES	
+			(	'DISTRICT_COREX_FRONTIER_TOWN',		'LOC_DISTRICT_COREX_FRONTIER_TOWN_NAME',		'LOC_DISTRICT_COREX_FRONTIER_TOWN_DESCRIPTION',		'TECH_IRRIGATION',			NULL,				'TRAIT_LEADER_LAST_BEST_WEST',		'PLUNDER_FAITH',	'50',			'ADVISOR_GENERIC',	'17',	'COST_PROGRESSION_GAME_PROGRESS',	'500',					'0',		'1',				'0',				'0',		'1',					'0',				'0',			'1',						'0',						'NO_DOMAIN',		'1',		'1',		'1',				'1',				'0',					'1',						'0',						'-1'						);
+
+		INSERT INTO DistrictReplaces
+			(	CivUniqueDistrictType,					ReplacesDistrictType			)	VALUES
+			(	'DISTRICT_COREX_FRONTIER_TOWN',			'DISTRICT_RURALCOMMUNITY'		);
+
+		INSERT INTO District_ValidTerrains
+
+			(	DistrictType,							TerrainType						)	VALUES
+			(	'DISTRICT_COREX_FRONTIER_TOWN',			'TERRAIN_TUNDRA'				),
+			(	'DISTRICT_COREX_FRONTIER_TOWN',			'TERRAIN_TUNDRA_HILLS'			),
+			(	'DISTRICT_COREX_FRONTIER_TOWN',			'TERRAIN_SNOW'					),
+			(	'DISTRICT_COREX_FRONTIER_TOWN',			'TERRAIN_SNOW_HILLS'			);
+
+		INSERT INTO District_TradeRouteYields
+
+			(	DistrictType,						YieldType,			YieldChangeAsOrigin,	YieldChangeAsDomesticDestination,	YieldChangeAsInternationalDestination	)	VALUES
+			(	'DISTRICT_COREX_FRONTIER_TOWN',		'YIELD_FOOD',		'0',					'1',								'0'										);
+
+		INSERT INTO DistrictModifiers
+
+			(	DistrictType,						ModifierId									)	VALUES
+			(	'DISTRICT_COREX_FRONTIER_TOWN',		'CIV_CAN_RURCOM_CULTURE_BOMB'				),
+			(	'DISTRICT_COREX_FRONTIER_TOWN',		'CIV_CAN_RURCOM_FOREST_PROD_FLAT'			),
+			(	'DISTRICT_COREX_FRONTIER_TOWN',		'CIV_CAN_RURCOM_FOREST_PROD_HILL'			),
+			(	'DISTRICT_COREX_FRONTIER_TOWN',		'CIV_CAN_RURCOM_FOOD_FLAT'					),
+			(	'DISTRICT_COREX_FRONTIER_TOWN',		'CIV_CAN_RURCOM_FOOD_HILL'					);
+
+
 		INSERT INTO Modifiers 
 			(	ModifierId,												ModifierType,									 				RunOnce,	Permanent,	OwnerRequirementSetId,		OwnerStackLimit,			SubjectStackLimit,				SubjectRequirementSetId							)	VALUES
 
@@ -68,10 +105,11 @@
 			(	'CIV_CAN_RURCOM_FOOD_FLAT',								'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'CIV_RURCOM_SET_FLAT'							),
 			(	'CIV_CAN_RURCOM_FOOD_HILL',								'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'CIV_RURCOM_SET_HILL'							);
 
+
 		INSERT INTO ModifierArguments
 			(	ModifierId,												Name,						Value								)	VALUES
 
-			(	'CIV_CAN_RURCOM_CULTURE_BOMB',							'DistrictType',				'DISTRICT_RURALCOMMUNITY'			),
+			(	'CIV_CAN_RURCOM_CULTURE_BOMB',							'DistrictType',				'DISTRICT_COREX_FRONTIER_TOWN'		),
 			(	'CIV_CAN_RURCOM_FOREST_PROD_FLAT',						'YieldType',				'YIELD_PRODUCTION'					),
 			(	'CIV_CAN_RURCOM_FOREST_PROD_FLAT',						'Amount',					'1'									),
 			(	'CIV_CAN_RURCOM_FOREST_PROD_HILL',						'YieldType',				'YIELD_PRODUCTION'					),
@@ -81,6 +119,7 @@
 			(	'CIV_CAN_RURCOM_FOOD_HILL',								'YieldType',				'YIELD_FOOD'						),
 			(	'CIV_CAN_RURCOM_FOOD_HILL',								'Amount',					'1'									);
 
+	/* DEPRECATED
 		INSERT INTO TraitModifiers
 			(	TraitType,												ModifierId										)	VALUES
 			(	'TRAIT_LEADER_LAST_BEST_WEST',							'CIV_CAN_RURCOM_CULTURE_BOMB'					),
@@ -88,16 +127,19 @@
 			(	'TRAIT_LEADER_LAST_BEST_WEST',							'CIV_CAN_RURCOM_FOREST_PROD_HILL'				),
 			(	'TRAIT_LEADER_LAST_BEST_WEST',							'CIV_CAN_RURCOM_FOOD_FLAT'						),
 			(	'TRAIT_LEADER_LAST_BEST_WEST',							'CIV_CAN_RURCOM_FOOD_HILL'						);
+	*/
 
 		INSERT INTO Requirements
 			(	RequirementId,							RequirementType,									Inverse	)	VALUES
 
-			(	'CIV_RURCOM_PLOT_HAS_FOREST',			'REQUIREMENT_PLOT_FEATURE_TYPE_MATCHES',			0		);
+			(	'CIV_RURCOM_PLOT_HAS_FOREST',			'REQUIREMENT_PLOT_FEATURE_TYPE_MATCHES',			0		),
+			(	'COREX_PLOT_NEAR_FRONTIER',				'REQUIREMENT_PLOT_ADJACENT_DISTRICT_TYPE_MATCHES',	0		);
 
 		INSERT INTO RequirementArguments 
-			(	RequirementId,							Name,				Value								)	VALUES
+			(	RequirementId,							Name,				Value									)	VALUES
 
-			(	'CIV_RURCOM_PLOT_HAS_FOREST',			'FeatureType',		'FEATURE_FOREST'					);
+			(	'CIV_RURCOM_PLOT_HAS_FOREST',			'FeatureType',		'FEATURE_FOREST'						),
+			(	'COREX_PLOT_NEAR_FRONTIER',				'DistrictType',		'DISTRICT_COREX_FRONTIER_TOWN'			);
 
 		INSERT INTO RequirementSets 
 			(	RequirementSetId,								RequirementSetType			)	VALUES
@@ -110,19 +152,19 @@
 		INSERT INTO RequirementSetRequirements
 			(	RequirementSetId,								RequirementId								)	VALUES
 
-			(	'CIV_RURCOM_SET_FOREST_FLAT',					'RURCOM_PLOT_NEAR_RURCOM'					),
-			(	'CIV_RURCOM_SET_FOREST_FLAT',					'CIV_RURCOM_PLOT_HAS_FOREST'					),
-			(	'CIV_RURCOM_SET_FOREST_FLAT',					'REQUIRES_PLOT_HAS_TUNDRA'						),
+			(	'CIV_RURCOM_SET_FOREST_FLAT',					'COREX_PLOT_NEAR_FRONTIER'					),
+			(	'CIV_RURCOM_SET_FOREST_FLAT',					'CIV_RURCOM_PLOT_HAS_FOREST'				),
+			(	'CIV_RURCOM_SET_FOREST_FLAT',					'REQUIRES_PLOT_HAS_TUNDRA'					),
 
-			(	'CIV_RURCOM_SET_FLAT',							'RURCOM_PLOT_NEAR_RURCOM'					),
-			(	'CIV_RURCOM_SET_FLAT',							'REQUIRES_PLOT_HAS_TUNDRA'						),
+			(	'CIV_RURCOM_SET_FLAT',							'COREX_PLOT_NEAR_FRONTIER'					),
+			(	'CIV_RURCOM_SET_FLAT',							'REQUIRES_PLOT_HAS_TUNDRA'					),
 
-			(	'CIV_RURCOM_SET_FOREST_HILL',					'RURCOM_PLOT_NEAR_RURCOM'					),
-			(	'CIV_RURCOM_SET_FOREST_HILL',					'CIV_RURCOM_PLOT_HAS_FOREST'					),
-			(	'CIV_RURCOM_SET_FOREST_HILL',					'REQUIRES_PLOT_HAS_TUNDRA_HILLS'				),
+			(	'CIV_RURCOM_SET_FOREST_HILL',					'COREX_PLOT_NEAR_FRONTIER'					),
+			(	'CIV_RURCOM_SET_FOREST_HILL',					'CIV_RURCOM_PLOT_HAS_FOREST'				),
+			(	'CIV_RURCOM_SET_FOREST_HILL',					'REQUIRES_PLOT_HAS_TUNDRA_HILLS'			),
 
-			(	'CIV_RURCOM_SET_HILL',							'RURCOM_PLOT_NEAR_RURCOM'					),
-			(	'CIV_RURCOM_SET_HILL',							'REQUIRES_PLOT_HAS_TUNDRA_HILLS'				);
+			(	'CIV_RURCOM_SET_HILL',							'COREX_PLOT_NEAR_FRONTIER'					),
+			(	'CIV_RURCOM_SET_HILL',							'REQUIRES_PLOT_HAS_TUNDRA_HILLS'			);
 
 
 		DELETE FROM TraitModifiers WHERE ModifierId IN
