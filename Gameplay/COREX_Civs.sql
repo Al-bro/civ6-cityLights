@@ -89,12 +89,10 @@
 		INSERT INTO DistrictModifiers
 
 			(	DistrictType,						ModifierId									)	VALUES
-			(	'DISTRICT_COREX_FRONTIER_TOWN',		'CIV_CAN_RURCOM_CULTURE_BOMB'				),
-			(	'DISTRICT_COREX_FRONTIER_TOWN',		'CIV_CAN_RURCOM_FOREST_PROD_FLAT'			),
-			(	'DISTRICT_COREX_FRONTIER_TOWN',		'CIV_CAN_RURCOM_FOREST_PROD_HILL'			),
-			(	'DISTRICT_COREX_FRONTIER_TOWN',		'CIV_CAN_RURCOM_FOOD_FLAT'					),
-			(	'DISTRICT_COREX_FRONTIER_TOWN',		'CIV_CAN_RURCOM_FOOD_HILL'					);
-
+			(	'DISTRICT_COREX_FRONTIER_TOWN',		'RURCOM_NEG_GROWTH'							),
+			(	'DISTRICT_COREX_FRONTIER_TOWN',		'RURCOM_GRANT_FARMER_UNIT'					),
+			(	'DISTRICT_COREX_FRONTIER_TOWN',		'CIV_CAN_NEG_PROD_DIST_RURCOM_1'			),
+			(	'DISTRICT_COREX_FRONTIER_TOWN',		'CIV_CAN_NEG_PROD_DIST_RURCOM_2'			);
 
 		INSERT INTO Modifiers 
 			(	ModifierId,												ModifierType,									 				RunOnce,	Permanent,	OwnerRequirementSetId,		OwnerStackLimit,			SubjectStackLimit,				SubjectRequirementSetId							)	VALUES
@@ -103,7 +101,9 @@
 			(	'CIV_CAN_RURCOM_FOREST_PROD_FLAT',						'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'CIV_RURCOM_SET_FOREST_FLAT'					),
 			(	'CIV_CAN_RURCOM_FOREST_PROD_HILL',						'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'CIV_RURCOM_SET_FOREST_HILL'					),
 			(	'CIV_CAN_RURCOM_FOOD_FLAT',								'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'CIV_RURCOM_SET_FLAT'							),
-			(	'CIV_CAN_RURCOM_FOOD_HILL',								'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'CIV_RURCOM_SET_HILL'							);
+			(	'CIV_CAN_RURCOM_FOOD_HILL',								'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'CIV_RURCOM_SET_HILL'							),
+			(	'CIV_CAN_NEG_PROD_DIST_RURCOM_1',						'MODIFIER_COREX_SINGLE_CITY_ADJUST_DIS_PROD',					 0,			0,			NULL,						'6',						'6',							NULL											),
+			(	'CIV_CAN_NEG_PROD_DIST_RURCOM_2',						'MODIFIER_COREX_SINGLE_CITY_ADJUST_DIS_PROD',					 0,			0,			NULL,						'3',						'3',							NULL											);
 
 
 		INSERT INTO ModifierArguments
@@ -117,17 +117,11 @@
 			(	'CIV_CAN_RURCOM_FOOD_FLAT',								'YieldType',				'YIELD_FOOD'						),
 			(	'CIV_CAN_RURCOM_FOOD_FLAT',								'Amount',					'1'									),
 			(	'CIV_CAN_RURCOM_FOOD_HILL',								'YieldType',				'YIELD_FOOD'						),
-			(	'CIV_CAN_RURCOM_FOOD_HILL',								'Amount',					'1'									);
-
-	/* DEPRECATED
-		INSERT INTO TraitModifiers
-			(	TraitType,												ModifierId										)	VALUES
-			(	'TRAIT_LEADER_LAST_BEST_WEST',							'CIV_CAN_RURCOM_CULTURE_BOMB'					),
-			(	'TRAIT_LEADER_LAST_BEST_WEST',							'CIV_CAN_RURCOM_FOREST_PROD_FLAT'				),
-			(	'TRAIT_LEADER_LAST_BEST_WEST',							'CIV_CAN_RURCOM_FOREST_PROD_HILL'				),
-			(	'TRAIT_LEADER_LAST_BEST_WEST',							'CIV_CAN_RURCOM_FOOD_FLAT'						),
-			(	'TRAIT_LEADER_LAST_BEST_WEST',							'CIV_CAN_RURCOM_FOOD_HILL'						);
-	*/
+			(	'CIV_CAN_RURCOM_FOOD_HILL',								'Amount',					'1'									),
+			(	'CIV_CAN_NEG_PROD_DIST_RURCOM_1',						'Amount',					'-12'								),
+			(	'CIV_CAN_NEG_PROD_DIST_RURCOM_1',						'DistrictType',				'DISTRICT_COREX_FRONTIER_TOWN'		),		
+			(	'CIV_CAN_NEG_PROD_DIST_RURCOM_2',						'Amount',					'-8'								),
+			(	'CIV_CAN_NEG_PROD_DIST_RURCOM_2',						'DistrictType',				'DISTRICT_COREX_FRONTIER_TOWN'		);		
 
 		INSERT INTO Requirements
 			(	RequirementId,							RequirementType,									Inverse	)	VALUES
@@ -166,7 +160,7 @@
 			(	'CIV_RURCOM_SET_HILL',							'COREX_PLOT_NEAR_FRONTIER'					),
 			(	'CIV_RURCOM_SET_HILL',							'REQUIRES_PLOT_HAS_TUNDRA_HILLS'			);
 
-
+	/* DEPRECATED
 		DELETE FROM TraitModifiers WHERE ModifierId IN
 
 			(	'SNOW_CAMPS_FOOD',
@@ -179,6 +173,17 @@
 				'TUNDRA_HILLS_LUMBER_MILLS_PRODUCTION',
 				'TUNDRA_LUMBER_MILLS_PRODUCTION'
 			);
+	*/
+
+		INSERT INTO TraitModifiers
+			(	TraitType,									ModifierId										)	VALUES
+
+			(	'TRAIT_LEADER_LAST_BEST_WEST',				'CIV_CAN_RURCOM_CULTURE_BOMB'					),
+			(	'TRAIT_LEADER_LAST_BEST_WEST',				'CIV_CAN_RURCOM_FOREST_PROD_FLAT'				),
+			(	'TRAIT_LEADER_LAST_BEST_WEST',				'CIV_CAN_RURCOM_FOREST_PROD_HILL'				),
+			(	'TRAIT_LEADER_LAST_BEST_WEST',				'CIV_CAN_RURCOM_FOOD_FLAT'						),
+			(	'TRAIT_LEADER_LAST_BEST_WEST',				'CIV_CAN_RURCOM_FOOD_HILL'						);
+
 
 		INSERT INTO StartBiasFeatures
 			(	CivilizationType,						FeatureType,			Tier			)	VALUES

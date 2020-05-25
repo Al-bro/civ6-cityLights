@@ -105,7 +105,7 @@
 			<Text>Department of Energy</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_COREXC_TIER2_CUL_NAME" Language="en_US">
-			<Text>Civil Enigneers</Text>
+			<Text>Civil Engineers</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_COREXC_TIER2_GOL_NAME" Language="en_US">
 			<Text>Suburban Developers</Text>
@@ -402,7 +402,7 @@
 		</Replace>
 		
 		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_COTHON" Language="en_US">
-			<Text>+{1_num} [ICON_GOLD] Gold from the adjacent Cothon {1_Num : plural 1?district; other?districts;}.</Text>
+			<Text>+{1_num} [ICON_FOOD] Food from the adjacent Cothon {1_Num : plural 1?district; other?districts;}.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_DISTRICT_COREEXPANSIONA_CANAL" Language="en_US">
@@ -566,7 +566,7 @@
 		</Replace>
 
 		<Replace Tag="LOC_DISTRICT_COREEXPANSIONB_COTHONPROD" Language="en_US">
-			<Text>+{1_num} [ICON_PRODUCTION] Production from the adjacent Cothon {1_Num : plural 1?district; other?districts;}.</Text>
+			<Text>+{1_num} [ICON_FOOD] Food from the adjacent Cothon {1_Num : plural 1?district; other?districts;}.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_DISTRICT_COREEXPANSIONB_CANAL" Language="en_US">
@@ -730,7 +730,7 @@
 		</Replace>
 
 		<Replace Tag="LOC_DISTRICT_COREEXPANSIONC_COTHONPROD" Language="en_US">
-			<Text>+{1_num} [ICON_PRODUCTION] Production from the adjacent Cothon {1_Num : plural 1?district; other?districts;}.</Text>
+			<Text>+{1_num} [ICON_FOOD] Food from the adjacent Cothon {1_Num : plural 1?district; other?districts;}.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_DISTRICT_COREEXPANSIONC_CANAL" Language="en_US">
@@ -868,7 +868,8 @@
 		</Replace>
 
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ADJACENT_DISTRICTS_DESCRIPTION" Language="en_US">
-			<Text>All districts receive an additional standard adjacency bonus for being adjacent to another district. +25% [ICON_Production] Production towards the Modern Era Core Expansion.</Text>
+	<!-- 	<Text>All districts receive an additional standard adjacency bonus for being adjacent to another district. +25% [ICON_Production] Production towards the Modern Era Core Expansion.</Text>	-->
+			<Text>Specialty districts receive an additional Standard adjacency bonus from other districts and a Minor adjacency bonus from Water tiles. City Centers gain +1 [ICON_Food] Food and +1 [ICON_Production] Production for each adjacent Water tile. Gain access to the Fishery improvement after unlocking Sailing. +25% [ICON_Production] Production towards the Modern Era Core Expansion.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="en_US">

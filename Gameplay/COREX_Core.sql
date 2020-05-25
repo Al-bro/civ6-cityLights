@@ -58,6 +58,7 @@ INSERT INTO Types
 (	'MODIFIER_COREX_PLAYER_CITIES_ADJUST_NAT_PARK_TOUR',				'KIND_MODIFIER'			),
 (	'MODIFIER_COREX_SINGLE_CITY_DISTRICTS_ADJACENCY_BONUS',				'KIND_MODIFIER'			),
 (	'MODIFIER_COREX_SINGLE_CITY_ADJUST_BUILDING_PURCHASE',				'KIND_MODIFIER'			),
+(	'MODIFIER_COREX_RURCOM_GRANT_FARMER_UNIT',							'KIND_MODIFIER'			),
 /* DEPRECATED
 (	'MODIFIER_COREX_PLAYER_CITIES_GREAT_WORKS_MODIFIER',				'KIND_MODIFIER'			),
 */
@@ -69,6 +70,7 @@ INSERT INTO Types
 */
 
 (	'UNIT_COREXC_TIER2_CUL_CIVIL_ENG',									'KIND_UNIT'				),
+(	'UNIT_RURCOM_FARMER',												'KIND_UNIT'				),
 
 (	'RESOURCE_COREEX_TEXTILES',											'KIND_RESOURCE'			),
 
@@ -107,6 +109,7 @@ INSERT INTO Types
 			(	'CoreExA_CityCenter',			'LOC_DISTRICT_COREEXPANSIONA_CITYCENTER',		'YIELD_PRODUCTION',		1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_CITY_CENTER'					),	
 																																																																			
 			(	'CoreExA_CampusOne',			'LOC_DISTRICT_COREEXPANSIONA_CAMPUS',			'YIELD_SCIENCE',		1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_CAMPUS'						),
+			(	'CoreExA_ObservOne',			'LOC_DISTRICT_COREEXPANSIONA_CAMPUS',			'YIELD_SCIENCE',		1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_OBSERVATORY'					),
 			(	'CoreExA_HolySiteOne',			'LOC_DISTRICT_COREEXPANSIONA_HOLYSITE',			'YIELD_FAITH',			1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_HOLY_SITE'					),
 			(	'CoreExA_CommHubOne',			'LOC_DISTRICT_COREEXPANSIONA_COMMHUB',			'YIELD_GOLD',			1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_COMMERCIAL_HUB'				),
 			(	'CoreExA_SugubaOne',			'LOC_DISTRICT_COREEXPANSIONA_SUGUBA',			'YIELD_GOLD',			1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_SUGUBA'						),
@@ -119,7 +122,7 @@ INSERT INTO Types
 			(	'CoreExA_HansaOne',				'LOC_DISTRICT_COREEXPANSIONA_HANSA',			'YIELD_PRODUCTION',		1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_HANSA'						),
 			(	'CoreExA_LavraOne',				'LOC_DISTRICT_COREEXPANSIONA_LAVRA',			'YIELD_FAITH',			1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_LAVRA'						),
 			(	'CoreExA_RoyalNavyGoldOne',		'LOC_DISTRICT_COREEXPANSIONA_ROYALGOLD',		'YIELD_GOLD',			1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_ROYAL_NAVY_DOCKYARD'			),
-			(	'CoreExA_CothonGoldOne',		'LOC_DISTRICT_COREEXPANSIONA_COTHON',			'YIELD_GOLD',			1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_COTHON'						),
+			(	'CoreExA_CothonGoldOne',		'LOC_DISTRICT_COREEXPANSIONA_COTHON',			'YIELD_FOOD',			1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_COTHON'						),
 			(	'CoreExA_Canal',				'LOC_DISTRICT_COREEXPANSIONA_CANAL',			'YIELD_PRODUCTION',		1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_CANAL'						),
 			(	'CoreExA_Entertainment',		'LOC_DISTRICT_COREEXPANSIONA_ENTERTAIMENT',		'YIELD_GOLD',			1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_ENTERTAINMENT_COMPLEX'		),
 			(	'CoreExA_StreetCarnival',		'LOC_DISTRICT_COREEXPANSIONA_STREETCARNIVAL',	'YIELD_GOLD',			1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_STREET_CARNIVAL'				),
@@ -150,6 +153,7 @@ INSERT INTO Types
 																																																																			
 			(	'CoreExB_CityCenter',			'LOC_DISTRICT_COREEXPANSIONB_CITYCENTER',		'YIELD_PRODUCTION',		2,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_CITY_CENTER'					),		
 			(	'CoreExB_CampusOne',			'LOC_DISTRICT_COREEXPANSIONB_CAMPUS',			'YIELD_SCIENCE',		2,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_CAMPUS'						),
+			(	'CoreExB_ObservOne',			'LOC_DISTRICT_COREEXPANSIONB_CAMPUS',			'YIELD_SCIENCE',		2,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_OBSERVATORY'					),
 			(	'CoreExB_HolySiteOne',			'LOC_DISTRICT_COREEXPANSIONB_HOLYSITE',			'YIELD_FAITH',			2,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_HOLY_SITE'					),
 			(	'CoreExB_CommHubOne',			'LOC_DISTRICT_COREEXPANSIONB_COMMHUB',			'YIELD_GOLD',			2,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_COMMERCIAL_HUB'				),
 			(	'CoreExB_SugubaOne',			'LOC_DISTRICT_COREEXPANSIONB_SUGUBA',			'YIELD_GOLD',			2,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_SUGUBA'						),
@@ -165,7 +169,7 @@ INSERT INTO Types
 			(	'CoreExB_RoyalNavyGoldOne',		'LOC_DISTRICT_COREEXPANSIONB_ROYALGOLD',		'YIELD_GOLD',			1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_ROYAL_NAVY_DOCKYARD'			),
 			(	'CoreExB_RoyalNavyProdOne',		'LOC_DISTRICT_COREEXPANSIONB_ROYALPROD',		'YIELD_PRODUCTION',		1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_ROYAL_NAVY_DOCKYARD'			),
 			(	'CoreExB_CothonGoldOne',		'LOC_DISTRICT_COREEXPANSIONB_COTHON',			'YIELD_GOLD',			1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_COTHON'						),
-			(	'CoreExB_CothonProdOne',		'LOC_DISTRICT_COREEXPANSIONB_COTHONPROD',		'YIELD_PRODUCTION',		1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_COTHON'						),
+			(	'CoreExB_CothonProdOne',		'LOC_DISTRICT_COREEXPANSIONB_COTHONPROD',		'YIELD_FOOD',			1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_COTHON'						),
 			(	'CoreExB_Canal',				'LOC_DISTRICT_COREEXPANSIONB_CANAL',			'YIELD_PRODUCTION',		2,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_CANAL'						),
 			(	'CoreExB_Entertainment',		'LOC_DISTRICT_COREEXPANSIONB_ENTERTAIMENT',		'YIELD_GOLD',			2,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_ENTERTAINMENT_COMPLEX'		),
 			(	'CoreExB_StreetCarnival',		'LOC_DISTRICT_COREEXPANSIONB_STREETCARNIVAL',	'YIELD_GOLD',			2,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_STREET_CARNIVAL'				),
@@ -196,6 +200,7 @@ INSERT INTO Types
 																																																																			
 			(	'CoreExC_CityCenter',			'LOC_DISTRICT_COREEXPANSIONC_CITYCENTER',		'YIELD_PRODUCTION',		3,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_CITY_CENTER'					),	
 			(	'CoreExC_CampusOne',			'LOC_DISTRICT_COREEXPANSIONC_CAMPUS',			'YIELD_SCIENCE',		3,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_CAMPUS'						),
+			(	'CoreExC_ObservOne',			'LOC_DISTRICT_COREEXPANSIONC_CAMPUS',			'YIELD_SCIENCE',		3,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_OBSERVATORY'					),
 			(	'CoreExC_HolySiteOne',			'LOC_DISTRICT_COREEXPANSIONC_HOLYSITE',			'YIELD_FAITH',			3,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_HOLY_SITE'					),
 			(	'CoreExC_CommHubOne',			'LOC_DISTRICT_COREEXPANSIONC_COMMHUB',			'YIELD_GOLD',			3,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_COMMERCIAL_HUB'				),
 			(	'CoreExC_SugubaOne',			'LOC_DISTRICT_COREEXPANSIONC_SUGUBA',			'YIELD_GOLD',			3,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_SUGUBA'						),
@@ -211,7 +216,7 @@ INSERT INTO Types
 			(	'CoreExC_RoyalNavyGoldOne',		'LOC_DISTRICT_COREEXPANSIONC_ROYALGOLD',		'YIELD_GOLD',			2,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_ROYAL_NAVY_DOCKYARD'			),
 			(	'CoreExC_RoyalNavyProdOne',		'LOC_DISTRICT_COREEXPANSIONC_ROYALPROD',		'YIELD_PRODUCTION',		1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_ROYAL_NAVY_DOCKYARD'			),
 			(	'CoreExC_CothonGoldOne',		'LOC_DISTRICT_COREEXPANSIONC_COTHON',			'YIELD_GOLD',			2,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_COTHON'						),
-			(	'CoreExC_CothonProdOne',		'LOC_DISTRICT_COREEXPANSIONC_COTHONPROD',		'YIELD_PRODUCTION',		1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_COTHON'						),
+			(	'CoreExC_CothonProdOne',		'LOC_DISTRICT_COREEXPANSIONC_COTHONPROD',		'YIELD_FOOD',			1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_COTHON'						),
 			(	'CoreExC_Canal',				'LOC_DISTRICT_COREEXPANSIONC_CANAL',			'YIELD_PRODUCTION',		3,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_CANAL'						),
 			(	'CoreExC_Entertainment',		'LOC_DISTRICT_COREEXPANSIONC_ENTERTAIMENT',		'YIELD_GOLD',			3,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_ENTERTAINMENT_COMPLEX'		),
 			(	'CoreExC_StreetCarnival',		'LOC_DISTRICT_COREEXPANSIONC_STREETCARNIVAL',	'YIELD_GOLD',			3,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_STREET_CARNIVAL'				),
@@ -262,14 +267,13 @@ INSERT INTO Types
 			(	'RurCom_negFood_1',				'Placeholder',									'YIELD_FOOD',		   -1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_RURALCOMMUNITY'				),
 			(	'RurCom_negProd_1',				'Placeholder',									'YIELD_PRODUCTION',	   -1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_RURALCOMMUNITY'				),
 
-			(	'RurCom_Faith_1',				'Placeholder',									'YIELD_FAITH',			1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_RURALCOMMUNITY'				),
+			(	'RurCom_Faith_1',				'Placeholder',									'YIELD_FAITH',			1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_RURALCOMMUNITY'				);
+
+    /* DEPRECATED
 			(	'RurCom_Gold_1',				'Placeholder',									'YIELD_GOLD',			1,				0,								1,						NULL,							'CIVIC_FEUDALISM',		NULL,								'DISTRICT_RURALCOMMUNITY'				),
-    /* DEPRECATED
 			(	'TERRACEFARM_RurCom',			'Placeholder',									'YIELD_FOOD',			1,				0,								1,						NULL,							'CIVIC_FEUDALISM',		NULL,								'DISTRICT_RURALCOMMUNITY'				),
-	*/
-			(	'RurCom_Gold_2',				'Placeholder',									'YIELD_GOLD',			1,				0,								1,						NULL,							NULL,					'TECH_REPLACEABLE_PARTS',			'DISTRICT_RURALCOMMUNITY'				);
-    /* DEPRECATED
-			(	'TERRACEFARM_RurCom_Gol',		'Placeholder',									'YIELD_GOLD',			1,				0,								1,						NULL,							NULL,					'TECH_REPLACEABLE_PARTS',			'DISTRICT_RURALCOMMUNITY'				),
+			(	'RurCom_Gold_2',				'Placeholder',									'YIELD_GOLD',			1,				0,								1,						NULL,							NULL,					'TECH_REPLACEABLE_PARTS',			'DISTRICT_RURALCOMMUNITY'				),
+  			(	'TERRACEFARM_RurCom_Gol',		'Placeholder',									'YIELD_GOLD',			1,				0,								1,						NULL,							NULL,					'TECH_REPLACEABLE_PARTS',			'DISTRICT_RURALCOMMUNITY'				),
 	*/
 		
 --===========================================================================================================================================================================--				
@@ -305,7 +309,9 @@ INSERT INTO Types
 			(	'DISTRICT_COREEXPANSIONA',		'CoreExA_CoreExC'				),			
 			(	'DISTRICT_COREEXPANSIONA',		'CoreExA_GovSci'				),
 			(	'DISTRICT_COREEXPANSIONA',		'CoreExA_GovCult'				),
+			(	'DISTRICT_COREEXPANSIONA',		'CoreExA_ObservOne'				),
 			(	'DISTRICT_CAMPUS',				'Campus_CoreExA'				),
+			(	'DISTRICT_OBSERVATORY',			'Campus_CoreExA'				),
 			(	'DISTRICT_HOLY_SITE',			'HolySite_CoreExA'				),
 			(	'DISTRICT_LAVRA',				'Lavra_CoreExA'					),
 			(	'DISTRICT_COMMERCIAL_HUB',		'CommHub_CoreExA'				),
@@ -317,7 +323,9 @@ INSERT INTO Types
 			(	'DISTRICT_COTHON',				'Cothon_CoreExA'				),
 			(	'DISTRICT_INDUSTRIAL_ZONE',		'Industrial_CoreExA'			),
 			(	'DISTRICT_HANSA',				'Hansa_CoreExA'					),
-			
+
+
+
 	/* DISTRICT B */			
 
 			(	'DISTRICT_COREEXPANSIONB',		'CoreExB_CityCenter'			),	
@@ -350,7 +358,9 @@ INSERT INTO Types
 			(	'DISTRICT_COREEXPANSIONB',		'CoreExB_CoreExC'				),			
 			(	'DISTRICT_COREEXPANSIONB',		'CoreExB_GovSci'				),
 			(	'DISTRICT_COREEXPANSIONB',		'CoreExB_GovCult'				),
+			(	'DISTRICT_COREEXPANSIONB',		'CoreExB_ObservOne'				),
 			(	'DISTRICT_CAMPUS',				'Campus_CoreExB'				),
+			(	'DISTRICT_OBSERVATORY',			'Campus_CoreExB'				),
 			(	'DISTRICT_HOLY_SITE',			'HolySite_CoreExB'				),
 			(	'DISTRICT_LAVRA',				'Lavra_CoreExB'					),
 			(	'DISTRICT_COMMERCIAL_HUB',		'CommHub_CoreExB'				),
@@ -395,7 +405,9 @@ INSERT INTO Types
 			(	'DISTRICT_COREEXPANSIONC',		'CoreExC_CoreExC'				),
 			(	'DISTRICT_COREEXPANSIONC',		'CoreExC_GovSci'				),
 			(	'DISTRICT_COREEXPANSIONC',		'CoreExC_GovCult'				),
+			(	'DISTRICT_COREEXPANSIONC',		'CoreExC_ObservOne'				),
 			(	'DISTRICT_CAMPUS',				'Campus_CoreExC'				),
+			(	'DISTRICT_OBSERVATORY',			'Campus_CoreExC'				),
 			(	'DISTRICT_HOLY_SITE',			'HolySite_CoreExC'				),
 			(	'DISTRICT_LAVRA',				'Lavra_CoreExC'					),
 			(	'DISTRICT_COMMERCIAL_HUB',		'CommHub_CoreExC'				),
@@ -417,6 +429,7 @@ INSERT INTO Types
 			(	'DISTRICT_RURALCOMMUNITY',		'RurCom_IKANDA'					),		
 
 			(	'DISTRICT_CAMPUS',				'RurCom_negSci_1'				),
+			(	'DISTRICT_OBSERVATORY',			'RurCom_negSci_1'				),
 			(	'DISTRICT_SEOWON',				'RurCom_Sci_1'					),
 			(	'DISTRICT_COMMERCIAL_HUB',		'RurCom_negGold_1'				),
 			(	'DISTRICT_SUGUBA',				'RurCom_negGold_1'				),
@@ -516,6 +529,7 @@ INSERT INTO Types
 	/* RURAL COMMUNITY */
 
 			(	'DISTRICT_RURALCOMMUNITY',	'RURCOM_NEG_GROWTH'						),
+			(	'DISTRICT_RURALCOMMUNITY',	'RURCOM_GRANT_FARMER_UNIT'				),
 			(	'DISTRICT_RURALCOMMUNITY',	'RURCOM_NEG_PROD_DIST_RURCOM_1'			),
 			(	'DISTRICT_RURALCOMMUNITY',	'RURCOM_NEG_PROD_DIST_RURCOM_2'			);
 			
@@ -531,15 +545,10 @@ INSERT INTO Types
 			(	'DISTRICT_RURALCOMMUNITY',		'DISTRICT_COREEXPANSIONA'				),
 			(	'DISTRICT_RURALCOMMUNITY',		'DISTRICT_COREEXPANSIONB'				),
 			(	'DISTRICT_RURALCOMMUNITY',		'DISTRICT_COREEXPANSIONC'				);
-
-
-
-	
 	
 --===========================================================================================================================================================================--
 /* SECTION 2: BUILDINGS */
 --===========================================================================================================================================================================--
-
 
 		INSERT INTO Buildings
 			(	BuildingType,       				Name,       										PrereqTech,					PrereqCivic,   					 Cost,      	 MaxPlayerInstances,    PrereqDistrict,       			Description,										Maintenance,    CitizenSlots,   		Entertainment,			PurchaseYield,				ObsoleteEra,		    AdvisorType      			)	VALUES
@@ -914,6 +923,7 @@ INSERT INTO Types
 			(	'MODIFIER_COREX_PLAYER_CITIES_ADJUST_NAT_PARK_TOUR',							'COLLECTION_PLAYER_CITIES',			'EFFECT_ADJUST_CITY_NATIONAL_PARK_TOURISM'															),			
 			(	'MODIFIER_COREX_SINGLE_CITY_DISTRICTS_ADJACENCY_BONUS',							'COLLECTION_OWNER_CITY',			'EFFECT_ADJUST_DISTRICT_YIELD_BASED_ON_ADJACENCY_BONUS'												),			
 			(	'MODIFIER_COREX_SINGLE_CITY_ADJUST_BUILDING_PURCHASE',							'COLLECTION_OWNER_CITY',			'EFFECT_ADJUST_BUILDING_PURCHASE_COST'																),			
+			(	'MODIFIER_COREX_RURCOM_GRANT_FARMER_UNIT',										'COLLECTION_ALL_PLAYERS',			'EFFECT_ADJUST_PLAYER_DISTRICT_CREATE_UNIT'															),			
 
 	/* DEPRECATED
 			(	'MODIFIER_COREX_PLAYER_CITIES_GREAT_WORKS_MODIFIER',							'COLLECTION_PLAYER_CITIES',			'EFFECT_ADJUST_ALL_GREAT_WORKS_YIELDS_MODIFIER'														),			
@@ -974,16 +984,19 @@ INSERT INTO Types
 	/* RURAL COMMUNITY */											                                                                                                                        
 
 			(	'RURCOM_NEG_GROWTH',									'MODIFIER_SINGLE_CITY_ADJUST_CITY_GROWTH',						 0,			0,			NULL,						NULL,						NULL,							NULL											),
+			(	'RURCOM_GRANT_FARMER_UNIT',								'MODIFIER_COREX_RURCOM_GRANT_FARMER_UNIT',						 0,			0,			NULL,						NULL,						NULL,							NULL											),
 			(	'RURCOM_NEG_PROD_DIST_RURCOM_1',						'MODIFIER_COREX_SINGLE_CITY_ADJUST_DIS_PROD',					 0,			0,			NULL,						'6',						'6',							NULL											),
 			(	'RURCOM_NEG_PROD_DIST_RURCOM_2',						'MODIFIER_COREX_SINGLE_CITY_ADJUST_DIS_PROD',					 0,			0,			NULL,						'3',						'3',							NULL											),
 			(	'RURCOM_FARM_GOLD_1',									'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_FARM'							),
 			(	'RURCOM_PAST_GOLD_1',									'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_PAST'							),
 			(	'RURCOM_BOAT_GOLD_1',									'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_BOAT'							),
 			(	'RURCOM_PLANT_GOLD_1',									'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_PLANT'							),
+			(	'RURCOM_CAMP_GOLD_1',									'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_CAMP'							),
 			(	'RURCOM_FARM_GOLD_2',									'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_FARM'							),
 			(	'RURCOM_PAST_GOLD_2',									'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_PAST'							),
 			(	'RURCOM_BOAT_GOLD_2',									'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_BOAT'							),
 			(	'RURCOM_PLANT_GOLD_2',									'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_PLANT'							),
+			(	'RURCOM_CAMP_GOLD_2',									'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'RURCOM_SET_PLOT_CAMP'							),
 
 
 
@@ -1089,6 +1102,7 @@ INSERT INTO Types
 			(	'PROJECT_COREXB_TIER1_SCI_CONFERENCE',					'MODIFIER_PLAYER_GRANT_YIELD_BASED_ON_CURRENT_YIELD_RATE',		 1,			1,			NULL,						NULL,						NULL,							NULL											),
 			(	'PROJECT_COREXB_TIER1_SCI_BUILDING_MODIFIER',			'BUILDING_COREX_SINGLE_CITY_ADJUST_BUILDING_YIELD_MODIFIER',	 0,			0,			NULL,						NULL,						NULL,							NULL											),
 			(	'PROJECT_COREXB_TIER1_SCI_BUILDING_MODIFIER_ALT',		'BUILDING_COREX_SINGLE_CITY_ADJUST_BUILDING_YIELD_MODIFIER',	 0,			0,			NULL,						NULL,						NULL,							NULL											),
+			(	'PROJECT_COREXB_TIER1_SCI_BUILDING_MODIFIER_ALT2',		'BUILDING_COREX_SINGLE_CITY_ADJUST_BUILDING_YIELD_MODIFIER',	 0,			0,			NULL,						NULL,						NULL,							NULL											),
 			
 			(	'BUILDING_COREXB_TIER1_GOL_YIELD_GOL',					'MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER',				 0,			0,			NULL,						NULL,						NULL,							'COREX_SET_CITY_HAS_SHIPYARD'					),
 			(	'BUILDING_COREXB_TIER1_GOL_GRANT_PROJ_BUILD',			'MODIFIER_SINGLE_CITY_GRANT_BUILDING_IN_CITY_IGNORE',			 1,			1,			NULL,						NULL,						NULL,							'COREX_SET_CITY_HAS_SHIPYARD'					),
@@ -1354,6 +1368,8 @@ INSERT INTO Types
 	/* RURAL COMMUNITY */	
 
 			(	'RURCOM_NEG_GROWTH',									'Amount',					'-15'								),
+			(	'RURCOM_GRANT_FARMER_UNIT',								'DistrictType',				'DISTRICT_RURALCOMMUNITY'			),
+			(	'RURCOM_GRANT_FARMER_UNIT',								'UnitType',					'UNIT_RURCOM_FARMER'				),
 			(	'RURCOM_NEG_PROD_DIST_RURCOM_1',						'Amount',					'-12'								),
 			(	'RURCOM_NEG_PROD_DIST_RURCOM_1',						'DistrictType',				'DISTRICT_RURALCOMMUNITY'			),		
 			(	'RURCOM_NEG_PROD_DIST_RURCOM_2',						'Amount',					'-8'								),
@@ -1366,6 +1382,8 @@ INSERT INTO Types
 			(	'RURCOM_BOAT_GOLD_1',									'Amount',					'1'									),		
 			(	'RURCOM_PLANT_GOLD_1',									'YieldType',				'YIELD_GOLD'						),		
 			(	'RURCOM_PLANT_GOLD_1',									'Amount',					'1'									),		
+			(	'RURCOM_CAMP_GOLD_1',									'YieldType',				'YIELD_GOLD'						),		
+			(	'RURCOM_CAMP_GOLD_1',									'Amount',					'1'									),		
 			(	'RURCOM_FARM_GOLD_2',									'YieldType',				'YIELD_GOLD'						),		
 			(	'RURCOM_FARM_GOLD_2',									'Amount',					'2'									),		
 			(	'RURCOM_PAST_GOLD_2',									'YieldType',				'YIELD_GOLD'						),		
@@ -1374,6 +1392,9 @@ INSERT INTO Types
 			(	'RURCOM_BOAT_GOLD_2',									'Amount',					'2'									),		
 			(	'RURCOM_PLANT_GOLD_2',									'YieldType',				'YIELD_GOLD'						),		
 			(	'RURCOM_PLANT_GOLD_2',									'Amount',					'2'									),		
+			(	'RURCOM_CAMP_GOLD_2',									'YieldType',				'YIELD_GOLD'						),		
+			(	'RURCOM_CAMP_GOLD_2',									'Amount',					'2'									),		
+
 
 	/* DEPRECATED
 			(	'RURCOM_NEG_PROD_DIST',									'Amount',					'-10'								),	
@@ -1562,6 +1583,9 @@ INSERT INTO Types
 			(	'PROJECT_COREXB_TIER1_SCI_BUILDING_MODIFIER_ALT',		'Amount',					'20'								),	
 			(	'PROJECT_COREXB_TIER1_SCI_BUILDING_MODIFIER_ALT',		'DistrictType',				'DISTRICT_SEOWON'					),	
 			(	'PROJECT_COREXB_TIER1_SCI_BUILDING_MODIFIER_ALT',		'YieldType',				'YIELD_SCIENCE'						),			
+			(	'PROJECT_COREXB_TIER1_SCI_BUILDING_MODIFIER_ALT2',		'Amount',					'20'								),	
+			(	'PROJECT_COREXB_TIER1_SCI_BUILDING_MODIFIER_ALT2',		'DistrictType',				'DISTRICT_OBSERVATORY'				),	
+			(	'PROJECT_COREXB_TIER1_SCI_BUILDING_MODIFIER_ALT2',		'YieldType',				'YIELD_SCIENCE'						),			
 			
 			(	'PROJECT_COREXB_TIER1_GOL_GRANT_TRDR',					'Amount',					'1'									),
 			(	'PROJECT_COREXB_TIER1_GOL_GRANT_TRDR',					'UnitType',					'UNIT_TRADER'						),																										
@@ -2282,6 +2306,7 @@ INSERT INTO Types
 			(	'RURCOM_SET_PLOT_PAST',							'REQUIREMENTSET_TEST_ALL'	),
 			(	'RURCOM_SET_PLOT_BOAT',							'REQUIREMENTSET_TEST_ALL'	),
 			(	'RURCOM_SET_PLOT_PLANT',						'REQUIREMENTSET_TEST_ALL'	),
+			(	'RURCOM_SET_PLOT_CAMP',							'REQUIREMENTSET_TEST_ALL'	),
 
 
 	/* BUILDING A*/			
@@ -2427,6 +2452,8 @@ INSERT INTO Types
 			(	'RURCOM_SET_PLOT_BOAT',								'COREXA_PLOT_HAS_FISHING'					),
 			(	'RURCOM_SET_PLOT_PLANT',							'RURCOM_PLOT_NEAR_RURCOM'					),
 			(	'RURCOM_SET_PLOT_PLANT',							'COREXA_PLOT_HAS_PLANTATION'				),
+			(	'RURCOM_SET_PLOT_CAMP',								'RURCOM_PLOT_NEAR_RURCOM'					),
+			(	'RURCOM_SET_PLOT_CAMP',								'COREXA_PLOT_HAS_CAMP'						),
 
 
 	/* BUILDING A */				
@@ -2576,7 +2603,8 @@ INSERT INTO Types
 			(	'IMPROVEMENT_FISHING_BOATS',		'RurCom_Faith_1'								),
 			(	'IMPROVEMENT_PASTURE',				'RurCom_Faith_1'								),
 			(	'IMPROVEMENT_PLANTATION',			'RurCom_Faith_1'								),
-			(	'IMPROVEMENT_FARM',					'RurCom_Faith_1'								);
+			(	'IMPROVEMENT_FARM',					'RurCom_Faith_1'								),
+			(	'IMPROVEMENT_CAMP',					'RurCom_Faith_1'								);
 
 	/* DEPRECATED
 
@@ -2692,12 +2720,15 @@ INSERT INTO Types
 
 			(	'PROJECT_COREX_ACADEM_CONF_1',		'PROJECT_COREXB_TIER1_SCI_BUILDING_MODIFIER'		),
 			(	'PROJECT_COREX_ACADEM_CONF_1',		'PROJECT_COREXB_TIER1_SCI_BUILDING_MODIFIER_ALT'	),
+			(	'PROJECT_COREX_ACADEM_CONF_1',		'PROJECT_COREXB_TIER1_SCI_BUILDING_MODIFIER_ALT2'	),
 			(	'PROJECT_COREX_ACADEM_CONF_1',		'PROJECT_COREXB_TIER1_SCI_CONFERENCE'				),
 			(	'PROJECT_COREX_ACADEM_CONF_2',		'PROJECT_COREXB_TIER1_SCI_BUILDING_MODIFIER'		),
 			(	'PROJECT_COREX_ACADEM_CONF_2',		'PROJECT_COREXB_TIER1_SCI_BUILDING_MODIFIER_ALT'	),
+			(	'PROJECT_COREX_ACADEM_CONF_2',		'PROJECT_COREXB_TIER1_SCI_BUILDING_MODIFIER_ALT2'	),
 			(	'PROJECT_COREX_ACADEM_CONF_2',		'PROJECT_COREXB_TIER1_SCI_CONFERENCE'				),
 			(	'PROJECT_COREX_ACADEM_CONF_3',		'PROJECT_COREXB_TIER1_SCI_BUILDING_MODIFIER'		),
 			(	'PROJECT_COREX_ACADEM_CONF_3',		'PROJECT_COREXB_TIER1_SCI_BUILDING_MODIFIER_ALT'	),
+			(	'PROJECT_COREX_ACADEM_CONF_3',		'PROJECT_COREXB_TIER1_SCI_BUILDING_MODIFIER_ALT2'	),
 			(	'PROJECT_COREX_ACADEM_CONF_3',		'PROJECT_COREXB_TIER1_SCI_CONFERENCE'				);
 
 --===========================================================================================================================================================================--
@@ -2706,8 +2737,9 @@ INSERT INTO Types
 
 		INSERT INTO Units
 			(	UnitType,									Name,												BaseSightRange,				BaseMoves,				Domain,				FormationClass,					Cost,		BuildCharges,		Description,											CostProgressionModel,						CostProgressionParam1,			PurchaseYield,			AdvisorType				)	VALUES
-			(	'UNIT_COREXC_TIER2_CUL_CIVIL_ENG',			'LOC_UNIT_COREXC_TIER2_CUL_CIVIL_ENG_NAME',			'2',						'2',					'DOMAIN_LAND',		'FORMATION_CLASS_CIVILIAN',		'330',		'2',				'LOC_UNIT_COREXC_TIER2_CUL_CIVIL_ENG_DESCRIPTION',		'COST_PROGRESSION_PREVIOUS_COPIES',			'4',							'YIELD_GOLD',			'ADVISOR_GENERIC'		);
-			
+			(	'UNIT_COREXC_TIER2_CUL_CIVIL_ENG',			'LOC_UNIT_COREXC_TIER2_CUL_CIVIL_ENG_NAME',			'2',						'2',					'DOMAIN_LAND',		'FORMATION_CLASS_CIVILIAN',		'330',		'2',				'LOC_UNIT_COREXC_TIER2_CUL_CIVIL_ENG_DESCRIPTION',		'COST_PROGRESSION_PREVIOUS_COPIES',			'4',							'YIELD_GOLD',			'ADVISOR_GENERIC'		),
+			(	'UNIT_RURCOM_FARMER',						'LOC_UNIT_RURCOM_FARMER_NAME',						'2',						'2',					'DOMAIN_LAND',		'FORMATION_CLASS_CIVILIAN',		'1',		'2',				'LOC_UNIT_RURCOM_FARMER_DESCRIPTION',					'COST_PROGRESSION_PREVIOUS_COPIES',			'4',							'YIELD_GOLD',			'ADVISOR_GENERIC'		);
+		
 --===========================================================================================================================================================================--		
 		INSERT INTO Unit_BuildingPrereqs
 			(	Unit,										PrereqBuilding,						NumSupported				)	VALUES
@@ -2716,8 +2748,10 @@ INSERT INTO Types
 --===========================================================================================================================================================================--		
 		INSERT INTO District_BuildChargeProductions
 			(	DistrictType,									UnitType,								PercentProductionPerCharge		)	VALUES
+
 			(	'DISTRICT_HOLY_SITE',							'UNIT_COREXC_TIER2_CUL_CIVIL_ENG',		'20'							),
 			(	'DISTRICT_CAMPUS',								'UNIT_COREXC_TIER2_CUL_CIVIL_ENG',		'20'							),
+			(	'DISTRICT_OBSERVATORY',							'UNIT_COREXC_TIER2_CUL_CIVIL_ENG',		'20'							),
 			(	'DISTRICT_HARBOR',								'UNIT_COREXC_TIER2_CUL_CIVIL_ENG',		'20'							),
 			(	'DISTRICT_AERODROME',							'UNIT_COREXC_TIER2_CUL_CIVIL_ENG',		'20'							),
 			(	'DISTRICT_COMMERCIAL_HUB',						'UNIT_COREXC_TIER2_CUL_CIVIL_ENG',		'20'							),
@@ -2742,6 +2776,7 @@ INSERT INTO Types
 --===========================================================================================================================================================================--		
 		INSERT INTO Building_BuildChargeProductions
 			(	BuildingType,									UnitType,								PercentProductionPerCharge		)	VALUES
+
 			(	'BUILDING_MONUMENT',							'UNIT_COREXC_TIER2_CUL_CIVIL_ENG',		'70'							),
 			(	'BUILDING_GRANARY',								'UNIT_COREXC_TIER2_CUL_CIVIL_ENG',		'70'							),
 			(	'BUILDING_LIBRARY',								'UNIT_COREXC_TIER2_CUL_CIVIL_ENG',		'70'							),
@@ -2806,13 +2841,24 @@ INSERT INTO Types
 			(	'BUILDING_MARAE',								'UNIT_COREXC_TIER2_CUL_CIVIL_ENG',		'60'							),
 			(	'BUILDING_QUEENS_BIBLIOTHEQUE',					'UNIT_COREXC_TIER2_CUL_CIVIL_ENG',		'50'							),
 			(	'BUILDING_THERMAL_BATH',						'UNIT_COREXC_TIER2_CUL_CIVIL_ENG',		'30'							);
-			
+
+--===========================================================================================================================================================================--		
+		INSERT INTO Improvement_ValidBuildUnits
+			(	ImprovementType,									UnitType								)	VALUES
+
+			(	'IMPROVEMENT_FARM',									'UNIT_RURCOM_FARMER'					),
+			(	'IMPROVEMENT_FISHING_BOATS',						'UNIT_RURCOM_FARMER'					),
+			(	'IMPROVEMENT_PASTURE',								'UNIT_RURCOM_FARMER'					),
+			(	'IMPROVEMENT_PLANTATION',							'UNIT_RURCOM_FARMER'					),
+			(	'IMPROVEMENT_CAMP',									'UNIT_RURCOM_FARMER'					);
+
 --===========================================================================================================================================================================--
 /* SECTION 7: Resources */
 --===========================================================================================================================================================================--			
 
 		INSERT INTO Resources
 			(	ResourceType,								Name,										ResourceClassType,				Happiness				)	VALUES
+
 			(	'RESOURCE_COREEX_TEXTILES',					'LOC_RESOURCE_COREEX_TEXTILES_NAME',		'RESOURCECLASS_LUXURY',			'4'						);
 			
 --===========================================================================================================================================================================--
@@ -2821,18 +2867,22 @@ INSERT INTO Types
 
 		INSERT INTO CivicModifiers
 			(	CivicType,							ModifierId								)	VALUES
+
 			(	'CIVIC_FEUDALISM',					'RURCOM_FARM_GOLD_1'					),	
 			(	'CIVIC_FEUDALISM',					'RURCOM_PAST_GOLD_1'					),	
 			(	'CIVIC_FEUDALISM',					'RURCOM_BOAT_GOLD_1'					),	
-			(	'CIVIC_FEUDALISM',					'RURCOM_PLANT_GOLD_1'					);	
+			(	'CIVIC_FEUDALISM',					'RURCOM_PLANT_GOLD_1'					),	
+			(	'CIVIC_FEUDALISM',					'RURCOM_CAMP_GOLD_1'					);	
 
 --======================================================================================================================================================================================================--
 		INSERT INTO TechnologyModifiers
 			(	TechnologyType,						ModifierId								)	VALUES
+
 			(	'TECH_REPLACEABLE_PARTS',			'RURCOM_FARM_GOLD_2'					),	
 			(	'TECH_REPLACEABLE_PARTS',			'RURCOM_PAST_GOLD_2'					),	
 			(	'TECH_REPLACEABLE_PARTS',			'RURCOM_BOAT_GOLD_2'					),	
-			(	'TECH_REPLACEABLE_PARTS',			'RURCOM_PLANT_GOLD_2'					);	
+			(	'TECH_REPLACEABLE_PARTS',			'RURCOM_PLANT_GOLD_2'					),	
+			(	'TECH_REPLACEABLE_PARTS',			'RURCOM_CAMP_GOLD_2'					);	
 	
 --======================================================================================================================================================================================================--
 

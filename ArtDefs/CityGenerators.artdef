@@ -27,13 +27,13 @@
 							<m_ParamName text="Var_EnableSpines"/>
 						</Element>
 						<Element class="AssetObjects..Coord2DValue">
-							<m_x>1.500000</m_x>
-							<m_y>1.900000</m_y>
+							<m_x>1.300000</m_x>
+							<m_y>1.800000</m_y>
 							<m_ParamName text="Var_SpineLengthRange"/>
 						</Element>
 						<Element class="AssetObjects..Coord2DValue">
-							<m_x>0.500000</m_x>
-							<m_y>0.900000</m_y>
+							<m_x>0.400000</m_x>
+							<m_y>0.800000</m_y>
 							<m_ParamName text="Var_SpineWidthRange"/>
 						</Element>
 						<Element class="AssetObjects..StringValue">
@@ -79,7 +79,7 @@
 										<m_ParamName text="Var_FillerOccupancy"/>
 									</Element>
 									<Element class="AssetObjects..FloatValue">
-										<m_fValue>0.083120</m_fValue>
+										<m_fValue>0.031250</m_fValue>
 										<m_ParamName text="Var_ScatterGrouping"/>
 									</Element>
 								</m_Values>
@@ -96,11 +96,11 @@
 										<m_ParamName text="Var_Population"/>
 									</Element>
 									<Element class="AssetObjects..FloatValue">
-										<m_fValue>48.000000</m_fValue>
+										<m_fValue>64.000000</m_fValue>
 										<m_ParamName text="Var_CityArea"/>
 									</Element>
 									<Element class="AssetObjects..FloatValue">
-										<m_fValue>0.200000</m_fValue>
+										<m_fValue>0.500000</m_fValue>
 										<m_ParamName text="Var_FillerRatio"/>
 									</Element>
 									<Element class="AssetObjects..FloatValue">
@@ -108,7 +108,7 @@
 										<m_ParamName text="Var_FillerOccupancy"/>
 									</Element>
 									<Element class="AssetObjects..FloatValue">
-										<m_fValue>0.001250</m_fValue>
+										<m_fValue>0.031250</m_fValue>
 										<m_ParamName text="Var_ScatterGrouping"/>
 									</Element>
 								</m_Values>
@@ -133,7 +133,7 @@
 										<m_ParamName text="Var_FillerRatio"/>
 									</Element>
 									<Element class="AssetObjects..FloatValue">
-										<m_fValue>0.650000</m_fValue>
+										<m_fValue>0.250000</m_fValue>
 										<m_ParamName text="Var_FillerOccupancy"/>
 									</Element>
 									<Element class="AssetObjects..FloatValue">
