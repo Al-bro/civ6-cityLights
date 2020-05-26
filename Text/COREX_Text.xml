@@ -245,10 +245,18 @@
 			<Text>Civil Engineer</Text>
 		</Replace>
 
+		<Replace Tag="LOC_UNIT_RURCOM_FARMER_NAME" Language="en_US">
+			<Text>Farmer</Text>
+		</Replace>		
+
 <!-- UNIT DESCRIPTIONS -->			
 
 		<Replace Tag="LOC_UNIT_COREXC_TIER2_CUL_CIVIL_ENG_DESCRIPTION" Language="en_US">
 			<Text>Modern era support unit. Can spend a charge to add +20% [ICON_Production] Production towards Non-Engineering Type Districts and +20% [ICON_Production] Production towards Modern Era and later Buildings. [ICON_Production] Production bonus increases for earlier era buildings. 2 build charges.</Text>
+		</Replace>
+
+		<Replace Tag="LOC_UNIT_RURCOM_FARMER_DESCRIPTION" Language="en_US">
+			<Text>May create Farm, Pastures, Plantations, Fishing Boats, and Camp tile improvements and remove features like Woods or Rainforest. Farmers can be used 2 times.</Text>
 		</Replace>
 		
 <!-- PROJECT NAMES -->			

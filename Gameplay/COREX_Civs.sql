@@ -87,12 +87,54 @@
 			(	'DISTRICT_COREX_FRONTIER_TOWN',		'YIELD_FOOD',		'0',					'1',								'0'										);
 
 		INSERT INTO DistrictModifiers
-
 			(	DistrictType,						ModifierId									)	VALUES
+
 			(	'DISTRICT_COREX_FRONTIER_TOWN',		'RURCOM_NEG_GROWTH'							),
-			(	'DISTRICT_COREX_FRONTIER_TOWN',		'RURCOM_GRANT_FARMER_UNIT'					),
 			(	'DISTRICT_COREX_FRONTIER_TOWN',		'CIV_CAN_NEG_PROD_DIST_RURCOM_1'			),
 			(	'DISTRICT_COREX_FRONTIER_TOWN',		'CIV_CAN_NEG_PROD_DIST_RURCOM_2'			);
+
+		INSERT INTO Adjacency_YieldChanges
+			(	ID,								Description,									YieldType,				YieldChange,	OtherDistrictAdjacent,			TilesRequired,			AdjacentImprovement,			PrereqCivic,			PrereqTech,							AdjacentDistrict							)	VALUES
+																																																																						
+			(	'CivCan_negSci_1',				'Placeholder',									'YIELD_SCIENCE',	   -1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_COREX_FRONTIER_TOWN'				),
+			(	'CivCan_Sci_1',					'Placeholder',									'YIELD_SCIENCE',	 	1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_COREX_FRONTIER_TOWN'				),
+			(	'CivCan_negGold_1',				'Placeholder',									'YIELD_GOLD',		   -1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_COREX_FRONTIER_TOWN'				),
+			(	'CivCan_negCul_1',				'Placeholder',									'YIELD_CULTURE',	   -1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_COREX_FRONTIER_TOWN'				),
+			(	'CivCan_negFood_1',				'Placeholder',									'YIELD_FOOD',		   -1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_COREX_FRONTIER_TOWN'				),
+			(	'CivCan_negProd_1',				'Placeholder',									'YIELD_PRODUCTION',	   -1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_COREX_FRONTIER_TOWN'				),
+
+			(	'CivCan_Faith_1',				'Placeholder',									'YIELD_FAITH',			1,				0,								1,						NULL,							NULL,					NULL,								'DISTRICT_COREX_FRONTIER_TOWN'				);
+
+		INSERT INTO District_Adjacencies
+			(	DistrictType,						YieldChangeID				)	VALUES
+
+			(	'DISTRICT_COREX_FRONTIER_TOWN',		'RurCom_HOLY_SITE'			),		
+			(	'DISTRICT_COREX_FRONTIER_TOWN',		'RurCom_LAVRA'				),		
+			(	'DISTRICT_COREX_FRONTIER_TOWN',		'RurCom_SEOWON'				),		
+			(	'DISTRICT_COREX_FRONTIER_TOWN',		'RurCom_ENCAMPMENT'			),		
+			(	'DISTRICT_COREX_FRONTIER_TOWN',		'RurCom_IKANDA'				),		
+
+			(	'DISTRICT_CAMPUS',					'CivCan_negSci_1'			),
+			(	'DISTRICT_OBSERVATORY',				'CivCan_negSci_1'			),
+			(	'DISTRICT_SEOWON',					'CivCan_Sci_1'				),
+			(	'DISTRICT_COMMERCIAL_HUB',			'CivCan_negGold_1'			),
+			(	'DISTRICT_SUGUBA',					'CivCan_negGold_1'			),
+			(	'DISTRICT_THEATER',					'CivCan_negCul_1'			),
+			(	'DISTRICT_ACROPOLIS',				'CivCan_negCul_1'			),
+			(	'DISTRICT_HARBOR',					'CivCan_negGold_1'			),
+			(	'DISTRICT_ROYAL_NAVY_DOCKYARD',		'CivCan_negGold_1'			),
+			(	'DISTRICT_COTHON',					'CivCan_negFood_1'			),
+			(	'DISTRICT_INDUSTRIAL_ZONE',			'CivCan_negProd_1'			),
+			(	'DISTRICT_HANSA',					'CivCan_negProd_1'			);
+
+		INSERT INTO Improvement_Adjacencies
+			(	ImprovementType,					YieldChangeId				)	VALUES
+
+			(	'IMPROVEMENT_FISHING_BOATS',		'CivCan_Faith_1'			),
+			(	'IMPROVEMENT_PASTURE',				'CivCan_Faith_1'			),
+			(	'IMPROVEMENT_PLANTATION',			'CivCan_Faith_1'			),
+			(	'IMPROVEMENT_FARM',					'CivCan_Faith_1'			),
+			(	'IMPROVEMENT_CAMP',					'CivCan_Faith_1'			);
 
 		INSERT INTO Modifiers 
 			(	ModifierId,												ModifierType,									 				RunOnce,	Permanent,	OwnerRequirementSetId,		OwnerStackLimit,			SubjectStackLimit,				SubjectRequirementSetId							)	VALUES
@@ -103,13 +145,15 @@
 			(	'CIV_CAN_RURCOM_FOOD_FLAT',								'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'CIV_RURCOM_SET_FLAT'							),
 			(	'CIV_CAN_RURCOM_FOOD_HILL',								'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'CIV_RURCOM_SET_HILL'							),
 			(	'CIV_CAN_NEG_PROD_DIST_RURCOM_1',						'MODIFIER_COREX_SINGLE_CITY_ADJUST_DIS_PROD',					 0,			0,			NULL,						'6',						'6',							NULL											),
-			(	'CIV_CAN_NEG_PROD_DIST_RURCOM_2',						'MODIFIER_COREX_SINGLE_CITY_ADJUST_DIS_PROD',					 0,			0,			NULL,						'3',						'3',							NULL											);
-
+			(	'CIV_CAN_NEG_PROD_DIST_RURCOM_2',						'MODIFIER_COREX_SINGLE_CITY_ADJUST_DIS_PROD',					 0,			0,			NULL,						'3',						'3',							NULL											),
+			(	'CIV_CAN_GRANT_FARMER_UNIT',							'MODIFIER_PLAYER_DISTRICT_CREATE_UNIT',							 0,			0,			NULL,						NULL,						NULL,							NULL											);
 
 		INSERT INTO ModifierArguments
 			(	ModifierId,												Name,						Value								)	VALUES
 
 			(	'CIV_CAN_RURCOM_CULTURE_BOMB',							'DistrictType',				'DISTRICT_COREX_FRONTIER_TOWN'		),
+			(	'CIV_CAN_GRANT_FARMER_UNIT',							'DistrictType',				'DISTRICT_COREX_FRONTIER_TOWN'		),
+			(	'CIV_CAN_GRANT_FARMER_UNIT',							'UnitType',					'UNIT_RURCOM_FARMER'				),
 			(	'CIV_CAN_RURCOM_FOREST_PROD_FLAT',						'YieldType',				'YIELD_PRODUCTION'					),
 			(	'CIV_CAN_RURCOM_FOREST_PROD_FLAT',						'Amount',					'1'									),
 			(	'CIV_CAN_RURCOM_FOREST_PROD_HILL',						'YieldType',				'YIELD_PRODUCTION'					),
@@ -179,10 +223,12 @@
 			(	TraitType,									ModifierId										)	VALUES
 
 			(	'TRAIT_LEADER_LAST_BEST_WEST',				'CIV_CAN_RURCOM_CULTURE_BOMB'					),
+			(	'TRAIT_LEADER_LAST_BEST_WEST',				'CIV_CAN_GRANT_FARMER_UNIT'						),
 			(	'TRAIT_LEADER_LAST_BEST_WEST',				'CIV_CAN_RURCOM_FOREST_PROD_FLAT'				),
 			(	'TRAIT_LEADER_LAST_BEST_WEST',				'CIV_CAN_RURCOM_FOREST_PROD_HILL'				),
 			(	'TRAIT_LEADER_LAST_BEST_WEST',				'CIV_CAN_RURCOM_FOOD_FLAT'						),
 			(	'TRAIT_LEADER_LAST_BEST_WEST',				'CIV_CAN_RURCOM_FOOD_HILL'						);
+
 
 
 		INSERT INTO StartBiasFeatures

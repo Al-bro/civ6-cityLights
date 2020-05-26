@@ -12,16 +12,6 @@
 	</RequiredGameArtIDs>
 	<SystemDependencies>
 		<Element>
-			<ConsumerName text="Units"/>
-			<ArtDefDependencyPaths/>
-			<LibraryDependencies>
-				<Element text="Unit"/>
-				<Element text="VFX"/>
-				<Element text="Light"/>
-			</LibraryDependencies>
-			<LoadsLibraries>true</LoadsLibraries>
-		</Element>
-		<Element>
 			<ConsumerName text="Clutter"/>
 			<ArtDefDependencyPaths/>
 			<LibraryDependencies>
@@ -29,6 +19,19 @@
 			</LibraryDependencies>
 			<LoadsLibraries>true</LoadsLibraries>
 		</Element>
+		<Element>
+			<ConsumerName text="Units"/>
+			<ArtDefDependencyPaths>
+				<Element text="Units.artdef"/>
+				<Element text="Unit_Bins.artdef"/>
+			</ArtDefDependencyPaths>
+			<LibraryDependencies>
+				<Element text="Unit"/>
+				<Element text="VFX"/>
+				<Element text="Light"/>
+			</LibraryDependencies>
+			<LoadsLibraries>true</LoadsLibraries>
+		</Element>		
 		<Element>
 			<ConsumerName text="Landmarks"/>
 			<ArtDefDependencyPaths>

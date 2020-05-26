@@ -447,23 +447,86 @@ INSERT INTO Types
 			
 	/* DISTRICT A */
 	
-			(	'DISTRICT_COREEXPANSIONA',	'YIELD_GOLD',		'0',					'0',								'2'										),
-			(	'DISTRICT_COREEXPANSIONA',	'YIELD_PRODUCTION',	'0',					'2',								'0'										),
+			(	'DISTRICT_COREEXPANSIONA',	'YIELD_GOLD',		'0',					'2',								'2'										),
 		
 	/* DISTRICT B */
 
-			(	'DISTRICT_COREEXPANSIONB',	'YIELD_GOLD',		'0',					'0',								'4'										),
-			(	'DISTRICT_COREEXPANSIONB',	'YIELD_PRODUCTION',	'0',					'3',								'0'										),
+			(	'DISTRICT_COREEXPANSIONB',	'YIELD_GOLD',		'0',					'3',								'3'										),
 	
 	/* DISTRICT C */
 
-			(	'DISTRICT_COREEXPANSIONC',	'YIELD_GOLD',		'0',					'0',								'6'										),
-			(	'DISTRICT_COREEXPANSIONC',	'YIELD_PRODUCTION',	'0',					'4',								'0'										),
+			(	'DISTRICT_COREEXPANSIONC',	'YIELD_GOLD',		'0',					'4',								'4'										),
 			
 	/* RURAL COMMUNITY */
 
 			(	'DISTRICT_RURALCOMMUNITY',	'YIELD_FOOD',		'0',					'1',								'0'										);
+
+		UPDATE District_TradeRouteYields
+			SET
+				YieldChangeAsDomesticDestination = '0'
+			WHERE  YieldType = 'YIELD_FOOD'
+			AND	   DistrictType NOT IN 
 			
+			(	'DISTRICT_CITY_CENTER',
+				'DISTRICT_RURALCOMMUNITY'
+			);			
+
+		UPDATE District_TradeRouteYields
+			SET
+				YieldChangeAsDomesticDestination = '1'
+			WHERE  YieldType = 'YIELD_CULTURE'
+			AND	   DistrictType IN
+
+			(	'DISTRICT_THEATER',
+				'DISTRICT_ACROPOLIS'
+			);
+
+		UPDATE District_TradeRouteYields
+			SET
+				YieldChangeAsDomesticDestination = '1'
+			WHERE  YieldType = 'YIELD_FAITH'
+			AND	   DistrictType IN
+
+			(	'DISTRICT_HOLY_SITE',
+				'DISTRICT_LAVRA'
+			);
+
+		UPDATE District_TradeRouteYields
+			SET
+				YieldType = 'YIELD_GOLD'
+			WHERE  YieldType = 'YIELD_FOOD'
+			AND	   DistrictType IN
+
+			(	'DISTRICT_ENTERTAINMENT_COMPLEX',
+				'DISTRICT_STREET_CARNIVAL',
+				'DISTRICT_WATER_ENTERTAINMENT_COMPLEX',
+				'DISTRICT_WATER_STREET_CARNIVAL'
+			);						
+
+		UPDATE District_TradeRouteYields
+			SET
+				YieldChangeAsDomesticDestination = '1'
+			WHERE  YieldType = 'YIELD_SCIENCE'
+			AND	   DistrictType IN
+
+			(	'DISTRICT_OBSERVATORY',
+				'DISTRICT_SEOWON',
+				'DISTRICT_CAMPUS'
+			);
+
+		UPDATE District_TradeRouteYields
+			SET
+				YieldType = 'YIELD_SCIENCE'
+			WHERE  YieldType = 'YIELD_FOOD'
+			AND	   DistrictType = 'DISTRICT_GOVERNMENT';
+
+		UPDATE District_TradeRouteYields
+			SET
+				YieldType = 'YIELD_CULTURE'
+			WHERE  YieldType = 'YIELD_PRODUCTION'
+			AND	   DistrictType = 'DISTRICT_GOVERNMENT';
+
+					
 --===========================================================================================================================================================================--			
 		INSERT INTO District_CitizenYieldChanges
 			(	DistrictType,      				 YieldType,       			YieldChange			)	VALUES
@@ -2736,9 +2799,9 @@ INSERT INTO Types
 --===========================================================================================================================================================================--			
 
 		INSERT INTO Units
-			(	UnitType,									Name,												BaseSightRange,				BaseMoves,				Domain,				FormationClass,					Cost,		BuildCharges,		Description,											CostProgressionModel,						CostProgressionParam1,			PurchaseYield,			AdvisorType				)	VALUES
-			(	'UNIT_COREXC_TIER2_CUL_CIVIL_ENG',			'LOC_UNIT_COREXC_TIER2_CUL_CIVIL_ENG_NAME',			'2',						'2',					'DOMAIN_LAND',		'FORMATION_CLASS_CIVILIAN',		'330',		'2',				'LOC_UNIT_COREXC_TIER2_CUL_CIVIL_ENG_DESCRIPTION',		'COST_PROGRESSION_PREVIOUS_COPIES',			'4',							'YIELD_GOLD',			'ADVISOR_GENERIC'		),
-			(	'UNIT_RURCOM_FARMER',						'LOC_UNIT_RURCOM_FARMER_NAME',						'2',						'2',					'DOMAIN_LAND',		'FORMATION_CLASS_CIVILIAN',		'1',		'2',				'LOC_UNIT_RURCOM_FARMER_DESCRIPTION',					'COST_PROGRESSION_PREVIOUS_COPIES',			'4',							'YIELD_GOLD',			'ADVISOR_GENERIC'		);
+			(	UnitType,									Name,												BaseSightRange,				BaseMoves,				Domain,				FormationClass,					Cost,		BuildCharges,		MustPurchase,	Description,											CostProgressionModel,						CostProgressionParam1,			PurchaseYield,			AdvisorType				)	VALUES
+			(	'UNIT_COREXC_TIER2_CUL_CIVIL_ENG',			'LOC_UNIT_COREXC_TIER2_CUL_CIVIL_ENG_NAME',			'2',						'2',					'DOMAIN_LAND',		'FORMATION_CLASS_CIVILIAN',		'330',		'2',				'0',			'LOC_UNIT_COREXC_TIER2_CUL_CIVIL_ENG_DESCRIPTION',		'COST_PROGRESSION_PREVIOUS_COPIES',			'4',							'YIELD_GOLD',			'ADVISOR_GENERIC'		),
+			(	'UNIT_RURCOM_FARMER',						'LOC_UNIT_RURCOM_FARMER_NAME',						'2',						'2',					'DOMAIN_LAND',		'FORMATION_CLASS_CIVILIAN',		'70',		'2',				'1',			'LOC_UNIT_RURCOM_FARMER_DESCRIPTION',					'COST_PROGRESSION_PREVIOUS_COPIES',			'4',							'YIELD_FAITH',			'ADVISOR_GENERIC'		);
 		
 --===========================================================================================================================================================================--		
 		INSERT INTO Unit_BuildingPrereqs
@@ -2886,3 +2949,10 @@ INSERT INTO Types
 	
 --======================================================================================================================================================================================================--
 
+		UPDATE GameSpeeds
+			SET
+				CostMultiplier = '120',
+				CivicUnlockMaxCost = '120'
+			WHERE GameSpeedType = 'GAMESPEED_STANDARD';
+
+--======================================================================================================================================================================================================--

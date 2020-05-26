@@ -79,6 +79,7 @@
     <File>ArtDefs/Districts.artdef</File>
     <File>ArtDefs/Landmarks.artdef</File>
     <File>ArtDefs/CityGenerators.artdef</File>
+    <File>ArtDefs/Units.artdef</File>
     <File>Art/COREX_Art.xml</File>
     <File>Art/Icons/CorExpA_ICON.dds</File>
     <File>Art/Icons/CorExpB_ICON.dds</File>
