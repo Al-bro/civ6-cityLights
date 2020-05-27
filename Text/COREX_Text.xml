@@ -83,7 +83,7 @@
 				</Replace>		
 		
 		<Replace Tag="LOC_BUILDING_COREXB_TIER2_SCI_NAME" Language="en_US">
-			<Text>Railway Company</Text>
+			<Text>City Planners</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_COREXB_TIER2_CUL_NAME" Language="en_US">
 			<Text>Industrialists</Text>
@@ -93,10 +93,10 @@
 		</Replace>		
 	
 		<Replace Tag="LOC_BUILDING_COREXC_TIER1_SCI_NAME" Language="en_US">
-			<Text>Board of Education</Text>
+			<Text>Research Foundation</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_COREXC_TIER1_CUL_NAME" Language="en_US">
-			<Text>Tourism Industry</Text>
+			<Text>Tourism Marketers</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_COREXC_TIER1_GOL_NAME" Language="en_US">
 			<Text>Public Traders</Text>
@@ -192,35 +192,35 @@
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXB_TIER1_SCI_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants access to the unique Campus district Project: Academic Conference. [NEWLINE][NEWLINE]Academic Conference Project Grants +20% [ICON_Science] Science from Campus district buildings and a one time [ICON_Culture] Culture bonus equal to your [ICON_Science] Science per turn on completion. Project can be completed 3 times in this city. [NEWLINE][NEWLINE]Requires a Campus district with at least +4 [ICON_Science] Science base adjacency in this city. [NEWLINE][NEWLINE]+10% [ICON_Science] Science.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants access to the unique Campus district Project: Academic Conference. [NEWLINE][NEWLINE]Academic Conference Project Grants +20% [ICON_Science] Science from Campus district buildings and a one time [ICON_Culture] Culture bonus equal to your [ICON_Science] Science per turn on completion. Project can be completed 3 times in this city. [NEWLINE][NEWLINE]Requires a Campus district with at least +3 adjacency and a University Building. [NEWLINE][NEWLINE]+10% [ICON_Science] Science.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXB_TIER1_CUL_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants access to the unique Theater Square district Project: Publish Great Works. [NEWLINE][NEWLINE]Publish Great Works Project Grants +150% [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing and a one time [ICON_Science] Science bonus equal to your [ICON_Culture] Culture per turn on completion. Project can be completed 3 times in this city. [NEWLINE][NEWLINE]Requires that the Printing Press Technolgy has been researched. [NEWLINE][NEWLINE]+10% [ICON_Culture] Culture.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants access to the unique Theater Square district Project: Publish Great Works. [NEWLINE][NEWLINE]Publish Great Works Project Grants +150% [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing and a one time [ICON_Science] Science bonus equal to your [ICON_Culture] Culture per turn on completion. Project can be completed 3 times in this city. [NEWLINE][NEWLINE]Requires a Theater Square district with at least +3 adjacency and that the Printing Press Technolgy has been researched. [NEWLINE][NEWLINE]+10% [ICON_Culture] Culture.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXB_TIER1_GOL_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants access to the unique Harbor district Project: Foreign Trade Expedition. [NEWLINE][NEWLINE]Foreign Trade Expedition Project Grants +1 [ICON_Gold] Gold per Luxury and Strategic resource improved at the destination as well as +1 [ICON_TradeRoute] Trade Routes and a free Trader Unit on completion. Project can be completed 3 times in this city. [NEWLINE][NEWLINE]Requires that a Shipyard has been built in this city. [NEWLINE][NEWLINE]+10% [ICON_Gold] Gold.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants access to the unique Commecial Hub district Project: Foreign Trade Expedition. [NEWLINE][NEWLINE]Foreign Trade Expedition Project Grants +1 [ICON_Gold] Gold per Luxury and Strategic resource improved at the destination as well as +1 [ICON_TradeRoute] Trade Routes and a free Trader Unit on completion. Project can be completed 3 times in this city. [NEWLINE][NEWLINE]Requires a Commercial Hub district with at least +3 adjacency and a Bank Building.. [NEWLINE][NEWLINE]+10% [ICON_Gold] Gold.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXB_TIER2_SCI_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants +1 [ICON_RESOURCE_COAL] Coal and +1 [ICON_RESOURCE_IRON] Iron per turn and a free Military Enigneer. Domestic [ICON_TradeRoute] Trade Routes from this city gain +2 [ICON_Production] Production and +4 [ICON_Gold] Gold. Unlocks Steam Power technology if not already researched</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]City Center District gains +1 [ICON_PRODUCTION] for each adjacent district. Domestic [ICON_TradeRoute] Trade Routes from this city gain +2 [ICON_Production] Production and +4 [ICON_Gold] Gold.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXB_TIER2_CUL_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Industrial Zone district gains [ICON_GOLD] Gold equal to its [ICON_PRODUCTION] Production adjacency and recieves a free Factory building whenever the Workshop building is constructed. Grants 1 copy of the unique Luxury Resource Textiles which provides +4 Happiness.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Industrial Zone district gains [ICON_GOLD] Gold equal to its [ICON_PRODUCTION] Production adjacency. Grants 2 copies of the unique Luxury Resource Textiles which provide +4 Happiness.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXB_TIER2_GOL_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE] Harbor district gains [ICON_FOOD] Food equal to its [ICON_GOLD] Gold adjacency. Instantly provides +3 [ICON_Citizen] Population upon completion. City growth rate is 30% higher.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Harbor district gains [ICON_FOOD] Food equal to its [ICON_GOLD] Gold adjacency. Instantly provides +2 [ICON_Citizen] Population upon completion. City growth rate is 20% higher.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXC_TIER1_SCI_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Plots within 1 tile of a Campus district with a Library gain +1 Appeal and plots within 2 tiles gain an additional +1 Appeal with a University. Neighborhood districts gain [ICON_Science] Science based on the Appeal of the tile. [NEWLINE][NEWLINE]+1 [ICON_Science] Science on tiles with 3 Appeal or higher. [NEWLINE]+3 [ICON_Science] Science on tiles with 5 Appeal or higher. [NEWLINE]+6 [ICON_Science] Science on tiles with 7 Appeal or higher. [NEWLINE][NEWLINE]+15% [ICON_Science] Science.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]  [NEWLINE][NEWLINE]+15% [ICON_Science] Science.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXC_TIER1_CUL_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]May build the City Park and Seaside Resort Tile Improvements if not already available. The City Park and Seaside Resort Tile Improvements gain +2 [ICON_Culture] Culture and an additional +1 [ICON_Culture] Culture and +2 [ICON_Gold] Gold if adjacent to a Wonder. [NEWLINE][NEWLINE]+15% [ICON_Culture] Culture.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]May build all basic Tourism [ICON_Tourism] Tile Improvements. basic Tourism [ICON_Tourism] Tile Improvements gain +1 [ICON_Culture] Culture and an additional +1 [ICON_Culture] Culture and +2 [ICON_Gold] Gold if adjacent to a Wonder. [NEWLINE][NEWLINE]+15% [ICON_Culture] Culture.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_BUILDING_COREXC_TIER1_GOL_DESCRIPTION" Language="en_US">
@@ -236,7 +236,7 @@
 		</Replace>
 
 		<Replace Tag="LOC_BUILDING_COREXC_TIER2_GOL_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Neighborhood districts recieves +1 [ICON_Gold] Gold for each adjacent district. +100% [ICON_Production] Production towards Neighborhood districts.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]+100% [ICON_Production] Production towards Neighborhood districts. Neighborhood districts gain [ICON_Gold] Gold based on the Appeal of the tile. [NEWLINE][NEWLINE]+2 [ICON_Gold] Gold on tiles with 1 Appeal or higher. [NEWLINE]+4 [ICON_Gold] Gold on tiles with 3 Appeal or higher. [NEWLINE]+8 [ICON_Gold] Gold on tiles with 6 Appeal or higher.</Text>
 		</Replace>
 
 <!-- UNIT NAMES -->			
