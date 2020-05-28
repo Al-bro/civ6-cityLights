@@ -273,13 +273,17 @@
 			<Text>Host Academic Conference</Text>
 		</Replace>
 
-		<Replace Tag="LOC_PROJECT_COREX_SPACE_RACE" Language="en_US">
-			<Text>Support Space Race</Text>
+		<Replace Tag="LOC_PROJECT_COREX_MARKETING_1_NAME" Language="en_US">
+			<Text>Run Tourism Marketing Campaign</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_PROJECT_COREX_IPO_1_NAME" Language="en_US">
+			<Text>Fund Initial Public Offering</Text>
 		</Replace>
 
-		<Replace Tag="LOC_PROJECT_COREX_IMMIGRATION_NAME" Language="en_US">
-			<Text>Support Immigration</Text>
-		</Replace>
+		<Replace Tag="LOC_PROJECT_COREX_RESEARCH_1_NAME" Language="en_US">
+			<Text>Distribute Research Grants</Text>
+		</Replace>		
 
 <!-- PROJECT DESCRIPTIONS -->			
 
@@ -287,46 +291,38 @@
 			<Text>Grants +150% [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing and a one time [ICON_Science] Science bonus equal to your [ICON_Culture] Culture per turn on completion. Can be completed 3 times. (1/3)</Text>
 		</Replace>
 		
+		<Replace Tag="LOC_PROJECT_COREX_PUBLISHERS_2_DESCRIPTION" Language="en_US">
+			<Text>Grants +150% [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing and a one time [ICON_Science] Science bonus equal to your [ICON_Culture] Culture per turn on completion. Can be completed 3 times. (2/3)</Text>
+		</Replace>
+
+		<Replace Tag="LOC_PROJECT_COREX_PUBLISHERS_3_DESCRIPTION" Language="en_US">
+			<Text>Grants +150% [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing and a one time [ICON_Science] Science bonus equal to your [ICON_Culture] Culture per turn on completion. Can be completed 3 times. (3/3)</Text>
+		</Replace>
+
 		<Replace Tag="LOC_PROJECT_COREX_TRADE_EXP_1_DESCRIPTION" Language="en_US">
 			<Text>Grants +1 [ICON_Gold] Gold per Luxury and Strategic resource improved at the destination as well as +1 [ICON_TradeRoute] Trade Routes and a free Trader Unit on completion. Can be completed 3 times. (1/3)</Text>
+		</Replace>
+
+		<Replace Tag="LOC_PROJECT_COREX_TRADE_EXP_3_DESCRIPTION" Language="en_US">
+			<Text>Grants +1 [ICON_Gold] Gold per Luxury and Strategic resource improved at the destination as well as +1 [ICON_TradeRoute] Trade Routes and a free Trader Unit on completion. Can be completed 3 times. (3/3)</Text>
+		</Replace>
+
+		<Replace Tag="LOC_PROJECT_COREX_TRADE_EXP_2_DESCRIPTION" Language="en_US">
+			<Text>Grants +1 [ICON_Gold] Gold per Luxury and Strategic resource improved at the destination as well as +1 [ICON_TradeRoute] Trade Routes and a free Trader Unit on completion. Can be completed 3 times. (2/3)</Text>
 		</Replace>
 
 		<Replace Tag="LOC_PROJECT_COREX_ACADEM_CONF_1_DESCRIPTION" Language="en_US">
 			<Text>Grants +20% [ICON_Science] Science from Campus district buildings and a one time [ICON_Culture] Culture bonus equal to your [ICON_Science] Science per turn on completion. Can be completed 3 times. (1/3)</Text>
 		</Replace>
 
-		<Replace Tag="LOC_PROJECT_COREX_PUBLISHERS_2_DESCRIPTION" Language="en_US">
-			<Text>Grants +150% [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing and a one time [ICON_Science] Science bonus equal to your [ICON_Culture] Culture per turn on completion. Can be completed 3 times. (2/3)</Text>
-		</Replace>
-		
-		<Replace Tag="LOC_PROJECT_COREX_TRADE_EXP_2_DESCRIPTION" Language="en_US">
-			<Text>Grants +1 [ICON_Gold] Gold per Luxury and Strategic resource improved at the destination as well as +1 [ICON_TradeRoute] Trade Routes and a free Trader Unit on completion. Can be completed 3 times. (2/3)</Text>
-		</Replace>
-
 		<Replace Tag="LOC_PROJECT_COREX_ACADEM_CONF_2_DESCRIPTION" Language="en_US">
 			<Text>Grants +20% [ICON_Science] Science from Campus district buildings and a one time [ICON_Culture] Culture bonus equal to your [ICON_Science] Science per turn on completion. Can be completed 3 times. (2/3)</Text>
-		</Replace>
-		
-		<Replace Tag="LOC_PROJECT_COREX_PUBLISHERS_3_DESCRIPTION" Language="en_US">
-			<Text>Grants +150% [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing and a one time [ICON_Science] Science bonus equal to your [ICON_Culture] Culture per turn on completion. Can be completed 3 times. (3/3)</Text>
-		</Replace>
-		
-		<Replace Tag="LOC_PROJECT_COREX_TRADE_EXP_3_DESCRIPTION" Language="en_US">
-			<Text>Grants +1 [ICON_Gold] Gold per Luxury and Strategic resource improved at the destination as well as +1 [ICON_TradeRoute] Trade Routes and a free Trader Unit on completion. Can be completed 3 times. (3/3)</Text>
 		</Replace>
 
 		<Replace Tag="LOC_PROJECT_COREX_ACADEM_CONF_3_DESCRIPTION" Language="en_US">
 			<Text>Grants +20% [ICON_Science] Science from Campus district buildings and a one time [ICON_Culture] Culture bonus equal to your [ICON_Science] Science per turn on completion. Can be completed 3 times. (3/3)</Text>
 		</Replace>
 		
-		<Replace Tag="LOC_PROJECT_COREX_SPACE_RACE_DESCRIPTION" Language="en_US">
-			<Text>Support Space Race</Text>
-		</Replace>
-
-		<Replace Tag="LOC_PROJECT_COREX_IMMIGRATION_DESCRIPTION" Language="en_US">
-			<Text>Provides -2 [ICON_Amenities] Amenities while active. Grants -4 Loyalty and +1 [ICON_Citizen] Population upon completion.</Text>
-		</Replace>
-
 <!-- RESOURCES -->
 
 		<Replace Tag="LOC_RESOURCE_COREEX_TEXTILES_NAME" Language="en_US">
