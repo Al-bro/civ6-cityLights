@@ -180,27 +180,27 @@
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXA_TIER2_SCI_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Allows an additional district to be built above the usual population limit. +20% [ICON_Production] Production towards engineering projects (Aquaduct, Dam, Canal, and Neighborhoods).</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grant a Workshop and Factory Building upon researching their corresponding Technology.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXA_TIER2_CUL_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Enables [ICON_Faith] Faith purchase of buildings in the Entertainment Complex or Waterfront Park district. Plots within 2 tiles of the Entertainment Complex or Waterfront Park district gain +1 Appeal.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grant an Arena and Zoo Building upon researching their corresponding Civic.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXA_TIER2_GOL_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Harbor district recieves +2 [ICON_Gold] Gold for each adjacent district. Harbour and Commercial Hub district buildings are 50% cheaper to purchase with [ICON_Gold] Gold.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grant a Lighthouse and Shipyard Building upon researching their corresponding Technology.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXB_TIER1_SCI_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants access to the unique Campus district Project: Academic Conference. [NEWLINE][NEWLINE]Academic Conference Project Grants +20% [ICON_Science] Science from Campus district buildings and a one time [ICON_Culture] Culture bonus equal to your [ICON_Science] Science per turn on completion. Project can be completed 3 times in this city. [NEWLINE][NEWLINE]Requires a Campus district with at least +3 adjacency and a University Building. [NEWLINE][NEWLINE]+10% [ICON_Science] Science.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants access to the unique Campus district Project: Academic Conference. [NEWLINE][NEWLINE]Academic Conference Project Grants +20% [ICON_Science] Science from Campus district buildings. Project can be completed 3 times in this city. [NEWLINE][NEWLINE]Requires a Campus district with at least +3 adjacency and a University Building. [NEWLINE][NEWLINE]+10% [ICON_Science] Science.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXB_TIER1_CUL_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants access to the unique Theater Square district Project: Publish Great Works. [NEWLINE][NEWLINE]Publish Great Works Project Grants +150% [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing and a one time [ICON_Science] Science bonus equal to your [ICON_Culture] Culture per turn on completion. Project can be completed 3 times in this city. [NEWLINE][NEWLINE]Requires a Theater Square district with at least +3 adjacency and that the Printing Press Technolgy has been researched. [NEWLINE][NEWLINE]+10% [ICON_Culture] Culture.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants access to the unique Theater Square district Project: Publish Great Works. [NEWLINE][NEWLINE]Publish Great Works Project Grants +150% [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing. Project can be completed 3 times in this city. [NEWLINE][NEWLINE]Requires a Theater Square district with at least +3 adjacency and that the Printing Press Technolgy has been researched. [NEWLINE][NEWLINE]+10% [ICON_Culture] Culture.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXB_TIER1_GOL_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants access to the unique Commecial Hub district Project: Foreign Trade Expedition. [NEWLINE][NEWLINE]Foreign Trade Expedition Project Grants +1 [ICON_Gold] Gold per Luxury and Strategic resource improved at the destination as well as +1 [ICON_TradeRoute] Trade Routes and a free Trader Unit on completion. Project can be completed 3 times in this city. [NEWLINE][NEWLINE]Requires a Commercial Hub district with at least +3 adjacency and a Bank Building.. [NEWLINE][NEWLINE]+10% [ICON_Gold] Gold.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants access to the unique Commecial Hub district Project: Foreign Trade Expedition. [NEWLINE][NEWLINE]Foreign Trade Expedition Project Grants +1 [ICON_TradeRoute] Trade Routes and a free Trader Unit on completion. Project can be completed 3 times in this city. [NEWLINE][NEWLINE]Requires a Commercial Hub district with at least +3 adjacency and a Bank Building. [NEWLINE][NEWLINE]+10% [ICON_Gold] Gold.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXB_TIER2_SCI_DESCRIPTION" Language="en_US">
@@ -216,15 +216,15 @@
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXC_TIER1_SCI_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]  [NEWLINE][NEWLINE]+15% [ICON_Science] Science.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants access to the unique Campus district Project: Fund Research Grant. [NEWLINE][NEWLINE]Triggers a [ICON_Eureka] Eureka moment for two random technologies. Project can be completed 3 times in this city. [NEWLINE][NEWLINE]Requires a Campus district with at least +4 adjacency and a Research Lab Building. [NEWLINE][NEWLINE]+15% [ICON_Science] Science.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXC_TIER1_CUL_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]May build all basic Tourism [ICON_Tourism] Tile Improvements. basic Tourism [ICON_Tourism] Tile Improvements gain +1 [ICON_Culture] Culture and an additional +1 [ICON_Culture] Culture and +2 [ICON_Gold] Gold if adjacent to a Wonder. [NEWLINE][NEWLINE]+15% [ICON_Culture] Culture.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants access to the unique Theater Square district Project: Run Tourism Marketing Campaign. [NEWLINE][NEWLINE]+25% [ICON_Tourism] Tourism for all tile improvements in the city. Project can be completed 3 times in this city. [NEWLINE][NEWLINE]Requires a Theater Square district with at least +4 adjacency and a Broadcast Center Building. [NEWLINE][NEWLINE]+15% [ICON_Culture] Culture.</Text>
 		</Replace>
 
 		<Replace Tag="LOC_BUILDING_COREXC_TIER1_GOL_DESCRIPTION" Language="en_US">
-			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants a Stock Exchange building in the Commercial Hub district whenever a Bank is constructed. +4 [ICON_GOLD] Gold from the Stock Exchange building for every specialty district in this city. [NEWLINE][NEWLINE]+15% [ICON_Gold] Gold.</Text>
+			<Text>Effects apply to this city only. [NEWLINE][NEWLINE]Grants access to the unique Commercial Hub district Project: Fund Initial Public Offering. [NEWLINE][NEWLINE]XXXXXXXX. Project can be completed 3 times in this city. [NEWLINE][NEWLINE]Requires a Commercial Hub district with at least +4 adjacency and a Stock Exchange Building. [NEWLINE][NEWLINE]+15% [ICON_Gold] Gold.</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_BUILDING_COREXC_TIER2_SCI_DESCRIPTION" Language="en_US">
@@ -288,41 +288,65 @@
 <!-- PROJECT DESCRIPTIONS -->			
 
 		<Replace Tag="LOC_PROJECT_COREX_PUBLISHERS_1_DESCRIPTION" Language="en_US">
-			<Text>Grants +150% [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing and a one time [ICON_Science] Science bonus equal to your [ICON_Culture] Culture per turn on completion. Can be completed 3 times. (1/3)</Text>
+			<Text>Grants +150% [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works. Can be completed 3 times. (1/3)</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_PROJECT_COREX_PUBLISHERS_2_DESCRIPTION" Language="en_US">
-			<Text>Grants +150% [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing and a one time [ICON_Science] Science bonus equal to your [ICON_Culture] Culture per turn on completion. Can be completed 3 times. (2/3)</Text>
+			<Text>Grants +150% [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works. Can be completed 3 times. (2/3)</Text>
 		</Replace>
 
 		<Replace Tag="LOC_PROJECT_COREX_PUBLISHERS_3_DESCRIPTION" Language="en_US">
-			<Text>Grants +150% [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works of Writing and a one time [ICON_Science] Science bonus equal to your [ICON_Culture] Culture per turn on completion. Can be completed 3 times. (3/3)</Text>
+			<Text>Grants +150% [ICON_Culture] Culture from [ICON_GreatWork_Writing] Great Works. Can be completed 3 times. (3/3)</Text>
 		</Replace>
 
 		<Replace Tag="LOC_PROJECT_COREX_TRADE_EXP_1_DESCRIPTION" Language="en_US">
-			<Text>Grants +1 [ICON_Gold] Gold per Luxury and Strategic resource improved at the destination as well as +1 [ICON_TradeRoute] Trade Routes and a free Trader Unit on completion. Can be completed 3 times. (1/3)</Text>
+			<Text>Grants +1 [ICON_TradeRoute] Trade Routes and a free Trader Unit on completion. Can be completed 3 times. (1/3)</Text>
 		</Replace>
 
 		<Replace Tag="LOC_PROJECT_COREX_TRADE_EXP_3_DESCRIPTION" Language="en_US">
-			<Text>Grants +1 [ICON_Gold] Gold per Luxury and Strategic resource improved at the destination as well as +1 [ICON_TradeRoute] Trade Routes and a free Trader Unit on completion. Can be completed 3 times. (3/3)</Text>
+			<Text>Grants +1 [ICON_TradeRoute] Trade Routes and a free Trader Unit on completion. Can be completed 3 times. (3/3)</Text>
 		</Replace>
 
 		<Replace Tag="LOC_PROJECT_COREX_TRADE_EXP_2_DESCRIPTION" Language="en_US">
-			<Text>Grants +1 [ICON_Gold] Gold per Luxury and Strategic resource improved at the destination as well as +1 [ICON_TradeRoute] Trade Routes and a free Trader Unit on completion. Can be completed 3 times. (2/3)</Text>
+			<Text>Grants +1 [ICON_TradeRoute] Trade Routes and a free Trader Unit on completion. Can be completed 3 times. (2/3)</Text>
 		</Replace>
 
 		<Replace Tag="LOC_PROJECT_COREX_ACADEM_CONF_1_DESCRIPTION" Language="en_US">
-			<Text>Grants +20% [ICON_Science] Science from Campus district buildings and a one time [ICON_Culture] Culture bonus equal to your [ICON_Science] Science per turn on completion. Can be completed 3 times. (1/3)</Text>
+			<Text>Grants +20% [ICON_Science] Science from Campus district buildings. Can be completed 3 times. (1/3)</Text>
 		</Replace>
 
 		<Replace Tag="LOC_PROJECT_COREX_ACADEM_CONF_2_DESCRIPTION" Language="en_US">
-			<Text>Grants +20% [ICON_Science] Science from Campus district buildings and a one time [ICON_Culture] Culture bonus equal to your [ICON_Science] Science per turn on completion. Can be completed 3 times. (2/3)</Text>
+			<Text>Grants +20% [ICON_Science] Science from Campus district buildings. Can be completed 3 times. (2/3)</Text>
 		</Replace>
 
 		<Replace Tag="LOC_PROJECT_COREX_ACADEM_CONF_3_DESCRIPTION" Language="en_US">
-			<Text>Grants +20% [ICON_Science] Science from Campus district buildings and a one time [ICON_Culture] Culture bonus equal to your [ICON_Science] Science per turn on completion. Can be completed 3 times. (3/3)</Text>
+			<Text>Grants +20% [ICON_Science] Science from Campus district buildings. Can be completed 3 times. (3/3)</Text>
 		</Replace>
-		
+
+		<Replace Tag="LOC_PROJECT_COREX_RESEARCH_1_DESCRIPTION" Language="en_US">
+			<Text>Triggers a [ICON_Eureka] Eureka moment for two random technologies. Can be completed 3 times. (1/3)</Text>
+		</Replace>
+
+		<Replace Tag="LOC_PROJECT_COREX_RESEARCH_2_DESCRIPTION" Language="en_US">
+			<Text>Triggers a [ICON_Eureka] Eureka moment for two random technologies. Can be completed 3 times. (2/3)</Text>
+		</Replace>
+
+		<Replace Tag="LOC_PROJECT_COREX_RESEARCH_3_DESCRIPTION" Language="en_US">
+			<Text>Triggers a [ICON_Eureka] Eureka moment for two random technologies. Can be completed 3 times. (3/3)</Text>
+		</Replace>
+
+		<Replace Tag="LOC_PROJECT_COREX_MARKETING_1_DESCRIPTION" Language="en_US">
+			<Text>+25% [ICON_Tourism] Tourism for all tile improvements in the city. Can be completed 3 times. (1/3)</Text>
+		</Replace>
+
+		<Replace Tag="LOC_PROJECT_COREX_MARKETING_2_DESCRIPTION" Language="en_US">
+			<Text>+25% [ICON_Tourism] Tourism for all tile improvements in the city. Can be completed 3 times. (2/3)</Text>
+		</Replace>
+
+		<Replace Tag="LOC_PROJECT_COREX_MARKETING_3_DESCRIPTION" Language="en_US">
+			<Text>+25% [ICON_Tourism] Tourism for all tile improvements in the city. Can be completed 3 times. (3/3)</Text>
+		</Replace>
+
 <!-- RESOURCES -->
 
 		<Replace Tag="LOC_RESOURCE_COREEX_TEXTILES_NAME" Language="en_US">
