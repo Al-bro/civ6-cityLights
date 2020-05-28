@@ -2955,3 +2955,4 @@ INSERT INTO Types
 				CostMultiplier = '120',
 				CivicUnlockMaxCost = '120'
 			WHERE GameSpeedType = 'GAMESPEED_STANDARD';
+
