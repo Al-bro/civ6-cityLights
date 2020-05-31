@@ -67,7 +67,7 @@
 		INSERT INTO Districts
 
 			(	DistrictType,						Name,											Description,										PrereqTech,					PrereqCivic,		TraitType,							PlunderType,		PlunderAmount,	AdvisorType,		Cost,	CostProgressionModel,				CostProgressionParam1,	OnePerCity,	RequiresPlacement,	RequiresPopulation,	Aqueduct,	NoAdjacentCity,			CityCenter,			InternalOnly,	CaptureRemovesBuildings,	CaptureRemovesCityDefenses,	MilitaryDomain,		Appeal, 	Housing,	Entertainment,		Maintenance,		CitizenSlots,			CityStrengthModifier,		CaptureRemovesDistrict,		MaxPerPlayer				)	VALUES	
-			(	'DISTRICT_COREX_FRONTIER_TOWN',		'LOC_DISTRICT_COREX_FRONTIER_TOWN_NAME',		'LOC_DISTRICT_COREX_FRONTIER_TOWN_DESCRIPTION',		'TECH_IRRIGATION',			NULL,				'TRAIT_LEADER_LAST_BEST_WEST',		'PLUNDER_FAITH',	'50',			'ADVISOR_GENERIC',	'17',	'COST_PROGRESSION_GAME_PROGRESS',	'500',					'0',		'1',				'0',				'0',		'1',					'0',				'0',			'1',						'0',						'NO_DOMAIN',		'1',		'1',		'1',				'1',				'0',					'1',						'0',						'-1'						);
+			(	'DISTRICT_COREX_FRONTIER_TOWN',		'LOC_DISTRICT_COREX_FRONTIER_TOWN_NAME',		'LOC_DISTRICT_COREX_FRONTIER_TOWN_DESCRIPTION',		'TECH_IRRIGATION',			NULL,				'TRAIT_LEADER_LAST_BEST_WEST',		'PLUNDER_FAITH',	'50',			'ADVISOR_GENERIC',	'50',	'COST_PROGRESSION_GAME_PROGRESS',	'500',					'0',		'1',				'0',				'0',		'1',					'0',				'0',			'1',						'0',						'NO_DOMAIN',		'1',		'1',		'1',				'1',				'0',					'1',						'0',						'-1'						);
 
 		INSERT INTO DistrictReplaces
 			(	CivUniqueDistrictType,					ReplacesDistrictType			)	VALUES

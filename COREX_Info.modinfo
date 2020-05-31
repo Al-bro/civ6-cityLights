@@ -2,10 +2,12 @@
 <Mod id="2c3469aa-bca5-451f-930d-4fe9c3072bcc" version="1">
   <Properties>
     <Name>City Lights</Name>
-    <Description>Temp</Description>
+    <Description>Temporary</Description>
     <CustomProperties></CustomProperties>
-    <Teaser>Temp</Teaser>
+    <Teaser>Temporary</Teaser>
     <Authors>Albro</Authors>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <CompatibleVersions>2.0</CompatibleVersions>
   </Properties>
   <FrontEndActions>
     <UpdateText id="TextUpdate">
